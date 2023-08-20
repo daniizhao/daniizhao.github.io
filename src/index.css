@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
+@import url('https://fonts.googleapis.com/css?family=Space+Mono');
+
+:root {
+  --primary: #4D21A9;
+  --secondary: #CF6766;
+
+  --white: #E7DFDD;
+  --black: #0E0B16;
+
+  --background: #0E1212;
+
+  --primary-font: 'Josefin Sans';
+  --code-font: 'Space Mono';
+}
+
+body {
+  margin: 0;
+  font-family: var(--primary-font);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--background);
+}
+
+.codeText {
+  font-family: var(--code-font);
+}
