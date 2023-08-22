@@ -14,9 +14,12 @@
   --code-font: 'Space Mono';
 }
 
+* {
+  font-family: var(--primary-font);
+}
+
 body {
   margin: 0;
-  font-family: var(--primary-font);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: var(--background);

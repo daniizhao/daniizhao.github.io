@@ -1,7 +1,9 @@
+import './Header.scss';
 import { useTranslation } from 'react-i18next';
-import './Header.css';
 import Icon from '../icon/Icon';
 import { ReactComponent as Logo } from '../../assets/icon/logoDZ.svg';
+import Button from '../button/Button';
+import { NavLink } from 'react-router-dom';
 
 const Header = () => {
 
@@ -18,9 +20,21 @@ const Header = () => {
         <Logo />
       </div>
       <div className='navContainer'>
-        <button>{t('HEADER.ABOUTME')}</button>
-        <button>{t('HEADER.WORK')}</button>
-        <button>{t('HEADER.CONTACT')}</button>
+        <NavLink to='/' className={({ isActive }) =>
+          isActive ? 'activeLink' : 'navLink'
+        }>
+          {t('ABOUTME.TITLE')}
+        </NavLink>
+        <NavLink to='/work' className={({ isActive }) =>
+          isActive ? 'activeLink' : 'navLink'
+        }>
+          {t('WORK.TITLE')}
+        </NavLink>
+        <NavLink to='/contact' className={({ isActive }) =>
+          isActive ? 'activeLink' : 'navLink'
+        }>
+          {t('CONTACT.TITLE')}
+        </NavLink>
       </div>
     </div>
   )
