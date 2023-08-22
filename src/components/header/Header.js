@@ -3,11 +3,16 @@ import { useTranslation } from 'react-i18next';
 import Icon from '../icon/Icon';
 import { ReactComponent as Logo } from '../../assets/icon/logoDZ.svg';
 import { NAV_SECTIONS } from '../../config/constants';
-import { Link } from 'react-scroll';
+import { Link, scrollSpy } from 'react-scroll';
+import { useEffect } from 'react';
 
 const Header = () => {
 
   const { t } = useTranslation();
+
+  useEffect(() => {
+    scrollSpy.update();
+  }, []);
 
   return (
     <div className='headerContainer'>
@@ -23,12 +28,14 @@ const Header = () => {
         {
           NAV_SECTIONS.map((section) => {
             return (
-              <Link 
+              <Link
                 key={section.id}
                 activeClass='activeLink'
                 className='navItem'
                 to={section.id}
                 smooth={true}
+                offset={-60}
+                spy={true}
               >
                 {t(section.title)}
               </Link>

@@ -5,6 +5,10 @@
   justify-content: space-between;
   align-items: center;
   max-height: 36px;
+  padding: 10px 40px 10px;
+  position: fixed;
+  width: -webkit-fill-available;
+  top: 0;
 
   .linksContainer {
     display: flex;
@@ -21,18 +25,16 @@
     flex-direction: row;
     align-items: center;
     gap: 16px;
-    a {
+    .navItem {
+      cursor: pointer;
       text-decoration: none;
       font-size: 20px;
       &:hover {
         opacity: 0.5;
       }
-    }
-    .navLink {
-      color: var(--white);
-    }
-    .activeLink {
-      color: var(--primary);
+      &.activeLink {
+        color: var(--primary);
+      }
     }
   }
 }
