@@ -2,8 +2,8 @@ import './Header.scss';
 import { useTranslation } from 'react-i18next';
 import Icon from '../icon/Icon';
 import { ReactComponent as Logo } from '../../assets/icon/logoDZ.svg';
-import Button from '../button/Button';
-import { NavLink } from 'react-router-dom';
+import { NAV_SECTIONS } from '../../config/constants';
+import { Link } from 'react-scroll';
 
 const Header = () => {
 
@@ -20,21 +20,21 @@ const Header = () => {
         <Logo />
       </div>
       <div className='navContainer'>
-        <NavLink to='/' className={({ isActive }) =>
-          isActive ? 'activeLink' : 'navLink'
-        }>
-          {t('ABOUTME.TITLE')}
-        </NavLink>
-        <NavLink to='/work' className={({ isActive }) =>
-          isActive ? 'activeLink' : 'navLink'
-        }>
-          {t('WORK.TITLE')}
-        </NavLink>
-        <NavLink to='/contact' className={({ isActive }) =>
-          isActive ? 'activeLink' : 'navLink'
-        }>
-          {t('CONTACT.TITLE')}
-        </NavLink>
+        {
+          NAV_SECTIONS.map((section) => {
+            return (
+              <Link 
+                key={section.id}
+                activeClass='activeLink'
+                className='navItem'
+                to={section.id}
+                smooth={true}
+              >
+                {t(section.title)}
+              </Link>
+            )
+          })
+        }
       </div>
     </div>
   )
