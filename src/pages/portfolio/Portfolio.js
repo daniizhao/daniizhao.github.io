@@ -6,12 +6,12 @@ import Header from '../../components/header/Header';
 const Portfolio = () => {
   return (
     <div>
-      <Header />
-      <div className='contentWrapper'>
+      <Header sections={true} />
+      <div className='content-wrapper'>
         {
           NAV_SECTIONS.map((section) => {
             return (
-              <Element key={section.id} name={section.id} className='contentContainer'>
+              <Element key={section.id} name={section.id} className='content-container'>
                 {section.component}
               </Element>
             )

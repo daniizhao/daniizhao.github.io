@@ -1,3 +1,4 @@
+import './Aboutme.scss';
 import { useTranslation } from "react-i18next";
 
 const Aboutme = () => {
@@ -6,7 +7,6 @@ const Aboutme = () => {
 
   return (
     <div>
-      <h1>{t('ABOUTME.TITLE')}</h1>
     </div>
   )
 }

@@ -1,4 +1,4 @@
-.headerContainer {
+.header-container {
   background-color: var(--background);
   display: flex;
   flex-direction: row;
@@ -10,17 +10,19 @@
   width: -webkit-fill-available;
   top: 0;
 
-  .linksContainer {
+  .links-container {
     display: flex;
     flex-direction: row;
     gap: 16px;
+    align-items: center;
+    justify-content: flex-end;
 
     svg {
       max-width: 32px;
     }
   }
 
-  .navContainer {
+  .nav-container {
     display: flex;
     flex-direction: row;
     align-items: center;

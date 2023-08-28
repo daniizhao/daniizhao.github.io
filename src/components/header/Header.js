@@ -1,12 +1,11 @@
 import './Header.scss';
 import { useTranslation } from 'react-i18next';
 import Icon from '../icon/Icon';
-import { ReactComponent as Logo } from '../../assets/icon/logoDZ.svg';
 import { NAV_SECTIONS } from '../../config/constants';
 import { Link, scrollSpy } from 'react-scroll';
 import { useEffect } from 'react';
 
-const Header = () => {
+const Header = (props) => {
 
   const { t } = useTranslation();
 
@@ -15,17 +14,10 @@ const Header = () => {
   }, []);
 
   return (
-    <div className='headerContainer'>
-      <div className='linksContainer'>
-        <Icon iconName={'fa-brands fa-linkedin'} color={"var(--primary)"} />
-        <Icon iconName={'fa-brands fa-github'} color={"var(--primary)"} />
-        <Icon iconName={'fa-brands fa-artstation'} color={"var(--primary)"} />
-      </div>
-      <div className='logoContainer'>
-        <Logo />
-      </div>
-      <div className='navContainer'>
+    <div className='header-container'>
+      <div className='nav-container'>
         {
+          props.sections &&
           NAV_SECTIONS.map((section) => {
             return (
               <Link
@@ -42,6 +34,11 @@ const Header = () => {
             )
           })
         }
+      </div>
+      <div className='links-container'>
+        <Icon iconName={'fa-brands fa-linkedin'} />
+        <Icon iconName={'fa-brands fa-github'} />
+        <Icon iconName={'fa-brands fa-artstation'} />
       </div>
     </div>
   )
