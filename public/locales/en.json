@@ -1,12 +1,14 @@
 {
-  "ABOUTME": {
-    "TITLE": "About me",
+  "HOME": {
     "INTRODUCTION": {
       "HEY": "Hey! I am",
       "DEV": "Frontend developer",
       "CONCEPT": "Concept artist",
       "SHORT_INTRO": ""
     }
+  },
+  "ABOUTME": {
+    "TITLE": "About me"
   },
   "WORK": {
     "TITLE": "Work"

@@ -2,9 +2,12 @@ import "./Home.scss";
 import Header from "../../components/header/Header";
 import TechPortrait from "../../assets/img/tech-portrait.jpg";
 import SelfPortrait from "../../assets/img/self-portrait.png";
-import Keyboard from "../../assets/img/keyboard.jpg";
+import { useTranslation } from "react-i18next";
 
 const Home = () => {
+
+  const { t } = useTranslation();
+
   return (
     <div className="home-wrapper">
       <Header />
@@ -18,7 +21,12 @@ const Home = () => {
         <div className="overlay"></div>
       </div>
       <div className="content-wrapper">
-
+        <div className="title">
+          {t("HOME.INTRODUCTION.HEY")}
+        </div>
+        <div className="content-container">
+          Daniela Zhao
+        </div>
       </div>
     </div>
   )

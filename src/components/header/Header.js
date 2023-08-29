@@ -1,7 +1,7 @@
 import './Header.scss';
 import { useTranslation } from 'react-i18next';
 import Icon from '../icon/Icon';
-import { NAV_SECTIONS } from '../../config/constants';
+import { ARTSTATION_PAGE, GITHUB_PAGE, LINKEDIN_PAGE, NAV_SECTIONS } from '../../config/constants';
 import { Link, scrollSpy } from 'react-scroll';
 import { useEffect } from 'react';
 
@@ -36,9 +36,15 @@ const Header = (props) => {
         }
       </div>
       <div className='links-container'>
-        <Icon iconName={'fa-brands fa-linkedin'} />
-        <Icon iconName={'fa-brands fa-github'} />
-        <Icon iconName={'fa-brands fa-artstation'} />
+        <a href={LINKEDIN_PAGE} target='_blank'>
+          <Icon iconName={'fa-brands fa-linkedin'} />
+        </a>
+        <a href={GITHUB_PAGE} target='_blank'>
+          <Icon iconName={'fa-brands fa-github'} />
+        </a>
+        <a href={ARTSTATION_PAGE} target='_blank'>
+          <Icon iconName={'fa-brands fa-artstation'} />
+        </a>
       </div>
     </div>
   )

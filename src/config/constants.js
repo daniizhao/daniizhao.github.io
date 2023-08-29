@@ -18,6 +18,10 @@ export const NAV_SECTIONS = [
     title: 'CONTACT.TITLE',
     component: <Contact />
   },
-]
+];
 
 export const PRIMARY_BUTTON = 'primary';
+
+export const LINKEDIN_PAGE = 'https://www.linkedin.com/in/daniela-zhao/';
+export const GITHUB_PAGE = 'https://github.com/daniizhao';
+export const ARTSTATION_PAGE = 'https://www.artstation.com/nydalae';
