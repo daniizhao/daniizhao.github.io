@@ -1,6 +1,6 @@
 import Aboutme from "../pages/aboutme/Aboutme";
 import Contact from "../pages/contact/Contact";
-import Work from "../pages/work/Work";
+import Projects from "../pages/projects/Projects";
 
 export const NAV_SECTIONS = [
   {
@@ -9,9 +9,9 @@ export const NAV_SECTIONS = [
     component: <Aboutme />
   },
   {
-    id: 'work',
-    title: 'WORK.TITLE',
-    component: <Work />
+    id: 'projects',
+    title: 'PROJECTS.TITLE',
+    component: <Projects />
   },
   {
     id: 'contact',
