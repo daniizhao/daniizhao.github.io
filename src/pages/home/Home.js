@@ -13,8 +13,8 @@ const Home = () => {
   return (
     <div className="home-wrapper">
       <Header />
-      <div className="background-wrapper">
-        <img className="bkg-tech" src={BackgroundImage} alt="bkg_image" />
+      <div className="background-wrapper general-bkg">
+        <img src={BackgroundImage} alt="bkg_image" />
       </div>
       <div className="content-wrapper">
         {

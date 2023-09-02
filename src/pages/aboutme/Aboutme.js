@@ -2,6 +2,7 @@ import './Aboutme.scss';
 import PortraitBkg from "../../assets/img/Portfolio_home.png";
 import { NAV_SECTIONS } from '../../config/constants';
 import { useTranslation } from 'react-i18next';
+import Icon from '../../components/icon/Icon';
 
 const Aboutme = () => {
 
@@ -12,18 +13,39 @@ const Aboutme = () => {
       <div className="background-wrapper">
         <img className="bkg-tech" src={PortraitBkg} alt="bkg_image" />
       </div>
-      <div className="section-wrapper">
+      <div className="section-wrapper aboutme">
         <div className="title">
           {t("HOME.INTRODUCTION.HEY")}
         </div>
         <div className="intro-wrapper">
           <div className="intro-container">
-            Daniela Zhao
+            <div className='title tech'>
+              Daniela Zhao
+            </div>
+            <div className='role'>
+              {t('HOME.INTRODUCTION.DEV')}
+            </div>
           </div>
           <div className="intro-container">
-            nydalae
+            <div className='title art'>
+              nydalae
+            </div>
+            <div className='role'>
+              {t('HOME.INTRODUCTION.CONCEPT')}
+            </div>
           </div>
         </div>
+        <div className='intro-footer'>
+          <div className='text'>
+            {t('HOME.INTRODUCTION.SCROLL')}
+          </div>
+          <div className='icon-container'>
+            <Icon iconName='fa-solid fa-angles-down' color='var(--white)' animation='fa-bounce' />
+          </div>
+        </div>
+      </div>
+      <div className='section-wrapper'>
+
       </div>
     </div>
   )
