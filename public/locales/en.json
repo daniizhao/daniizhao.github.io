@@ -3,13 +3,41 @@
     "INTRODUCTION": {
       "HEY": "Hey! I am",
       "DEV": "Frontend developer",
-      "CONCEPT": "Concept artist",
+      "CONCEPT": "Artist",
       "SHORT_INTRO": "",
       "SCROLL": "Scroll down to get to know me better!"
     }
   },
   "ABOUTME": {
-    "TITLE": "About me"
+    "TITLE": "About me",
+    "STORY": {
+      "TITLE": "My story starts when I...",
+      "ART_START": {
+        "TITLE": "discovered I loved drawing",
+        "DESCRIPTION": "Started copying and gettings inspired by Manga and Anime (canon event on every artist)"
+      },
+      "TECH_START": {
+        "TITLE": "discovered programming was cool",
+        "DESCRIPTION": "Thanks to a teacher in high school that introduced us Python programming, I thought it was really cool to be able to create functional programs by typing some code and executing it"
+      },
+      "COLLEGE_DEGREE": {
+        "TITLE": "Informatics Engineering degree @ UPC",
+        "DESCRIPTION": "Major in Software Engineering"
+      },
+      "HOBBY": {
+        "TITLE": "kept drawing as a hobby, got interested in realism/impresionism/digital art"
+      },
+      "SLASHMOBILITY": {
+        "TITLE": "Software Developer @ SlashMobility",
+        "DESCRIPTION": "Frontend development: intialize, develop, debug and deliver apps",
+        "DESCRIPTION_2": " Project management: monitor project progress, client communication",
+        "DESCRIPTION_3": "Stack: Angular, Ionic, React Native, KnockoutJS, Tizen SDK, webOs SDK, Git"
+      },
+      "FX_ANIMATION": {
+        "TITLE": "Master in Concept Art @ FX Animation School",
+        "DESCRIPTION": "Create and design characters, creatures, props and environments for projects."
+      }
+    }
   },
   "PROJECTS": {
     "TITLE": "Projects"
