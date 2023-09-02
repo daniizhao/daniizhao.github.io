@@ -3,6 +3,7 @@ import PortraitBkg from "../../assets/img/Portfolio_home.png";
 import { NAV_SECTIONS } from '../../config/constants';
 import { useTranslation } from 'react-i18next';
 import Icon from '../../components/icon/Icon';
+import Timeline from '../../components/timeline/Timeline';
 
 const Aboutme = () => {
 
@@ -44,8 +45,8 @@ const Aboutme = () => {
           </div>
         </div>
       </div>
-      <div className='section-wrapper'>
-
+      <div className='section-wrapper timeline'>
+        <Timeline />
       </div>
     </div>
   )
