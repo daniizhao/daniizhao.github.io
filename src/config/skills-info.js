@@ -74,7 +74,7 @@ export const ART_SKILLS_INFO = [
     lvl_id: 1
   },
   {
-    title: 'Photoshop',
+    title: 'Adobe Photoshop',
     lvl_id: 1
   },
   {
@@ -90,11 +90,38 @@ export const ART_SKILLS_INFO = [
     lvl_id: 0
   },
   {
+    title: 'Substance Painter',
+    lvl_id: 0
+  },
+  {
     title: '',
     lvl_id: null
   },
   {
     title: 'Figma',
     lvl_id: 0
+  },
+];
+
+export const LANGUAGES_INFO = [
+  {
+    lang: 'Español',
+    code: 'es-ES',
+    lvl: 'SKILLS.LANGUAGES.LEVELS.FLUENT'
+  },
+  {
+    lang: 'Català',
+    code: 'ca-ES',
+    lvl: 'SKILLS.LANGUAGES.LEVELS.FLUENT'
+  },
+  {
+    lang: 'English',
+    code: 'en-US',
+    lvl: 'SKILLS.LANGUAGES.LEVELS.FLUENT'
+  },
+  {
+    lang: 'Deutsch',
+    code: 'de-DE',
+    lvl: 'SKILLS.LANGUAGES.LEVELS.BASIC'
   },
 ];

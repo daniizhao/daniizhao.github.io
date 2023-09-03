@@ -47,7 +47,7 @@ const Aboutme = () => {
       </div>
       <div className='section-wrapper timeline'>
         <div className='section-title'>
-          {t('ABOUTME.STORY.TITLE')}
+          <span>{t('ABOUTME.STORY.TITLE_1')}</span> {t('ABOUTME.STORY.TITLE_2')}
         </div>
         <TimelineComponent />
       </div>

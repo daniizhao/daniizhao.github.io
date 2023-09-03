@@ -1,8 +1,27 @@
 import { useTranslation } from "react-i18next";
 import { NAV_SECTIONS } from "../../config/constants";
-import { ART_SKILLS_INFO, SKILL_LEVELS_LIST, TECH_SKILLS_INFO } from "../../config/skills-info";
+import { ART_SKILLS_INFO, LANGUAGES_INFO, SKILL_LEVELS_LIST, TECH_SKILLS_INFO } from "../../config/skills-info";
 import "./Skills.scss";
 import Icon from "../../components/icon/Icon";
+
+import { motion, useInView } from "framer-motion";
+import { useRef } from "react";
+
+const SkillBar = (props) => {
+
+  const ref = useRef(null);
+  const isInView = useInView(ref);
+
+  return (
+    <div ref={ref} className={`skills-list-content-row-levels skill-bar ${props.isLeftSide && 'align-right'}`}>
+    <motion.div 
+      className="skill-progress"
+      animate={{width: isInView ? `${props.level}%` : 0, opacity: isInView ? 1 : 0}}
+      transition={{type:'spring', duration: 1}}
+    ></motion.div>
+  </div>
+  )
+}
 
 const SkillsList = (props) => {
 
@@ -52,9 +71,7 @@ const SkillsList = (props) => {
                 }
                 {
                   skill.lvl_id !== null &&
-                  <div className={`skills-list-content-row-levels skill-bar ${isLeftSide && 'align-right'}`}>
-                    <div className="skill-progress" style={{width: `${getPercFromLvl(skill.lvl_id)}%`}}></div>
-                  </div>
+                  <SkillBar level={getPercFromLvl(skill.lvl_id)} isLeftSide={isLeftSide} />
                 }
                 {
                   isLeftSide &&
@@ -77,14 +94,67 @@ const Skills = () => {
 
   return (
     <div id={NAV_SECTIONS[1].id} className="section-wrapper">
-      <div className="section-title">{t('SKILLS.TITLE')}</div>
       <div className="skills-wrapper">
+        <div className="section-title">
+          {t('SKILLS.TITLE')}
+        </div>
         <div className="skills-hard-container">
           <SkillsList list={TECH_SKILLS_INFO} levels={SKILL_LEVELS_LIST.slice().reverse()} position='left' iconName='fa-code' />
           <SkillsList list={ART_SKILLS_INFO} levels={SKILL_LEVELS_LIST} iconName='fa-palette'/>
         </div>
         <div className="skills-soft-container">
-
+          <div className="skills-item">
+            <div className="section-title">
+              {t('SKILLS.LANGUAGES.TITLE')}
+            </div>
+            <div className="skills-item-content">
+              {
+                LANGUAGES_INFO.map((lang, i) => {
+                  return (
+                    <div key={`lang-${i}`} className="skills-item-content-row">
+                      <div className="skills-item-content-key">
+                        {lang.lang} <span>({lang.code})</span>
+                      </div>
+                      <div className="skills-item-content-value">
+                        {t(lang.lvl)}
+                      </div>
+                    </div>
+                  )
+                })
+              }
+            </div>
+          </div>
+          <div className="skills-item">
+            <div className="section-title">
+              {t('SKILLS.OTHER.TITLE')}
+            </div>
+            <div className="skills-item-content">
+              <div className="skills-item-content-row">
+                <div className="skills-item-content-icon">
+                  <Icon iconName='fa-regular fa-moon' color='var(--secondary)' />
+                </div>
+                <div className="skills-item-content-key align-left">
+                  {t('SKILLS.OTHER.SHELTER')}<a href="https://www.instagram.com/ubgats" target="_blank" rel="noreferrer"> UBGats </a>
+                </div>
+              </div>
+              <div className="skills-item-content-row">
+                <div className="skills-item-content-icon">
+                  <Icon iconName='fa-regular fa-moon' color='var(--secondary)' />
+                </div>
+                <div className="skills-item-content-key align-left">
+                  {t('SKILLS.OTHER.GAMES')}
+                </div>
+              </div>
+              <div className="skills-item-content-row">
+                <div className="skills-item-content-icon">
+                  <Icon iconName='fa-regular fa-moon' color='var(--secondary)' />
+                </div>
+                <div className="skills-item-content-key align-left">
+                  {t('SKILLS.OTHER.READING')}
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>

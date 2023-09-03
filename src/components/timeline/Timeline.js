@@ -1,6 +1,6 @@
 import "./Timeline.scss";
 import Star from '@mui/icons-material/Star';
-import { Timeline, TimelineItem, TimelineSeparator, TimelineConnector, TimelineContent, TimelineDot, TimelineOppositeContent } from "@mui/lab";
+import { Timeline, TimelineItem, TimelineSeparator, TimelineConnector, TimelineContent, TimelineDot } from "@mui/lab";
 import { useTranslation } from "react-i18next";
 import UPCLogo from "../../assets/img/Logo_UPC.png";
 import SlashLogo from "../../assets/img/Logo_Slash.png";
@@ -19,21 +19,20 @@ const CustomTimeLineElement = (props) => {
       <TimelineItem
         position={props.position}
       >
-        <TimelineOppositeContent sx={{ pb: '128px', px: 2 }} color="var(--white)" className="opposite-content">
-          <motion.div
-            animate={{x: isInView ? 0 : (props.position === 'right' ? '-200px' : 200), opacity: isInView ? 1 : 0}}
-            transition={{ease: 'easeIn', duration: 0.5}}
-          >
-            {props.oppositeText}
-          </motion.div>
-        </TimelineOppositeContent>
         <TimelineSeparator>
+          <TimelineConnector />
           <TimelineDot>
             <Star />
           </TimelineDot>
           <TimelineConnector />
+          {
+            props.first &&
+            <TimelineDot>
+              <Star />
+            </TimelineDot>
+          }
         </TimelineSeparator>
-        <TimelineContent sx={{ pb: '128px', px: 2 }}>
+        <TimelineContent sx={{ py: '128px', px: 2 }}>
           <motion.div className="element-content"
             animate={{x: isInView ? 0 : (props.position === 'right' ? 200 : '-200px'), opacity: isInView ? 1 : 0}}
             transition={{ease: 'easeIn', duration: 0.5}}
@@ -57,43 +56,24 @@ const TimelineComponent = () => {
   return (
     <Timeline>
       <CustomTimeLineElement position='right'>
-        <div className='element-content-title'>
-          {t('ABOUTME.STORY.ART_START.TITLE')}
-        </div>
-        <div className='element-content-subtitle'>
-          ~ 2009
-        </div>
-        <div className='element-content-description'>
-          {t('ABOUTME.STORY.ART_START.DESCRIPTION')}
-        </div>
-      </CustomTimeLineElement>
-      <CustomTimeLineElement position='left'>
-        <div className='element-content-title'>
-          {t('ABOUTME.STORY.TECH_START.TITLE')}
-        </div>
-        <div className='element-content-subtitle'>
-          ~ 2015
-        </div>
-        <div className='element-content-description'>
-          {t('ABOUTME.STORY.TECH_START.DESCRIPTION')}
-        </div>
-      </CustomTimeLineElement>
-      <CustomTimeLineElement position='left' oppositeText={t('ABOUTME.STORY.HOBBY.TITLE')}>
-        <div className='element-content-title' onClick={() => {openLink(UPC_LINK)}}>
-          {t('ABOUTME.STORY.COLLEGE_DEGREE.TITLE')}
+        <div className='element-content-title' onClick={() => {openLink(FX_LINK)}}>
+          {t('ABOUTME.STORY.FX_ANIMATION.TITLE')}
           <div className='logo-container'>
-            <img src={UPCLogo} alt='UPC_logo' />
+            <img src={FXLogo} alt='FXAnimation_logo' />
           </div>
         </div>
         <div className='element-content-subtitle'>
-          2017 - 2021
+          2022 - present
         </div>
         <div className='element-content-description'>
           <div>
-            {t('ABOUTME.STORY.COLLEGE_DEGREE.DESCRIPTION')}
+            {t('ABOUTME.STORY.FX_ANIMATION.DESCRIPTION')}
+          </div>
+          <div>
+            {t('ABOUTME.STORY.FX_ANIMATION.DESCRIPTION_2')}
           </div>
           <div className="element-content-description-stack">
-            {t('ABOUTME.STORY.COLLEGE_DEGREE.STACK')}
+            {t('ABOUTME.STORY.FX_ANIMATION.STACK')}
           </div>
         </div>
       </CustomTimeLineElement>
@@ -119,25 +99,22 @@ const TimelineComponent = () => {
           </div>
         </div>
       </CustomTimeLineElement>
-      <CustomTimeLineElement position='right'>
-        <div className='element-content-title' onClick={() => {openLink(FX_LINK)}}>
-          {t('ABOUTME.STORY.FX_ANIMATION.TITLE')}
+      <CustomTimeLineElement first={true} position='left'>
+        <div className='element-content-title' onClick={() => {openLink(UPC_LINK)}}>
+          {t('ABOUTME.STORY.COLLEGE_DEGREE.TITLE')}
           <div className='logo-container'>
-            <img src={FXLogo} alt='FXAnimation_logo' />
+            <img src={UPCLogo} alt='UPC_logo' />
           </div>
         </div>
         <div className='element-content-subtitle'>
-          2022 - now
+          2017 - 2021
         </div>
         <div className='element-content-description'>
           <div>
-            {t('ABOUTME.STORY.FX_ANIMATION.DESCRIPTION')}
-          </div>
-          <div>
-            {t('ABOUTME.STORY.FX_ANIMATION.DESCRIPTION_2')}
+            {t('ABOUTME.STORY.COLLEGE_DEGREE.DESCRIPTION')}
           </div>
           <div className="element-content-description-stack">
-            {t('ABOUTME.STORY.FX_ANIMATION.STACK')}
+            {t('ABOUTME.STORY.COLLEGE_DEGREE.STACK')}
           </div>
         </div>
       </CustomTimeLineElement>

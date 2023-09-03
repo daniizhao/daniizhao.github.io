@@ -11,15 +11,8 @@
   "ABOUTME": {
     "TITLE": "About me",
     "STORY": {
-      "TITLE": "My story starts when I ...",
-      "ART_START": {
-        "TITLE": "discovered I loved drawing",
-        "DESCRIPTION": "Started copying and gettings inspired by Manga and Anime (cannon event on every artist)"
-      },
-      "TECH_START": {
-        "TITLE": "discovered programming was cool",
-        "DESCRIPTION": "Thanks to a teacher in high school that introduced us Python programming, I thought it was really cool to be able to create functional programs by typing some code and executing it"
-      },
+      "TITLE_1": "Where ",
+      "TITLE_2": "I've been ...",
       "COLLEGE_DEGREE": {
         "TITLE": "Informatics Engineering degree @ UPC",
         "DESCRIPTION": "Major in Software Engineering",
@@ -31,14 +24,14 @@
       "SLASHMOBILITY": {
         "TITLE": "Software Developer @ SlashMobility",
         "DESCRIPTION": "Developed, debugged and delivered web,  mobile and TV applications",
-        "DESCRIPTION_2": "Led few projects, direct communication with clients",
+        "DESCRIPTION_2": "Led and managed projects, communication with clients",
         "STACK": "Angular, Ionic, React Native, KnockoutJS, Tizen SDK, webOs SDK, Git"
       },
       "FX_ANIMATION": {
         "TITLE": "Master in Concept Art @ FX Animation School",
         "DESCRIPTION": "Create and design 2D characters, creatures, props and environments for projects",
         "DESCRIPTION_2": "Build 3D models (characters, creatures, ...)",
-        "STACK": "Clip Studio Paint, Photoshop, ZBrush, Blender"
+        "STACK": "Clip Studio Paint, Adobe Photoshop, ZBrush, Blender, Substance Painter"
       }
     }
   },
@@ -49,6 +42,20 @@
       "INTERMEDIATE": "Intermediate",
       "ADVANCED": "Advanced",
       "EXPERT": "Expert"
+    },
+    "LANGUAGES": {
+      "TITLE": "Languages",
+      "LEVELS": {
+        "BASIC": "Basic",
+        "INTERMEDIATE": "Intermediate",
+        "FLUENT": "Fluent"
+      }
+    },
+    "OTHER": {
+      "TITLE": "Hobbies & Interests",
+      "SHELTER": "Volunteer @ ",
+      "GAMES": "Games",
+      "READING": "Books"
     }
   },
   "PROJECTS": {

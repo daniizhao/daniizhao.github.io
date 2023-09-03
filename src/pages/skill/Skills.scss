@@ -1,9 +1,11 @@
 .skills-wrapper {
-  display: flex;
-  flex-direction: column;
+  display: table-cell;
+  vertical-align: middle;
+  width: 100%;
   .skills-hard-container {
     display: flex;
     flex-direction: row;
+    gap: 3%;
     .skills-list {
       display: flex;
       flex-direction: column;
@@ -27,7 +29,7 @@
         width: 100%;
       }
       .skill-name {
-        width: 25%;
+        width: 35%;
       }
       &-content {
         display: flex;
@@ -36,10 +38,10 @@
         &-row {
           display: flex;
           flex-direction: row;
+          align-items: center;
           height: 42px;
           &-title {
             font-family: var(--code-font);
-
             &.align-right {
               text-align: end;
             }
@@ -48,11 +50,11 @@
             display: flex;
             background-color: var(--black-0-5);
             border-radius: 20px;
-            height: 34px;
+            height: 30px;
             margin: 0 5%;
             .skill-progress {
               background-color: var(--secondary);
-              height: 32px;
+              height: 30px;
               border-radius: 20px;
             }
           }
@@ -62,6 +64,51 @@
   }
   .align-right {
     justify-content: flex-end;
+  }
+  .skills-soft-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    .skills-item {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      &-content {
+        font-size: 18px;
+        white-space: pre;
+        &-row {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+          gap: 20px;
+          span {
+            font-size: 14px;
+            color: var(--medium-gray);
+          }
+        }
+        &-icon {
+          width: 20px;
+        }
+        &-key {
+          text-align: end;
+          width: 50%;
+          a {
+            text-decoration: none;
+            color: var(--white);
+          }
+          &.align-left {
+            text-align: left;
+            width: 30%
+          }
+        }
+        &-value {
+          text-align: start;
+          width: 50%;
+          color: var(--secondary);
+        }
+      }
+    }
   }
 }
 

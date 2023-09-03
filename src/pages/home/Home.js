@@ -5,9 +5,8 @@ import { NAV_SECTIONS } from "../../config/constants";
 import { Element } from "react-scroll";
 
 const Home = () => {
-
   return (
-    <div className="home-wrapper">
+    <div id="portfolio-content" className="home-wrapper">
       <Header />
       <div className="background-wrapper general-bkg">
         <img src={BackgroundImage} alt="bkg_image" />
