@@ -4,15 +4,23 @@ import { NAV_SECTIONS } from '../../config/constants';
 import { useTranslation } from 'react-i18next';
 import Icon from '../../components/icon/Icon';
 import TimelineComponent from '../../components/timeline/Timeline';
+import { onMouseMove } from '../../config/mouseEvents';
+import { useEffect } from 'react';
 
 const Aboutme = () => {
 
   const { t } = useTranslation();
 
+  useEffect(() => {
+    let aboutmeSectionElement = document.querySelector('.aboutme');
+    aboutmeSectionElement.addEventListener('mousemove', onMouseMove);
+    aboutmeSectionElement.moveelement = document.querySelector('#portraitImg');
+  }, []);
+
   return (
     <div id={NAV_SECTIONS[0].id}>
       <div className="background-wrapper">
-        <img className="bkg-tech" src={PortraitBkg} alt="bkg_image" />
+        <img id='portraitImg' src={PortraitBkg} alt="bkg_image" />
       </div>
       <div className="section-wrapper aboutme">
         <div className="title">
