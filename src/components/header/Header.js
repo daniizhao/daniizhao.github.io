@@ -35,13 +35,13 @@ const Header = () => {
         }
       </div>
       <div className='links-container'>
-        <a href={LINKEDIN_PAGE} target='_blank'>
+        <a href={LINKEDIN_PAGE} target='_blank' rel='noreferrer'>
           <Icon iconName={'fa-brands fa-linkedin'} />
         </a>
-        <a href={GITHUB_PAGE} target='_blank'>
+        <a href={GITHUB_PAGE} target='_blank' rel='noreferrer'>
           <Icon iconName={'fa-brands fa-github'} />
         </a>
-        <a href={ARTSTATION_PAGE} target='_blank'>
+        <a href={ARTSTATION_PAGE} target='_blank' rel='noreferrer'>
           <Icon iconName={'fa-brands fa-artstation'} />
         </a>
       </div>

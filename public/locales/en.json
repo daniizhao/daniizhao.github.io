@@ -35,7 +35,15 @@
       },
       "FX_ANIMATION": {
         "TITLE": "Master in Concept Art @ FX Animation School",
-        "DESCRIPTION": "Create and design characters, creatures, props and environments for projects."
+        "DESCRIPTION": "Create and design characters, creatures, props and environments for projects"
+      }
+    },
+    "SKILLS": {
+      "LEVELS": {
+        "BEGINNER": "Beginner",
+        "INTERMEDIATE": "INtermediate",
+        "ADVANCED": "Advanced",
+        "EXPERT": "Expert"
       }
     }
   },
