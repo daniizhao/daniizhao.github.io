@@ -90,7 +90,12 @@ const TimelineComponent = () => {
           2017 - 2021
         </div>
         <div className='element-content-description'>
-          {t('ABOUTME.STORY.COLLEGE_DEGREE.DESCRIPTION')}
+          <div>
+            {t('ABOUTME.STORY.COLLEGE_DEGREE.DESCRIPTION')}
+          </div>
+          <div className="element-content-description-stack">
+            {t('ABOUTME.STORY.COLLEGE_DEGREE.STACK')}
+          </div>
         </div>
       </CustomTimeLineElement>
       <CustomTimeLineElement position='left'>
@@ -110,8 +115,8 @@ const TimelineComponent = () => {
           <div>
             {t('ABOUTME.STORY.SLASHMOBILITY.DESCRIPTION_2')}
           </div> 
-          <div>
-            {t('ABOUTME.STORY.SLASHMOBILITY.DESCRIPTION_3')}
+          <div className="element-content-description-stack">
+            {t('ABOUTME.STORY.SLASHMOBILITY.STACK')}
           </div>
         </div>
       </CustomTimeLineElement>
@@ -126,7 +131,15 @@ const TimelineComponent = () => {
           2022 - now
         </div>
         <div className='element-content-description'>
-          {t('ABOUTME.STORY.FX_ANIMATION.DESCRIPTION')}
+          <div>
+            {t('ABOUTME.STORY.FX_ANIMATION.DESCRIPTION')}
+          </div>
+          <div>
+            {t('ABOUTME.STORY.FX_ANIMATION.DESCRIPTION_2')}
+          </div>
+          <div className="element-content-description-stack">
+            {t('ABOUTME.STORY.FX_ANIMATION.STACK')}
+          </div>
         </div>
       </CustomTimeLineElement>
     </Timeline>

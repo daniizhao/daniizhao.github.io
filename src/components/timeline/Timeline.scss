@@ -23,13 +23,18 @@
     }
     &-subtitle {
       font-size: 18px;
-      color: var(--medium-gray);
+      color: var(--light-gray);
     }
     &-description {
       font-size: 20px;
       display: inline-flex;
       flex-direction: column;
       gap: 12px;
+      &-stack {
+        font-size: 14px;
+        font-family: var(--code-font);
+        color: var(--medium-gray);
+      }
     }
   }
   .opposite-content {

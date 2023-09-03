@@ -53,7 +53,7 @@ const Aboutme = () => {
       </div>
       <div className='section-wrapper'>
         <div className='section-title'>
-          {t('ABOUTME.STORY.TITLE')}
+          {t('ABOUTME.SKILLS.TITLE')}
         </div>
       </div>
     </div>

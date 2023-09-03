@@ -11,7 +11,7 @@
   "ABOUTME": {
     "TITLE": "About me",
     "STORY": {
-      "TITLE": "My story starts when I...",
+      "TITLE": "My story starts when I ...",
       "ART_START": {
         "TITLE": "discovered I loved drawing",
         "DESCRIPTION": "Started copying and gettings inspired by Manga and Anime (canon event on every artist)"
@@ -22,23 +22,27 @@
       },
       "COLLEGE_DEGREE": {
         "TITLE": "Informatics Engineering degree @ UPC",
-        "DESCRIPTION": "Major in Software Engineering"
+        "DESCRIPTION": "Major in Software Engineering",
+        "STACK" : "Java, C++, C, Assembly, R, Matlab, SQL"
       },
       "HOBBY": {
         "TITLE": "kept drawing as a hobby, got interested in realism/impresionism/digital art"
       },
       "SLASHMOBILITY": {
         "TITLE": "Software Developer @ SlashMobility",
-        "DESCRIPTION": "Frontend development: intialize, develop, debug and deliver apps",
-        "DESCRIPTION_2": " Project management: monitor project progress, client communication",
-        "DESCRIPTION_3": "Stack: Angular, Ionic, React Native, KnockoutJS, Tizen SDK, webOs SDK, Git"
+        "DESCRIPTION": "Developed, debugged and delivered web,  mobile and TV applications",
+        "DESCRIPTION_2": "Led few projects, direct communication with clients",
+        "STACK": "Angular, Ionic, React Native, KnockoutJS, Tizen SDK, webOs SDK, Git"
       },
       "FX_ANIMATION": {
         "TITLE": "Master in Concept Art @ FX Animation School",
-        "DESCRIPTION": "Create and design characters, creatures, props and environments for projects"
+        "DESCRIPTION": "Create and design 2D characters, creatures, props and environments for projects",
+        "DESCRIPTION_2": "Build 3D models (characters, creatures, ...)",
+        "STACK": "Clip Studio Paint, Photoshop, ZBrush, Blender"
       }
     },
     "SKILLS": {
+      "TITLE": "Skills",
       "LEVELS": {
         "BEGINNER": "Beginner",
         "INTERMEDIATE": "INtermediate",
