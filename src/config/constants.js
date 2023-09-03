@@ -1,12 +1,18 @@
 import Aboutme from "../pages/aboutme/Aboutme";
 import Contact from "../pages/contact/Contact";
 import Projects from "../pages/projects/Projects";
+import Skills from "../pages/skill/Skills";
 
 export const NAV_SECTIONS = [
   {
     id: 'aboutme',
     title: 'ABOUTME.TITLE',
     component: <Aboutme />
+  },
+  {
+    id: 'skills',
+    title: 'SKILLS.TITLE',
+    component: <Skills />
   },
   {
     id: 'projects',

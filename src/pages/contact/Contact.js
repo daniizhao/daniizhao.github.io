@@ -6,7 +6,7 @@ const Contact = () => {
   const { t } = useTranslation();
 
   return (
-    <div id={NAV_SECTIONS[2].id}>
+    <div id={NAV_SECTIONS[3].id}>
       <h1>{t('CONTACT.TITLE')}</h1>
     </div>
   )

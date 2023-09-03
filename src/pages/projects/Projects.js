@@ -7,7 +7,7 @@ const Projects = () => {
   const { t } = useTranslation();
 
   return (
-    <div id={NAV_SECTIONS[1].id}>
+    <div id={NAV_SECTIONS[2].id}>
       <h1>{t('PROJECTS.TITLE')}</h1>
     </div>
   )

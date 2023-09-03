@@ -19,7 +19,7 @@ const CustomTimeLineElement = (props) => {
       <TimelineItem
         position={props.position}
       >
-        <TimelineOppositeContent sx={{ py: '128px', px: 2 }} color="var(--white)" className="opposite-content">
+        <TimelineOppositeContent sx={{ pb: '128px', px: 2 }} color="var(--white)" className="opposite-content">
           <motion.div
             animate={{x: isInView ? 0 : (props.position === 'right' ? '-200px' : 200), opacity: isInView ? 1 : 0}}
             transition={{ease: 'easeIn', duration: 0.5}}
@@ -28,13 +28,12 @@ const CustomTimeLineElement = (props) => {
           </motion.div>
         </TimelineOppositeContent>
         <TimelineSeparator>
-          <TimelineConnector />
           <TimelineDot>
             <Star />
           </TimelineDot>
           <TimelineConnector />
         </TimelineSeparator>
-        <TimelineContent sx={{ py: '128px', px: 2 }}>
+        <TimelineContent sx={{ pb: '128px', px: 2 }}>
           <motion.div className="element-content"
             animate={{x: isInView ? 0 : (props.position === 'right' ? 200 : '-200px'), opacity: isInView ? 1 : 0}}
             transition={{ease: 'easeIn', duration: 0.5}}

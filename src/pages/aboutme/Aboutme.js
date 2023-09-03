@@ -51,11 +51,6 @@ const Aboutme = () => {
         </div>
         <TimelineComponent />
       </div>
-      <div className='section-wrapper'>
-        <div className='section-title'>
-          {t('ABOUTME.SKILLS.TITLE')}
-        </div>
-      </div>
     </div>
   )
 }

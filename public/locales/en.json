@@ -14,7 +14,7 @@
       "TITLE": "My story starts when I ...",
       "ART_START": {
         "TITLE": "discovered I loved drawing",
-        "DESCRIPTION": "Started copying and gettings inspired by Manga and Anime (canon event on every artist)"
+        "DESCRIPTION": "Started copying and gettings inspired by Manga and Anime (cannon event on every artist)"
       },
       "TECH_START": {
         "TITLE": "discovered programming was cool",
@@ -40,15 +40,15 @@
         "DESCRIPTION_2": "Build 3D models (characters, creatures, ...)",
         "STACK": "Clip Studio Paint, Photoshop, ZBrush, Blender"
       }
-    },
-    "SKILLS": {
-      "TITLE": "Skills",
-      "LEVELS": {
-        "BEGINNER": "Beginner",
-        "INTERMEDIATE": "INtermediate",
-        "ADVANCED": "Advanced",
-        "EXPERT": "Expert"
-      }
+    }
+  },
+  "SKILLS": {
+    "TITLE": "Skills",
+    "LEVELS": {
+      "BEGINNER": "Beginner",
+      "INTERMEDIATE": "Intermediate",
+      "ADVANCED": "Advanced",
+      "EXPERT": "Expert"
     }
   },
   "PROJECTS": {

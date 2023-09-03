@@ -16,6 +16,7 @@
   position: fixed;
   width: -webkit-fill-available;
   top: 0;
+  z-index: 999;
 
   .links-container {
     display: flex;
