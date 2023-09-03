@@ -6,10 +6,16 @@ import UPCLogo from "../../assets/img/Logo_UPC.png";
 import SlashLogo from "../../assets/img/Logo_Slash.png";
 import FXLogo from "../../assets/img/Logo_FX.png";
 import { FX_LINK, SLASH_LINK, UPC_LINK } from "../../config/constants";
+import { motion, useInView } from "framer-motion";
+import { useRef, useState } from "react";
 
 const CustomTimeLineElement = (props) => {
+  
+  const ref = useRef(null);
+  const isInView = useInView(ref, {margin: '-10%'});
+
   return (
-    <div className={`timeline-element ${props.position}`}>
+    <div ref={ref} className={`timeline-element ${props.position}`}>
       <TimelineItem
         position={props.position}
       >
@@ -24,9 +30,12 @@ const CustomTimeLineElement = (props) => {
           <TimelineConnector />
         </TimelineSeparator>
         <TimelineContent sx={{ py: '128px', px: 2 }}>
-          <div className="element-content">
+          <motion.div className="element-content"
+            animate={{x: isInView ? 0 : (props.position == 'right' ? 200 : '-200px'), opacity: isInView ? 1 : 0}}
+            transition={{ease: 'easeIn', duration: 0.5}}
+          >
             {props.children}
-          </div>
+          </motion.div>
         </TimelineContent>
       </TimelineItem>
     </div>
