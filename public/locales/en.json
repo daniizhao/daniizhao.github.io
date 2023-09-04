@@ -52,10 +52,17 @@
       }
     },
     "OTHER": {
+      "TITLE": "Soft Skills",
+      "COMM": "Communication",
+      "TEAMWORK": "Teamwork",
+      "PROJ_MGM": "Project management",
+      "DETAILS": "Keen to details" 
+    },
+    "HOBBIES": {
       "TITLE": "Hobbies & Interests",
       "SHELTER": "Volunteer @ ",
-      "GAMES": "Games",
-      "READING": "Books"
+      "GAMES": "Cozy/MMORPG Games",
+      "READING": "Fantasy books"
     }
   },
   "PROJECTS": {

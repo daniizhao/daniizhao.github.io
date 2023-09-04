@@ -105,6 +105,28 @@ const Skills = () => {
         <div className="skills-soft-container">
           <div className="skills-item">
             <div className="section-title">
+              {t('SKILLS.OTHER.TITLE')}
+            </div>
+            <div className="skills-item-content">
+              <div className="skills-item-content-row">
+                <div className="skills-item-content">
+                  {t('SKILLS.OTHER.TEAMWORK')}
+                </div>
+              </div>
+              <div className="skills-item-content-row">
+                <div className="skills-item-content">
+                  {t('SKILLS.OTHER.COMM')}
+                </div>
+              </div>
+              <div className="skills-item-content-row">
+                <div className="skills-item-content">
+                  {t('SKILLS.OTHER.DETAILS')}
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="skills-item">
+            <div className="section-title">
               {t('SKILLS.LANGUAGES.TITLE')}
             </div>
             <div className="skills-item-content">
@@ -126,7 +148,7 @@ const Skills = () => {
           </div>
           <div className="skills-item">
             <div className="section-title">
-              {t('SKILLS.OTHER.TITLE')}
+              {t('SKILLS.HOBBIES.TITLE')}
             </div>
             <div className="skills-item-content">
               <div className="skills-item-content-row">
@@ -134,7 +156,7 @@ const Skills = () => {
                   <Icon iconName='fa-regular fa-moon' color='var(--secondary)' />
                 </div>
                 <div className="skills-item-content-key align-left">
-                  {t('SKILLS.OTHER.SHELTER')}<a href="https://www.instagram.com/ubgats" target="_blank" rel="noreferrer"> UBGats </a>
+                  {t('SKILLS.HOBBIES.SHELTER')}<a href="https://www.instagram.com/ubgats" target="_blank" rel="noreferrer"> UBGats </a>
                 </div>
               </div>
               <div className="skills-item-content-row">
@@ -142,7 +164,7 @@ const Skills = () => {
                   <Icon iconName='fa-regular fa-moon' color='var(--secondary)' />
                 </div>
                 <div className="skills-item-content-key align-left">
-                  {t('SKILLS.OTHER.GAMES')}
+                  {t('SKILLS.HOBBIES.GAMES')}
                 </div>
               </div>
               <div className="skills-item-content-row">
@@ -150,7 +172,7 @@ const Skills = () => {
                   <Icon iconName='fa-regular fa-moon' color='var(--secondary)' />
                 </div>
                 <div className="skills-item-content-key align-left">
-                  {t('SKILLS.OTHER.READING')}
+                  {t('SKILLS.HOBBIES.READING')}
                 </div>
               </div>
             </div>

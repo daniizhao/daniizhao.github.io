@@ -1,4 +1,4 @@
-export const onMouseMove = (event) => {
+export const moveElementHandler = (event) => {
   const moveElement = event.currentTarget.moveelement;
   if (moveElement) {
     const x = event.clientX, y = event.clientY;

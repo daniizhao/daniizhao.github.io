@@ -4,7 +4,7 @@ import { NAV_SECTIONS } from '../../config/constants';
 import { useTranslation } from 'react-i18next';
 import Icon from '../../components/icon/Icon';
 import TimelineComponent from '../../components/timeline/Timeline';
-import { onMouseMove } from '../../config/mouseEvents';
+import { moveElementHandler } from '../../config/mouseEvents';
 import { useEffect } from 'react';
 
 const Aboutme = () => {
@@ -13,7 +13,7 @@ const Aboutme = () => {
 
   useEffect(() => {
     let aboutmeSectionElement = document.querySelector('.aboutme');
-    aboutmeSectionElement.addEventListener('mousemove', onMouseMove);
+    aboutmeSectionElement.addEventListener('mousemove', moveElementHandler);
     aboutmeSectionElement.moveelement = document.querySelector('#portraitImg');
   }, []);
 
