@@ -1,6 +1,6 @@
 import { useTranslation } from "react-i18next";
 import { NAV_SECTIONS } from "../../config/constants";
-import { ART_SKILLS_INFO, LANGUAGES_INFO, SKILL_LEVELS_LIST, TECH_SKILLS_INFO } from "../../config/skills-info";
+import { ART_SKILLS_INFO, LANGUAGES_INFO, SKILL_LEVELS_LIST, TECH_SKILLS_INFO } from "../../config/skillsInfo";
 import "./Skills.scss";
 import Icon from "../../components/icon/Icon";
 

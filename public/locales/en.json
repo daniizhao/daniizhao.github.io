@@ -66,7 +66,48 @@
     }
   },
   "PROJECTS": {
-    "TITLE": "Projects"
+    "TITLE": "Projects",
+    "TECH_TITLE": "Technical projects",
+    "CREATIVE_TITLE": "Creative projects",
+    "TAGS": {
+      "DESIGN": "Design",
+      "DEVELOPMENT": "Development",
+      "GAME": "Game",
+      "TRADITIONAL": "Tradicional",
+      "DIGITAL": "Digital Art"
+    },
+    "COMPRESSOR": {
+      "TITLE": "Text & Image Compressor",
+      "DESCRIPTION": ""
+    },
+    "BREAKIN": {
+      "TITLE": "Nook Break In",
+      "DESCRIPTION": ""
+    },
+    "QOMP": {
+      "TITLE": "Among Us - After ejection",
+      "DESCRIPTION": ""
+    },
+    "PORTFOLIO": {
+      "TITLE": "Website Portfolio",
+      "DESCRIPTION": ""
+    },
+    "LABORATORY": {
+      "TITLE": "Sci-fi Laboratory",
+      "DESCRIPTION": ""
+    },
+    "FAIRYTALE": {
+      "TITLE": "Fairy tale adaptation",
+      "DESCRIPTION": ""
+    },
+    "PERSONAL": {
+      "TITLE": "Personal drawings",
+      "DESCRIPTION": ""
+    },
+    "TRADITIONAL": {
+      "TITLE": "Traditional Work",
+      "DESCRIPTION": ""
+    }
   },
   "CONTACT": {
     "TITLE": "Contact"

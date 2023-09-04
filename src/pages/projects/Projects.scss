@@ -1,0 +1,17 @@
+.projects-wrapper {
+  display: flex !important;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  .section-title {
+    padding-top: 0 !important;
+  }
+  .project-list {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    &-container {
+      width: 100%;
+    }
+  }
+}
