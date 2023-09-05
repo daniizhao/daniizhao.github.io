@@ -62,6 +62,26 @@ export const TECH_PROJECTS = [
 export const ART_PROJECTS = [
   {
     id: `art-0`,
+    coverImage: PersonalCover,
+    titleKey: "PROJECTS.PERSONAL.TITLE",
+    tagsKey: [
+      "PROJECTS.TAGS.DIGITAL",
+      "2D",
+    ],
+    detailsComponent: null
+  },
+  {
+    id: `art-1`,
+    coverImage: PersonalCover,
+    titleKey: "PROJECTS.TRADITIONAL.TITLE",
+    tagsKey: [
+      "PROJECTS.TAGS.TRADITIONAL",
+      "2D",
+    ],
+    detailsComponent: null
+  },
+  {
+    id: `art-2`,
     coverImage: LabCover,
     titleKey: "PROJECTS.LABORATORY.TITLE",
     tagsKey: [
@@ -72,33 +92,13 @@ export const ART_PROJECTS = [
     detailsComponent: null
   },
   {
-    id: `art-1`,
+    id: `art-3`,
     coverImage: FairytaleCover,
     titleKey: "PROJECTS.FAIRYTALE.TITLE",
     tagsKey: [
       "PROJECTS.TAGS.DIGITAL",
       "2D & 3D",
       "FX Animation",
-    ],
-    detailsComponent: null
-  },
-  {
-    id: `art-2`,
-    coverImage: PersonalCover,
-    titleKey: "PROJECTS.PERSONAL.TITLE",
-    tagsKey: [
-      "PROJECTS.TAGS.DIGITAL",
-      "2D",
-    ],
-    detailsComponent: null
-  },
-  {
-    id: `art-3`,
-    coverImage: PersonalCover,
-    titleKey: "PROJECTS.TRADITIONAL.TITLE",
-    tagsKey: [
-      "PROJECTS.TAGS.TRADITIONAL",
-      "2D",
     ],
     detailsComponent: null
   },
