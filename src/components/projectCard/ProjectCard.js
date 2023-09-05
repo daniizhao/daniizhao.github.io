@@ -7,7 +7,7 @@ const ProjectCard = (props) => {
   const { t } = useTranslation();
 
   return (
-    <motion.div className="project-card-wrapper" whileHover={{scale: 1.05}}>
+    <motion.div className="project-card-wrapper" whileHover={{scale: 1.025}}>
       <div className="project-card-cover">
         <img src={props.img} alt={`image_${props.projectName}`} />
       </div>

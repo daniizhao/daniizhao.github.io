@@ -4,7 +4,7 @@ import { NAV_SECTIONS } from '../../config/constants';
 import { useTranslation } from 'react-i18next';
 import Icon from '../../components/icon/Icon';
 import TimelineComponent from '../../components/timeline/Timeline';
-import { moveElementHandler } from '../../config/mouseEvents';
+import { moveElementHandler } from '../../utils/mouseEvents';
 import { useEffect } from 'react';
 
 const Aboutme = () => {

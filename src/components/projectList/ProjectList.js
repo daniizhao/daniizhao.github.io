@@ -1,5 +1,5 @@
 import "./ProjectList.scss";
-import ProjectCard from "../project-card/ProjectCard";
+import ProjectCard from "../projectCard/ProjectCard";
 import { useTranslation } from "react-i18next";
 
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -13,13 +13,16 @@ const ProjectList = (props) => {
   return (
     <Swiper
       slidesPerView='auto'
-
     >
       {
         props.list.map((item) => {
           return (
             <SwiperSlide key={`project-${item.id}`} >
-              <ProjectCard img={item.coverImage} projectName={t(item.titleKey)} tags={item.tagsKey}/>
+              <div onClick={() => {
+                props.handleProjectClick(item);
+              }}>
+                <ProjectCard img={item.coverImage} projectName={t(item.titleKey)} tags={item.tagsKey}/>
+              </div>
             </SwiperSlide>
           )
         })

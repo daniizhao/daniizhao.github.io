@@ -5,6 +5,7 @@ import PortfolioCover from "../assets/img/Portfolio_Cover.png";
 import LabCover from "../assets/img/Lab_Cover.png";
 import FairytaleCover from "../assets/img/FairyTale_ZhaoDaniela_Cover.png";
 import PersonalCover from "../assets/img/artworks/yonaSpelling.png";
+import FairyTaleDetails from "../components/projectDetails/creative/FairytaleDetails";
 
 
 export const TECH_PROJECTS = [
@@ -51,7 +52,7 @@ export const TECH_PROJECTS = [
     titleKey: "PROJECTS.PORTFOLIO.TITLE",
     tagsKey: [
       "PROJECTS.TAGS.DEVELOPMENT",
-      "PROJECTS.TAGS.GAME",
+      "Web",
       "Unity",
       "3D",
     ],
@@ -100,6 +101,6 @@ export const ART_PROJECTS = [
       "2D & 3D",
       "FX Animation",
     ],
-    detailsComponent: null
+    detailsComponent: <FairyTaleDetails />
   },
 ];
