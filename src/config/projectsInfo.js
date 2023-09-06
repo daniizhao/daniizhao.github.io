@@ -5,6 +5,7 @@ import PortfolioCover from "../assets/img/Portfolio_Cover.png";
 import LabCover from "../assets/img/Lab_Cover.png";
 import FairytaleCover from "../assets/img/FairyTale_ZhaoDaniela_Cover.png";
 import PersonalCover from "../assets/img/artworks/yonaSpelling.png";
+import TraditionalCover from "../assets/img/artworks/traditional_cover.jpg";
 import FairyTaleDetails from "../components/projectDetails/creative/FairytaleDetails";
 import CompressorDetails from "../components/projectDetails/technological/CompressorDetails";
 import BreakInDetails from "../components/projectDetails/technological/BreakInDetails";
@@ -80,7 +81,7 @@ export const ART_PROJECTS = [
   },
   {
     id: `art-1`,
-    coverImage: PersonalCover,
+    coverImage: TraditionalCover,
     titleKey: "PROJECTS.TRADITIONAL.TITLE",
     tagsKey: [
       "PROJECTS.TAGS.TRADITIONAL",

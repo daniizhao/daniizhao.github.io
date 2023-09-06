@@ -35,11 +35,9 @@ const SkillsList = (props) => {
   return (
     <div className={`skills-list ${isLeftSide && 'align-right'}`}>
       <div className={`skills-list-header ${isLeftSide && 'align-right'}`}>
-        { !isLeftSide &&
-          <div className="skills-list-header-icon skill-name">
-            <Icon iconName={`fa-solid ${props.iconName}`} color='var(--secondary)'/>
-          </div>
-        }
+        <div className="skills-list-header-icon skill-name">
+          <Icon iconName={`fa-solid ${props.iconName}`} color='var(--secondary)'/>
+        </div>
         <div className={`skills-list-header-levels skill-bar ${isLeftSide && 'align-right'}`}>
           {
             props.levels.map((level, i) => {
@@ -51,33 +49,19 @@ const SkillsList = (props) => {
             })
           }
         </div>
-        {
-          isLeftSide &&
-          <div className="skills-list-header-icon skill-name">
-            <Icon iconName={`fa-solid ${props.iconName}`} color='var(--secondary)'/>
-          </div>
-        }
       </div>
-      <div className="skills-list-content">
+      <div className={`skills-list-content ${isLeftSide && 'align-right'}`}>
         {
           props.list.map((skill, i) => {
             return (
-              <div key={`skill-${i}`} className="skills-list-content-row">
-                {
-                  !isLeftSide &&
-                  <div className="skills-list-content-row-title skill-name align-right">
-                    {skill.title}
-                  </div>
-                }
+              <div key={`skill-${i}`} className={`skills-list-content-row ${isLeftSide && 'align-right'}`}>
+                <div className={`skills-list-content-row-title skill-name ${
+                  !isLeftSide && 'align-right'}`}>
+                  {skill.title}
+                </div>
                 {
                   skill.lvl_id !== null &&
                   <SkillBar level={getPercFromLvl(skill.lvl_id)} isLeftSide={isLeftSide} />
-                }
-                {
-                  isLeftSide &&
-                  <div className="skills-list-content-row-title skill-name">
-                    {skill.title}
-                  </div>
                 }
               </div>
             )
