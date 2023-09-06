@@ -1,5 +1,3 @@
-import { ARTSTATION_PAGE, GITHUB_PAGE, INSTAGRAM_PAGE, LINKEDIN_PAGE } from "./constants";
-
 export const TECH_CONTACT_INFO = [
   {
     id: 'contact-tech-0',
