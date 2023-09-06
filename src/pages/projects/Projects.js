@@ -15,8 +15,9 @@ const Projects = () => {
   const [selectedProject, setSelectedProject] = useState(null);
 
   const handleProjectClick = (projectDetails) => {
-    if (selectedProject && selectedProject.id === projectDetails.id) setSelectedProject(null);
-    else setSelectedProject(projectDetails);
+    // TODO: uncomment when projects details are done
+    // if (selectedProject && selectedProject.id === projectDetails.id) setSelectedProject(null);
+    // else setSelectedProject(projectDetails);
   };
 
   return (
