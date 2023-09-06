@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/static/css/main.8d94ac19.css",
+    "main.js": "/static/js/main.0cb5425e.js",
+    "static/js/787.1ed0c42c.chunk.js": "/static/js/787.1ed0c42c.chunk.js",
+    "static/media/Lab_Cover.png": "/static/media/Lab_Cover.953feb113e7cbaeb0d33.png",
+    "static/media/yonaSpelling.png": "/static/media/yonaSpelling.e7a16b33ae21df1b7280.png",
+    "static/media/FairyTale_ZhaoDaniela_Cover.png": "/static/media/FairyTale_ZhaoDaniela_Cover.7abc7b9e79609e55214b.png",
+    "static/media/Portfolio_home.png": "/static/media/Portfolio_home.408f860faf78de2e7152.png",
+    "static/media/Contact_bkg.png": "/static/media/Contact_bkg.db607c49d9b2fbf197a2.png",
+    "static/media/traditional_cover.jpg": "/static/media/traditional_cover.9e320f64354eb221d5b5.jpg",
+    "static/media/AmongUs_Cover.png": "/static/media/AmongUs_Cover.b40b13e78f3035874234.png",
+    "static/media/Portfolio_bkg.png": "/static/media/Portfolio_bkg.587dbe7137d7b95721c4.png",
+    "static/media/keyboard.jpg": "/static/media/keyboard.004a2bcdc6dae9d8a4e9.jpg",
+    "static/media/BreakIn_Cover.png": "/static/media/BreakIn_Cover.0473e9daec6772585176.png",
+    "static/media/Portfolio_Cover.png": "/static/media/Portfolio_Cover.f74c63742ee1b68770a5.png",
+    "static/media/Logo_FX.png": "/static/media/Logo_FX.648f2f0b2307acc16956.png",
+    "static/media/Logo_UPC.png": "/static/media/Logo_UPC.30eb539b97fd1add059f.png",
+    "index.html": "/index.html",
+    "static/media/getFetch.cjs": "/static/media/getFetch.40f37ddea2378391108f.cjs",
+    "main.8d94ac19.css.map": "/static/css/main.8d94ac19.css.map",
+    "main.0cb5425e.js.map": "/static/js/main.0cb5425e.js.map",
+    "787.1ed0c42c.chunk.js.map": "/static/js/787.1ed0c42c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8d94ac19.css",
+    "static/js/main.0cb5425e.js"
+  ]
+}
