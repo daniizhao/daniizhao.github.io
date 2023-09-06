@@ -1,0 +1,45 @@
+.MuiTimelineDot-root {
+  background-color: var(--background) !important;
+}
+
+.timeline-element {
+  .element-content {
+    &-title {
+      font-size: 32px;
+      font-weight: 900;
+      color: var(--primary);
+      display: inline-flex;
+      align-items: center;
+      gap: 16px;
+      cursor: pointer;
+      .logo-container {
+        width: 32px;
+        height: 32px;
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+    &-subtitle {
+      font-size: 18px;
+      color: var(--light-gray);
+    }
+    &-description {
+      font-size: 20px;
+      display: inline-flex;
+      flex-direction: column;
+      gap: 12px;
+      &-stack {
+        font-size: 14px;
+        font-family: var(--code-font);
+        color: var(--medium-gray);
+      }
+    }
+  }
+  .opposite-content {
+    padding-top: 16px;
+    font-family: var(--primary-font);
+    font-size: 20px;
+  }
+}

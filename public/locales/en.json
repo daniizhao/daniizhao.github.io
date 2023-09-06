@@ -3,17 +3,114 @@
     "INTRODUCTION": {
       "HEY": "Hey! I am",
       "DEV": "Frontend developer",
-      "CONCEPT": "Concept artist",
-      "SHORT_INTRO": ""
+      "CONCEPT": "Artist",
+      "SHORT_INTRO": "",
+      "SCROLL": "Scroll down to get to know me better!"
     }
   },
   "ABOUTME": {
-    "TITLE": "About me"
+    "TITLE": "About me",
+    "STORY": {
+      "TITLE_1": "Where ",
+      "TITLE_2": "I've been ...",
+      "COLLEGE_DEGREE": {
+        "TITLE": "Informatics Engineering degree @ UPC",
+        "DESCRIPTION": "Major in Software Engineering",
+        "STACK" : "Java, C++, C, Assembly, R, Matlab, SQL"
+      },
+      "HOBBY": {
+        "TITLE": "kept drawing as a hobby, got interested in realism/impresionism/digital art"
+      },
+      "SLASHMOBILITY": {
+        "TITLE": "Software Developer @ SlashMobility",
+        "DESCRIPTION": "Developed, debugged and delivered web,  mobile and TV applications",
+        "DESCRIPTION_2": "Led and managed projects, communication with clients",
+        "STACK": "Angular, Ionic, React Native, KnockoutJS, Tizen SDK, webOs SDK, Git"
+      },
+      "FX_ANIMATION": {
+        "TITLE": "Master in Concept Art @ FX Animation School",
+        "DESCRIPTION": "Create and design 2D characters, creatures, props and environments for projects",
+        "DESCRIPTION_2": "Build 3D models (characters, creatures, ...)",
+        "STACK": "Clip Studio Paint, Adobe Photoshop, ZBrush, Blender, Substance Painter"
+      }
+    }
   },
-  "WORK": {
-    "TITLE": "Work"
+  "SKILLS": {
+    "TITLE": "Skills",
+    "LEVELS": {
+      "BEGINNER": "Beginner",
+      "INTERMEDIATE": "Intermediate",
+      "ADVANCED": "Advanced",
+      "EXPERT": "Expert"
+    },
+    "LANGUAGES": {
+      "TITLE": "Languages",
+      "LEVELS": {
+        "BASIC": "Basic",
+        "INTERMEDIATE": "Intermediate",
+        "FLUENT": "Fluent"
+      }
+    },
+    "OTHER": {
+      "TITLE": "Soft Skills",
+      "COMM": "Communication",
+      "TEAMWORK": "Teamwork",
+      "PROJ_MGM": "Project management",
+      "DETAILS": "Keen to details" 
+    },
+    "HOBBIES": {
+      "TITLE": "Hobbies & Interests",
+      "SHELTER": "Volunteer @ ",
+      "GAMES": "Cozy/MMORPG Games",
+      "READING": "Books"
+    }
+  },
+  "PROJECTS": {
+    "TITLE": "Projects",
+    "TECH_TITLE": "Technical projects",
+    "CREATIVE_TITLE": "Creative projects",
+    "TAGS": {
+      "DESIGN": "Design",
+      "DEVELOPMENT": "Development",
+      "GAME": "Game",
+      "TRADITIONAL": "Tradicional",
+      "DIGITAL": "Digital Art"
+    },
+    "COMPRESSOR": {
+      "TITLE": "Text & Image Compressor",
+      "DESCRIPTION": ""
+    },
+    "BREAKIN": {
+      "TITLE": "Nook Break In",
+      "DESCRIPTION": ""
+    },
+    "QOMP": {
+      "TITLE": "Among Us - After ejection",
+      "DESCRIPTION": ""
+    },
+    "PORTFOLIO": {
+      "TITLE": "Website Portfolio",
+      "DESCRIPTION": ""
+    },
+    "LABORATORY": {
+      "TITLE": "Sci-fi Laboratory",
+      "DESCRIPTION": ""
+    },
+    "FAIRYTALE": {
+      "TITLE": "Fairy tale adaptation",
+      "DESCRIPTION": ""
+    },
+    "PERSONAL": {
+      "TITLE": "Personal drawings",
+      "DESCRIPTION": ""
+    },
+    "TRADITIONAL": {
+      "TITLE": "Traditional Work",
+      "DESCRIPTION": ""
+    }
   },
   "CONTACT": {
-    "TITLE": "Contact"
+    "TITLE": "Contact",
+    "SUBTITLE": "Let's work together!"
   }
 }

@@ -1,0 +1,120 @@
+.skills-wrapper {
+  display: table-cell;
+  vertical-align: middle;
+  width: 100%;
+  .skills-hard-container {
+    display: flex;
+    flex-direction: row;
+    gap: 3%;
+    .skills-list {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      gap: 36px;
+      &-header {
+        display: flex;
+        flex-direction: row;
+        &-icon {
+          max-height: 24px;
+        }
+        &-levels {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-around;
+          gap: 16px;
+          font-weight: 900;
+        }
+        &.align-right {
+          flex-direction: row-reverse;
+        }
+      }
+      .skill-bar {
+        width: 100%;
+      }
+      .skill-name {
+        width: 35%;
+      }
+      &-content {
+        display: flex;
+        flex-direction: column;
+        margin: 0 24px;
+        &-row {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          height: 42px;
+          &-title {
+            font-family: var(--code-font);
+            &.align-right {
+              text-align: end;
+            }
+          }
+          &-levels {
+            display: flex;
+            background-color: var(--terciary);
+            border-radius: 20px;
+            height: 30px;
+            margin: 0 5%;
+            .skill-progress {
+              background-color: var(--secondary);
+              height: 30px;
+              border-radius: 20px;
+            }
+          }
+          &.align-right {
+            flex-direction: row-reverse;
+          }
+        }
+      }
+    }
+  }
+  .align-right {
+    justify-content: flex-end;
+  }
+  .skills-soft-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    .skills-item {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      &-content {
+        font-size: 18px;
+        white-space: pre;
+        &-row {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+          gap: 20px;
+          span {
+            font-size: 14px;
+            color: var(--medium-gray);
+          }
+        }
+        &-icon {
+          width: 20px;
+        }
+        &-key {
+          text-align: end;
+          width: 50%;
+          a {
+            text-decoration: none;
+            color: var(--white);
+          }
+          &.align-left {
+            text-align: left;
+            width: 30%
+          }
+        }
+        &-value {
+          text-align: start;
+          width: 50%;
+          color: var(--secondary);
+        }
+      }
+    }
+  }
+}
+

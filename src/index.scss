@@ -1,18 +1,25 @@
-@import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
-@import url('https://fonts.googleapis.com/css?family=Space+Mono');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Playfair+Display:ital,wght@1,900&family=Space+Mono&family=Zeyada&display=swap');
 
 :root {
   --primary: #4D21A9;
   --secondary: #CF6766;
+  --terciary: #192231;
+
+  --secondary-0-75: #CF6766BF;
 
   --white: #E7DFDD;
   --black: #0E0B16;
   --black-0-5: #0e0b1680;
   --black-0-75: #0e0b16BF;
+  --dark-gray: #37343D;
+  --medium-gray: #777777;
+  --light-gray: #C1C1C1;
 
   --background: #0E1212;
 
   --primary-font: 'Josefin Sans';
+  --title-font: 'Playfair Display';
+  --handwritten-font: 'Zeyada';
   --code-font: 'Space Mono';
 }
 
@@ -26,6 +33,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background-color: var(--background);
   color: var(--white);
+  scroll-behavior: smooth;
 }
 
 .primaryColor {

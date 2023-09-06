@@ -5,7 +5,7 @@ import { ARTSTATION_PAGE, GITHUB_PAGE, LINKEDIN_PAGE, NAV_SECTIONS } from '../..
 import { Link, scrollSpy } from 'react-scroll';
 import { useEffect } from 'react';
 
-const Header = (props) => {
+const Header = () => {
 
   const { t } = useTranslation();
 
@@ -17,7 +17,6 @@ const Header = (props) => {
     <div className='header-container'>
       <div className='nav-container'>
         {
-          props.sections &&
           NAV_SECTIONS.map((section) => {
             return (
               <Link
@@ -36,13 +35,13 @@ const Header = (props) => {
         }
       </div>
       <div className='links-container'>
-        <a href={LINKEDIN_PAGE} target='_blank'>
+        <a href={LINKEDIN_PAGE} target='_blank' rel='noreferrer'>
           <Icon iconName={'fa-brands fa-linkedin'} />
         </a>
-        <a href={GITHUB_PAGE} target='_blank'>
+        <a href={GITHUB_PAGE} target='_blank' rel='noreferrer'>
           <Icon iconName={'fa-brands fa-github'} />
         </a>
-        <a href={ARTSTATION_PAGE} target='_blank'>
+        <a href={ARTSTATION_PAGE} target='_blank' rel='noreferrer'>
           <Icon iconName={'fa-brands fa-artstation'} />
         </a>
       </div>
