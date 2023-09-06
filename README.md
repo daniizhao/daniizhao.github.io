@@ -1,15 +1,12 @@
 # daniizhao.github.io
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+ReactJS project for my Website Portfolio. 
 
-## Available Scripts
+Deployed in [https://daniizhao.github.io](https://daniizhao.github.io).
 
-In the project directory, you can run:
+If you see any bugs or possible improvements, please contact me! I will appreciate every observation.
 
-### `npm start`
+# TODO List
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+* [WIP] Add Project details (modal with description and more images)
+* Responsive (adapt mobile version)
