@@ -6,6 +6,13 @@ import LabCover from "../assets/img/Lab_Cover.png";
 import FairytaleCover from "../assets/img/FairyTale_ZhaoDaniela_Cover.png";
 import PersonalCover from "../assets/img/artworks/yonaSpelling.png";
 import FairyTaleDetails from "../components/projectDetails/creative/FairytaleDetails";
+import CompressorDetails from "../components/projectDetails/technological/CompressorDetails";
+import BreakInDetails from "../components/projectDetails/technological/BreakInDetails";
+import QompDetails from "../components/projectDetails/technological/QompDetails";
+import PortfolioDetails from "../components/projectDetails/technological/WebsitePortfolio";
+import PersonalDetails from "../components/projectDetails/creative/PersonalDetails";
+import TraditionalDetails from "../components/projectDetails/creative/TraditionalDetails";
+import LaboratoryDetails from "../components/projectDetails/creative/LaboratoryDetails";
 
 
 export const TECH_PROJECTS = [
@@ -18,7 +25,7 @@ export const TECH_PROJECTS = [
       "Java",
       "UPC",
     ],
-    detailsComponent: null
+    detailsComponent: <CompressorDetails />
   },
   {
     id: `tech-1`,
@@ -31,7 +38,7 @@ export const TECH_PROJECTS = [
       "2D",
       "UPC",
     ],
-    detailsComponent: null
+    detailsComponent: <BreakInDetails />
   },
   {
     id: `tech-2`,
@@ -44,7 +51,7 @@ export const TECH_PROJECTS = [
       "3D",
       "UPC",
     ],
-    detailsComponent: null
+    detailsComponent: <QompDetails />
   },
   {
     id: `tech-3`,
@@ -56,7 +63,7 @@ export const TECH_PROJECTS = [
       "Unity",
       "3D",
     ],
-    detailsComponent: null
+    detailsComponent: <PortfolioDetails />
   },
 ];
 
@@ -69,7 +76,7 @@ export const ART_PROJECTS = [
       "PROJECTS.TAGS.DIGITAL",
       "2D",
     ],
-    detailsComponent: null
+    detailsComponent: <PersonalDetails />
   },
   {
     id: `art-1`,
@@ -79,7 +86,7 @@ export const ART_PROJECTS = [
       "PROJECTS.TAGS.TRADITIONAL",
       "2D",
     ],
-    detailsComponent: null
+    detailsComponent: <TraditionalDetails />
   },
   {
     id: `art-2`,
@@ -90,7 +97,7 @@ export const ART_PROJECTS = [
       "2D & 3D",
       "FX Animation",
     ],
-    detailsComponent: null
+    detailsComponent: <LaboratoryDetails />
   },
   {
     id: `art-3`,

@@ -59,9 +59,9 @@ const Projects = () => {
               }}
               exit={{
                 opacity: 0,
-                scale: 0
+                scale: 0.3
               }}
-              transition={{ duration: 0.5 }}
+              transition={{ duration: 0.3 }}
             >
               <motion.div className="modal-header">
                 <div className="modal-header-cover">
