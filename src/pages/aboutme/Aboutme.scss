@@ -1,10 +1,10 @@
- .aboutme {
+#portraitImg {
+  scale: 0.9;
+}
+.aboutme {
   display: flex !important;
   flex-direction: column;
   justify-content: space-between;
-  #portraitImg {
-    scale: 0.9;
-  }
 
   .title {
     text-align: center;
