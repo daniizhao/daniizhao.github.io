@@ -3,11 +3,13 @@ import { useTranslation } from 'react-i18next';
 import Icon from '../icon/Icon';
 import { ARTSTATION_PAGE, GITHUB_PAGE, LINKEDIN_PAGE, NAV_SECTIONS } from '../../config/constants';
 import { Link, scrollSpy } from 'react-scroll';
-import { useEffect } from 'react';
+import { useContext, useEffect } from 'react';
+import { AppSizeContext } from '../../App';
 
 const Header = () => {
 
   const { t } = useTranslation();
+  const isMobile = useContext(AppSizeContext);
 
   useEffect(() => {
     scrollSpy.update();
