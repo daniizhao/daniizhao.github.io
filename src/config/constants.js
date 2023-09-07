@@ -36,3 +36,5 @@ export const INSTAGRAM_PAGE = 'https://www.instagram.com/nydalae.art/';
 export const UPC_LINK = "https://www.upc.edu/en/bachelors/informatics-engineering-barcelona-fib";
 export const SLASH_LINK = "https://slashmobility.com/?lang=en";
 export const FX_LINK = "https://fxanimation.es/en/superior-master-in-modeling-and-concept-art/";
+
+export const MOBILE_SIZE = 768;
