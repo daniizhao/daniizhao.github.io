@@ -36,7 +36,7 @@ const CustomTimeLineElement = (props) => {
         </TimelineSeparator>
         <TimelineContent sx={{ py: isMobile ? '64px' : '128px', px: 2 }}>
           <motion.div className="element-content"
-            animate={{x: isInView ? 0 : (props.position === 'right' ? 200 : '-200px'), opacity: isInView ? 1 : 0}}
+            animate={{x: isInView ? 0 : ((props.position === 'right' || isMobile) ? 200 : '-200px'), opacity: isInView ? 1 : 0}}
             transition={{ease: 'easeIn', duration: 0.5}}
           >
             {props.children}
