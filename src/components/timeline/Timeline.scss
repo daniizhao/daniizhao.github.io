@@ -16,7 +16,6 @@
         width: 32px;
         height: 32px;
         img {
-          width: 100%;
           height: 100%;
         }
       }
@@ -37,9 +36,9 @@
       }
     }
   }
-  .opposite-content {
-    padding-top: 16px;
-    font-family: var(--primary-font);
-    font-size: 20px;
+}
+
+@media (max-width: 768) {
+  .timeline-element {
   }
 }
