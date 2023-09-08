@@ -133,7 +133,7 @@ const MobileHeader = () => {
 
   return (
     <motion.div
-      className={`mobile-menu ${isOpen ? 'opened-menu' : 'closed-menu'}`}
+      className={`mobile-menu`}
       initial={false}
       animate={isOpen ? 'open' : 'closed'}
       custom={height}

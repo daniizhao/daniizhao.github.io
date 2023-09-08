@@ -45,3 +45,18 @@
     }
   }
 }
+
+@media (max-width: 768px) {
+  .project-card-wrapper {
+    .project-card-info {
+      &-name {
+        font-size: 24px;
+      }
+      &-description {
+        &-tag {
+          font-size: 10px;
+        }
+      }
+    }
+  }
+}

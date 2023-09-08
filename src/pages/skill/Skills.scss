@@ -21,6 +21,7 @@
           display: flex;
           flex-direction: row;
           justify-content: space-around;
+          align-items: center;
           gap: 16px;
           font-weight: 900;
         }
@@ -105,7 +106,6 @@
           }
           &.align-left {
             text-align: left;
-            width: 30%
           }
         }
         &-value {
@@ -118,3 +118,32 @@
   }
 }
 
+@media (max-width: 768px) {
+  .skills-wrapper {
+    max-width: 100vw;
+    .skills-hard-container {
+      flex-direction: column;
+      .skills-list {
+        margin: 24px 0;
+        .skill-bar {
+          width: 95%;
+        }
+        &-header-levels {
+          width: 90%;
+          gap: 0;
+          &-title {
+            font-size: 10px;
+          }
+        }
+        &-content {
+          &-row-title {
+            font-size: 12px;
+          }
+        }
+      }
+    }
+    .skills-soft-container {
+      flex-direction: column;
+    }
+  }
+}
