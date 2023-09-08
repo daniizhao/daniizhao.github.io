@@ -55,3 +55,46 @@
     }
   }
 }
+
+@media (max-width: 768px) {
+  #portraitImg {
+    scale: 1;
+    transform: translate(0, 0) !important;
+  }
+  .bkg-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: var(--black-0-5);
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 0 40px 10px var(--black-0-5);
+  }
+  .aboutme {
+    .intro-wrapper {
+      flex-direction: column;
+      align-items: center;
+      gap: 24px;
+      .intro-container {
+        width: 90%;
+        .title.tech {
+          font-size: 52px;
+        }
+      }
+      .separator {
+        font-family: var(--title-font);
+        &-container {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          width: 80%;
+          gap: 16px;
+        }
+        &-line {
+          width: 100%;
+          border-bottom: 2px solid var(--white);
+        }
+      }
+    }
+  }
+}
