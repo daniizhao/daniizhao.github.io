@@ -5,6 +5,8 @@ import ContactImage from "../../assets/img/Contact_bkg.png";
 import Icon from "../../components/icon/Icon";
 import { ART_CONTACT_INFO, TECH_CONTACT_INFO } from "../../config/contactInfo";
 import { motion } from "framer-motion";
+import { useContext } from "react";
+import { IsMobileSizeContext } from "../../App";
 
 const handleContactClick = (url) => {
   window.open(url, "_blank");
@@ -28,17 +30,19 @@ const ContactItem = (props) => {
 const Contact = () => {
 
   const { t } = useTranslation();
+  const isMobile = useContext(IsMobileSizeContext);
 
   return (
     <div id={NAV_SECTIONS[3].id} className="section-wrapper contact-wrapper">
       <div className="background-wrapper">
         <img id='contactImg' src={ContactImage} alt="bkg_image" />
+        <div className="bkg-overlay"></div>
       </div>
       <div className="section-title">
         {t('CONTACT.SUBTITLE')}
       </div>
       <div className="contact-container">
-        <div className="contact-container-side align-right">
+        <div className={`contact-container-side ${!isMobile && 'align-right'}`}>
           {
             TECH_CONTACT_INFO.map((info) => {
               return (
@@ -47,6 +51,15 @@ const Contact = () => {
             })
           }
         </div>
+        {
+          isMobile && (
+            <div className='separator-container'>
+              <div className='separator-line'></div>
+              <div className='separator'>&</div>
+              <div className='separator-line'></div>
+            </div>
+          )
+        }
         <div className="contact-container-side">
           {
             ART_CONTACT_INFO.map((info) => {

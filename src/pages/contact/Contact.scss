@@ -53,3 +53,41 @@
     background-color: var(--background);
   }
 }
+
+@media (max-width: 768px) {
+  .contact-wrapper {
+    .contact-container {
+      justify-content: center;
+      flex-direction: column;
+      margin: 0 20px;
+      &-side {
+        width: 100%;
+        .contact-item {
+          width: 75%;
+          &-icon {
+            width: 24px;
+            height: 24px;
+          }
+          &-name {
+            font-size: 18px;
+          }
+        }
+      }
+      .separator {
+        font-family: var(--title-font);
+        &-container {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          width: 80%;
+          gap: 16px;
+          margin: 24px 0;
+        }
+        &-line {
+          width: 100%;
+          border-bottom: 2px solid var(--white);
+        }
+      }
+    }
+  }
+}
