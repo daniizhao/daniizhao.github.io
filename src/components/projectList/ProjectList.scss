@@ -6,3 +6,11 @@
     width: 25%;
   }
 }
+
+@media (max-width: 768px) {
+  .swiper {
+    .swiper-slide {
+      width: 60%;
+    }
+  }
+}

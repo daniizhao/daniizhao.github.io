@@ -33,8 +33,6 @@ export const TECH_PROJECTS = [
     coverImage: BreakInCover,
     titleKey: "PROJECTS.BREAKIN.TITLE",
     tagsKey: [
-      "PROJECTS.TAGS.DEVELOPMENT",
-      "PROJECTS.TAGS.DESIGN",
       "PROJECTS.TAGS.GAME",
       "OpenGL",
       "2D",
@@ -47,8 +45,6 @@ export const TECH_PROJECTS = [
     coverImage: QompCover,
     titleKey: "PROJECTS.QOMP.TITLE",
     tagsKey: [
-      "PROJECTS.TAGS.DEVELOPMENT",
-      "PROJECTS.TAGS.DESIGN",
       "PROJECTS.TAGS.GAME",
       "Unity",
       "3D",
@@ -61,8 +57,6 @@ export const TECH_PROJECTS = [
     coverImage: PortfolioCover,
     titleKey: "PROJECTS.PORTFOLIO.TITLE",
     tagsKey: [
-      "PROJECTS.TAGS.DEVELOPMENT",
-      "PROJECTS.TAGS.DESIGN",
       "Web",
       "Unity",
       "3D",
@@ -98,7 +92,6 @@ export const ART_PROJECTS = [
     titleKey: "PROJECTS.LABORATORY.TITLE",
     tagsKey: [
       "PROJECTS.TAGS.DIGITAL",
-      "PROJECTS.TAGS.DESIGN",
       "2D & 3D",
       "FX Animation",
     ],
@@ -110,7 +103,6 @@ export const ART_PROJECTS = [
     titleKey: "PROJECTS.FAIRYTALE.TITLE",
     tagsKey: [
       "PROJECTS.TAGS.DIGITAL",
-      "PROJECTS.TAGS.DESIGN",
       "2D & 3D",
       "FX Animation",
     ],

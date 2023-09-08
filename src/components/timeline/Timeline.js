@@ -1,23 +1,25 @@
 import "./Timeline.scss";
 import Star from '@mui/icons-material/Star';
-import { Timeline, TimelineItem, TimelineSeparator, TimelineConnector, TimelineContent, TimelineDot } from "@mui/lab";
+import { Timeline, TimelineItem, TimelineSeparator, TimelineConnector, TimelineContent, TimelineDot, timelineItemClasses } from "@mui/lab";
 import { useTranslation } from "react-i18next";
 import UPCLogo from "../../assets/img/Logo_UPC.png";
 import SlashLogo from "../../assets/img/Logo_Slash.png";
 import FXLogo from "../../assets/img/Logo_FX.png";
 import { FX_LINK, SLASH_LINK, UPC_LINK } from "../../config/constants";
 import { motion, useInView } from "framer-motion";
-import { useRef } from "react";
+import { useContext, useRef } from "react";
+import { IsMobileSizeContext } from "../../App";
 
 const CustomTimeLineElement = (props) => {
   
   const ref = useRef(null);
   const isInView = useInView(ref, {margin: '-10%'});
+  const isMobile = useContext(IsMobileSizeContext);
 
   return (
     <div ref={ref} className={`timeline-element ${props.position}`}>
       <TimelineItem
-        position={props.position}
+        position={isMobile ? 'right' : props.position}
       >
         <TimelineSeparator>
           <TimelineConnector />
@@ -32,9 +34,9 @@ const CustomTimeLineElement = (props) => {
             </TimelineDot>
           }
         </TimelineSeparator>
-        <TimelineContent sx={{ py: '128px', px: 2 }}>
+        <TimelineContent sx={{ py: isMobile ? '64px' : '128px', px: 2 }}>
           <motion.div className="element-content"
-            animate={{x: isInView ? 0 : (props.position === 'right' ? 200 : '-200px'), opacity: isInView ? 1 : 0}}
+            animate={{x: isInView ? 0 : ((props.position === 'right' || isMobile) ? 200 : '-200px'), opacity: isInView ? 1 : 0}}
             transition={{ease: 'easeIn', duration: 0.5}}
           >
             {props.children}
@@ -48,13 +50,21 @@ const CustomTimeLineElement = (props) => {
 const TimelineComponent = () => {
 
   const { t } = useTranslation();
+  const isMobile = useContext(IsMobileSizeContext);
 
   const openLink = (link) => {
     window.open(link, '_blank', 'noreferrer');
   };
 
   return (
-    <Timeline>
+    <Timeline 
+      sx={isMobile && {
+        [`& .${timelineItemClasses.root}:before`]: {
+          flex: 0,
+          padding: 0,
+        },
+      }}
+    >
       <CustomTimeLineElement position='right'>
         <div className='element-content-title' onClick={() => {openLink(FX_LINK)}}>
           {t('ABOUTME.STORY.FX_ANIMATION.TITLE')}
