@@ -1,4 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Playfair+Display:ital,wght@1,900&family=Space+Mono&family=Zeyada&display=swap');
+@font-face {
+  font-family: 'Playfair Display';
+  src: url("./assets/fonts/PlayfairDisplay-BoldItalic.ttf");
+}
+@font-face {
+  font-family: 'Josefin Sans';
+  src: url("./assets/fonts/JosefinSans-Regular.ttf");
+}
+@font-face {
+  font-family: 'Zeyada';
+  src: url("./assets/fonts/Zeyada-Regular.ttf");
+}
+@font-face {
+  font-family: 'Space Mono';
+  src: url("./assets/fonts/SpaceMono-Regular.ttf");
+}
 
 :root {
   --primary: #4D21A9;

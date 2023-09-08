@@ -5,15 +5,17 @@ import "./Skills.scss";
 import Icon from "../../components/icon/Icon";
 
 import { motion, useInView } from "framer-motion";
-import { useRef } from "react";
+import { useContext, useRef } from "react";
+import { IsMobileSizeContext } from "../../App";
 
 const SkillBar = (props) => {
 
   const ref = useRef(null);
   const isInView = useInView(ref);
+  const isMobile = useContext(IsMobileSizeContext);
 
   return (
-    <div ref={ref} className={`skills-list-content-row-levels skill-bar ${props.isLeftSide && 'align-right'}`}>
+    <div ref={ref} className={`skills-list-content-row-levels skill-bar ${props.isLeftSide && !isMobile && 'align-right'}`}>
     <motion.div 
       className="skill-progress"
       animate={{width: isInView ? `${props.level}%` : 0, opacity: isInView ? 1 : 0}}
@@ -27,22 +29,23 @@ const SkillsList = (props) => {
 
   const { t } = useTranslation();
   const isLeftSide = props.position === 'left';
+  const isMobile = useContext(IsMobileSizeContext);
 
   const getPercFromLvl = (lvlId) => {
     return SKILL_LEVELS_LIST.find(skill => skill.id === lvlId).perc;
   };
 
   return (
-    <div className={`skills-list ${isLeftSide && 'align-right'}`}>
-      <div className={`skills-list-header ${isLeftSide && 'align-right'}`}>
+    <div className={`skills-list ${isLeftSide && !isMobile && 'align-right'}`}>
+      <div className={`skills-list-header ${isLeftSide && !isMobile && 'align-right'}`}>
         <div className="skills-list-header-icon skill-name">
           <Icon iconName={`fa-solid ${props.iconName}`} color='var(--secondary)'/>
         </div>
-        <div className={`skills-list-header-levels skill-bar ${isLeftSide && 'align-right'}`}>
+        <div className={`skills-list-header-levels skill-bar ${isLeftSide && !isMobile && 'align-right'}`}>
           {
             props.levels.map((level, i) => {
               return (
-                <div key={`skill-level-${i}${isLeftSide ? '-left' : ''}`} className="skills-list-header-levels-title">
+                <div key={`skill-level-${i}${isLeftSide && !isMobile ? '-left' : ''}`} className="skills-list-header-levels-title">
                   {t(level.titleKey)}
                 </div>
               )
@@ -50,13 +53,13 @@ const SkillsList = (props) => {
           }
         </div>
       </div>
-      <div className={`skills-list-content ${isLeftSide && 'align-right'}`}>
+      <div className={`skills-list-content ${isLeftSide && !isMobile && 'align-right'}`}>
         {
           props.list.map((skill, i) => {
             return (
-              <div key={`skill-${i}`} className={`skills-list-content-row ${isLeftSide && 'align-right'}`}>
+              <div key={`skill-${i}`} className={`skills-list-content-row ${isLeftSide && !isMobile && 'align-right'}`}>
                 <div className={`skills-list-content-row-title skill-name ${
-                  !isLeftSide && 'align-right'}`}>
+                  !isLeftSide && !isMobile && 'align-right'}`}>
                   {skill.title}
                 </div>
                 {
@@ -75,6 +78,7 @@ const SkillsList = (props) => {
 const Skills = () => {
 
   const { t } = useTranslation();
+  const isMobile = useContext(IsMobileSizeContext);
 
   return (
     <div id={NAV_SECTIONS[1].id} className="section-wrapper">
@@ -83,7 +87,7 @@ const Skills = () => {
           {t('SKILLS.TITLE')}
         </div>
         <div className="skills-hard-container">
-          <SkillsList list={TECH_SKILLS_INFO} levels={SKILL_LEVELS_LIST.slice().reverse()} position='left' iconName='fa-code' />
+          <SkillsList list={TECH_SKILLS_INFO} levels={isMobile ? SKILL_LEVELS_LIST : SKILL_LEVELS_LIST.slice().reverse()} position='left' iconName='fa-code' />
           <SkillsList list={ART_SKILLS_INFO} levels={SKILL_LEVELS_LIST} iconName='fa-palette'/>
         </div>
         <div className="skills-soft-container">

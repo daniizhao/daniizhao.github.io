@@ -5,11 +5,14 @@ import { useTranslation } from 'react-i18next';
 import Icon from '../../components/icon/Icon';
 import TimelineComponent from '../../components/timeline/Timeline';
 import { moveElementHandler } from '../../utils/mouseEvents';
-import { useEffect } from 'react';
+import { useContext, useEffect } from 'react';
+import { IsMobileSizeContext } from '../../App';
 
 const Aboutme = () => {
 
   const { t } = useTranslation();
+
+  const isMobile = useContext(IsMobileSizeContext);
 
   useEffect(() => {
     let aboutmeSectionElement = document.querySelector('.aboutme');
@@ -21,6 +24,10 @@ const Aboutme = () => {
     <div id={NAV_SECTIONS[0].id}>
       <div className="background-wrapper">
         <img id='portraitImg' src={PortraitBkg} alt="bkg_image" />
+        {
+          isMobile &&
+          <div className='bkg-overlay'></div>
+        }
       </div>
       <div className="section-wrapper aboutme">
         <div className="title">
@@ -35,6 +42,15 @@ const Aboutme = () => {
               {t('HOME.INTRODUCTION.DEV')}
             </div>
           </div>
+          {
+            isMobile && (
+              <div className='separator-container'>
+                <div className='separator-line'></div>
+                <div className='separator'>&</div>
+                <div className='separator-line'></div>
+              </div>
+            )
+          }
           <div className="intro-container">
             <div className='title art'>
               nydalae
