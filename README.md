@@ -8,5 +8,4 @@ If you see any bugs or possible improvements, please contact me! I will apprecia
 
 # TODO List
 
-* [WIP] Add Project details (modal with description and more images)
-* Responsive (adapt mobile version)
+* [WIP] Add Project details (modal with description/process)
