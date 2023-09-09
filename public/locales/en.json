@@ -76,9 +76,23 @@
       "TRADITIONAL": "Tradicional",
       "DIGITAL": "Digital Art"
     },
+    "SECTIONS": {
+      "CONTEXT": "Context",
+      "FEATURES": "Functional Requirements",
+      "SOLUTION": "Solution",
+      "PROCESS": "Process",
+      "CONTRIBUTORS": "Contributors",
+      "LINKS": "Related links"
+    },
+    "MORE_INFO": {
+      "TITLE": "More information",
+      "GITHUB_LINK": "View in Github 🡥"
+    },
     "COMPRESSOR": {
       "TITLE": "Text & Image Compressor",
-      "DESCRIPTION": ""
+      "CONTEXT": "This project is from a compulsory subject at Informatics Engineering Bachelor Degree at UPC.\n\nThe project consists in document, design, develop, test and deliver a program able to compress/decompress texts and images.\nIt also has the possibility to compare a file before and after compression/decompression and save global statistics of every compression/decompression.\n\n",
+      "FEATURES": " - Compress File & Folders: The user can select a file, select the output directory and the compression algorithm to compress it.\n\n - Decompress File & Folders: The user can select a compressed file, the output directory and it will automatically detect which algorithms use and decompress it.\n\n - Compare File: The user can select a file to compare, the program will compress and descompress it and show if there are any differences (compression data loss)\n\n - View Global Statistics: The user can view the global statistics of the selected algorithm.\n\n - Export Global Statistics: The user can export the global statistics to a txt file.\n\n - Algorithms: LZ78, LZSS, LZW, JPEG \n\n - Help Module: In each feature tab, there's a question mark button that opens a window with an explanation of the feature.",
+      "SOLUTION": "The final program is organized in the following folders: \n\n - DOCS: Documentation of the project such as Class diagram, Functional requirements and the User's Manual explaining how the program works.\n - EXE: Executable files and Tests suite\n - SRC: Source code of the project.\n\nThe source code and the program is based and organized with a Three-tier architecture:\n\n - Presentation layer: Layer in charge of the user's interactions and displaying information to the user.\n - Application layer: Layer in charge of processing the information.\n - Data layer: Layer in charge of storing and accessing the data of the application. In this case, the database is the computer's hard disk. \n\n In the following screenshots we can see the final result and some tests:"
     },
     "BREAKIN": {
       "TITLE": "Nook Break In",

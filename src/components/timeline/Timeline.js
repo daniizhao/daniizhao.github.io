@@ -58,10 +58,10 @@ const TimelineComponent = () => {
 
   return (
     <Timeline 
-      sx={isMobile && {
+      sx={{
         [`& .${timelineItemClasses.root}:before`]: {
-          flex: 0,
-          padding: 0,
+          flex: isMobile ? 0 : 'auto',
+          padding: isMobile ? 0 : 'auto',
         },
       }}
     >

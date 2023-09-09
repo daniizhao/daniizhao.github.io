@@ -7,6 +7,10 @@
   src: url("./assets/fonts/JosefinSans-Regular.ttf");
 }
 @font-face {
+  font-family: 'Josefin Sans Bold';
+  src: url("./assets/fonts/JosefinSans-Bold.ttf");
+}
+@font-face {
   font-family: 'Zeyada';
   src: url("./assets/fonts/Zeyada-Regular.ttf");
 }
@@ -33,6 +37,7 @@
   --background: #0E1212;
 
   --primary-font: 'Josefin Sans';
+  --primary-font-bold: 'Josefin Sans Bold';
   --title-font: 'Playfair Display';
   --handwritten-font: 'Zeyada';
   --code-font: 'Space Mono';

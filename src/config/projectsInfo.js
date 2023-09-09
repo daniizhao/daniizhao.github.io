@@ -1,4 +1,5 @@
-import PlaceholderImage from "../assets/img/keyboard.jpg";
+// import PlaceholderImage from "../assets/img/keyboard.jpg";
+import CompressorCover from "../assets/img/Compressor.png";
 import BreakInCover from "../assets/img/BreakIn_Cover.png";
 import QompCover from "../assets/img/AmongUs_Cover.png";
 import PortfolioCover from "../assets/img/Portfolio_Cover.png";
@@ -19,7 +20,7 @@ import LaboratoryDetails from "../components/projectDetails/creative/LaboratoryD
 export const TECH_PROJECTS = [
   {
     id: `tech-0`,
-    coverImage: PlaceholderImage,
+    coverImage: CompressorCover,
     titleKey: "PROJECTS.COMPRESSOR.TITLE",
     tagsKey: [
       "PROJECTS.TAGS.DEVELOPMENT",
@@ -58,8 +59,8 @@ export const TECH_PROJECTS = [
     titleKey: "PROJECTS.PORTFOLIO.TITLE",
     tagsKey: [
       "Web",
-      "Unity",
-      "3D",
+      "PROJECTS.TAGS.DEVELOPMENT",
+      "PROJECTS.TAGS.DESIGN",
     ],
     detailsComponent: <PortfolioDetails />
   },
