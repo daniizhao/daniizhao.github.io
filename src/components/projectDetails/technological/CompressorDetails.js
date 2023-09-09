@@ -64,6 +64,19 @@ const CompressorDetails = () => {
         </div>
         <div className="project-links-container">
           <div className="project-detail-title">
+            {t('PROJECTS.SECTIONS.STACK')}
+          </div>
+          <div className="project-links-column">
+            <div>
+              Intellij IDEA
+            </div>
+            <div>
+              Java
+            </div>
+          </div>
+        </div>
+        <div className="project-links-container">
+          <div className="project-detail-title">
             {t('PROJECTS.SECTIONS.CONTRIBUTORS')}
           </div>
           <div className="project-links-column">

@@ -9,6 +9,7 @@
     display: flex;
     flex-direction: column;
     gap: 16px;
+    width: 100%;
     &-title {
       font-size: 24px;
       font-family: var(--primary-font-bold);
@@ -51,6 +52,14 @@
       text-decoration: none;
       color: var(--white);
     }
+    &-embed-video {
+      overflow: hidden;
+      iframe {
+        width: 95%;
+        height: 100%;
+        padding-bottom: 35%;
+      }
+    }
   }
   .project-links {
     &-wrapper {
@@ -90,6 +99,11 @@
       }
       &-subtitle {
         font-size: 18px;
+      }
+      &-embed-video {
+        iframe {
+          padding-bottom: 0;
+        }
       }
     }
   }

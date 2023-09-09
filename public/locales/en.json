@@ -80,13 +80,16 @@
       "CONTEXT": "Context",
       "FEATURES": "Functional Requirements",
       "SOLUTION": "Solution",
-      "PROCESS": "Process",
       "CONTRIBUTORS": "Contributors",
-      "LINKS": "Related links"
+      "LINKS": "Related links",
+      "DEMO": "Demo",
+      "STACK": "Stack"
     },
     "MORE_INFO": {
       "TITLE": "More information",
-      "GITHUB_LINK": "View in Github 🡥"
+      "GITHUB_LINK": "View Github 🡥",
+      "YOUTUBE_LINK": "View YouTube Video 🡥",
+      "ORIGINAL": "View Original Game 🡥"
     },
     "COMPRESSOR": {
       "TITLE": "Text & Image Compressor",
@@ -96,31 +99,33 @@
     },
     "BREAKIN": {
       "TITLE": "Nook Break In",
-      "DESCRIPTION": ""
+      "CONTEXT": "This project is from an optional subject at Informatics Engineering Bachelor Degree at UPC.\n\nThe project consists in creating a clone of an existing Game, in this case is Break In (1987, MSX platform). The goal of this project is to learn openGL to develop games.",
+      "SOLUTION": "( ! Disclaimer ! ) We used a template provided by the subject resources, it consisted in an initialized game project with basics classes, but every logic (collision, movements logics and sprites are developed & designed by us). \n\nWe had total liberty to change the design and my partner and me got inspired by Animal Crossing (we just lived through a pandemic quarantine and ACNH was incredibly popular), so we build the game's 'story' and aesthetic (mantaining the 8bit style) around Animal Crossing and instead of breaking into banks, the user was breaking into Tom Nook's safes.\n We tried our best to adapt the other elements of the game to Animal Crossing's universe, evens so we left some elements as the original game."
     },
     "QOMP": {
       "TITLE": "Among Us - After ejection",
-      "DESCRIPTION": ""
+      "CONTEXT": "This project is from an optional subject at Informatics Engineering Bachelor Degree at UPC.\n\nThe project consists in creating a clone of an existing Game (at that moment, it was in development), in this case is QOMP. The goal of this project is to learn to develop a game with 3D elements, we had the choice to develop it in OpenGL or Unity, due to the time we had to develop the project we chose Unity.",
+      "SOLUTION": "In this project, we started the Unity project from zero. \n\nThe 3D assets were created using MagicaVoxel and we used Blender to animate the 3D assets.\n\nWe had total liberty to change the design and my partner and me got inspired by Among Us (we just lived through a pandemic quarantine and the game was super popular), so we adapted the game to take place when a crewmate (or impostor) is ejected and goes through the spaceship to finally be ejected."
     },
     "PORTFOLIO": {
       "TITLE": "Website Portfolio",
-      "DESCRIPTION": ""
+      "CONTEXT": ""
     },
     "LABORATORY": {
       "TITLE": "Sci-fi Laboratory",
-      "DESCRIPTION": ""
+      "CONTEXT": ""
     },
     "FAIRYTALE": {
       "TITLE": "Fairy tale adaptation",
-      "DESCRIPTION": ""
+      "CONTEXT": ""
     },
     "PERSONAL": {
       "TITLE": "Personal drawings",
-      "DESCRIPTION": ""
+      "CONTEXT": ""
     },
     "TRADITIONAL": {
       "TITLE": "Traditional Work",
-      "DESCRIPTION": ""
+      "CONTEXT": ""
     }
   },
   "CONTACT": {
