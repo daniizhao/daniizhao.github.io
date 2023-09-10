@@ -131,7 +131,9 @@
     },
     "TRADITIONAL": {
       "TITLE": "Traditional Work",
-      "CONTEXT": "This is a collection of my favorite traditional artworks through the years"
+      "CONTEXT": "This is a collection of my favorite traditional artworks through the years",
+      "SKETCHBOOK": "Sketchbook",
+      "ARTWORKS": "Artworks"
     }
   },
   "CONTACT": {
