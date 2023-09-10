@@ -71,7 +71,7 @@ const FairyTaleDetails = () => {
       height: 2160
     },
     {
-      src: 'assets/img/fairyTale/CPT_1M_3T_ZhaoDaniela_Creature_CallOuts.png',
+      src: 'assets/img/fairyTale/CPT_1M_3T_ZhaoDaniela_Creature_Callouts.png',
       width: 3840,
       height: 2160
     }
@@ -99,7 +99,7 @@ const FairyTaleDetails = () => {
       height: 2160
     },
     {
-      src: 'assets/img/fairyTale/CPT_1M_3T_ZhaoDaniela_Prop_CallOuts.png',
+      src: 'assets/img/fairyTale/CPT_1M_3T_ZhaoDaniela_Prop_Callouts.png',
       width: 3840,
       height: 2160
     }
