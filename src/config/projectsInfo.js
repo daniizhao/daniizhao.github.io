@@ -12,9 +12,9 @@ import CompressorDetails from "../components/projectDetails/technological/Compre
 import BreakInDetails from "../components/projectDetails/technological/BreakInDetails";
 import QompDetails from "../components/projectDetails/technological/QompDetails";
 import PortfolioDetails from "../components/projectDetails/technological/WebsitePortfolio";
-import PersonalDetails from "../components/projectDetails/creative/PersonalDetails";
 import TraditionalDetails from "../components/projectDetails/creative/TraditionalDetails";
 import LaboratoryDetails from "../components/projectDetails/creative/LaboratoryDetails";
+import DigitalDetails from "../components/projectDetails/creative/DigitalDetails";
 
 
 export const TECH_PROJECTS = [
@@ -70,12 +70,12 @@ export const ART_PROJECTS = [
   {
     id: `art-0`,
     coverImage: PersonalCover,
-    titleKey: "PROJECTS.PERSONAL.TITLE",
+    titleKey: "PROJECTS.DIGITAL.TITLE",
     tagsKey: [
       "PROJECTS.TAGS.DIGITAL",
       "2D",
     ],
-    detailsComponent: <PersonalDetails />
+    detailsComponent: <DigitalDetails />
   },
   {
     id: `art-1`,

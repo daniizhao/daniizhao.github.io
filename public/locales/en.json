@@ -122,13 +122,16 @@
       "TITLE": "Fairy tale adaptation",
       "CONTEXT": ""
     },
-    "PERSONAL": {
-      "TITLE": "Personal drawings",
-      "CONTEXT": ""
+    "DIGITAL": {
+      "TITLE": "Digital Work",
+      "CONTEXT": "This is a collection of my favorite digital sketches & artworks through the years. As you will be able to see, I really enjoy drawing portraits, especially female portraits. \n\nMost of the work is done with Procreate and Clip Studio Paint. I use to switch between the iPad Pro (2018), XP PEN Artist 15.6 Pro, Wacom One 13 and Wacom Intuos M.",
+      "SKETCHES": "Sketches",
+      "ARTWORKS": "Artworks",
+      "CHALLENGES": "Challenges"
     },
     "TRADITIONAL": {
       "TITLE": "Traditional Work",
-      "CONTEXT": ""
+      "CONTEXT": "This is a collection of my favorite traditional artworks through the years"
     }
   },
   "CONTACT": {
