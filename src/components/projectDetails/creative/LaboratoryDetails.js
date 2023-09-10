@@ -22,8 +22,6 @@ const LaboratoryDetails = () => {
       width: 3840,
       height: 2160
     },
-  ];
-  const LabAlternativeViews = [
     {
       src: 'assets/img/labProject/CPT_1M_2T_ZhaoDaniela_Environment_Render_AltView_1.png',
       width: 3840,
@@ -41,7 +39,7 @@ const LaboratoryDetails = () => {
     },
   ];
 
-  const SmallCreatureCoverImages = [
+  const SmallCreatureImages = [
     {
       src: 'assets/img/labProject/SmallCreature_Portada.png',
       width: 3840,
@@ -52,8 +50,6 @@ const LaboratoryDetails = () => {
       width: 3840,
       height: 2160
     },
-  ];
-  const SmallCreatureImages = [
     {
       src: 'assets/img/labProject/CPT_1M_2T_ZhaoDaniela_SmallCreature_TurnAround.png',
       width: 3840,
@@ -71,7 +67,7 @@ const LaboratoryDetails = () => {
     }
   ];
 
-  const BigCreatureCoverImages = [
+  const BigCreatureImages = [
     {
       src: 'assets/img/labProject/BigCreature_Portada.png',
       width: 3840,
@@ -82,8 +78,6 @@ const LaboratoryDetails = () => {
       width: 3840,
       height: 2160
     },
-  ];
-  const BigCreatureImages = [
     {
       src: 'assets/img/labProject/CPT_1M_2T_ZhaoDaniela_BigCreature_TurnAround.png',
       width: 3840,
@@ -101,14 +95,12 @@ const LaboratoryDetails = () => {
     }
   ];
 
-  const ShortWeaponCoverImages = [
+  const ShortWeaponImages = [
     {
       src: 'assets/img/labProject/ShortWeapon_Portada.png',
       width: 3840,
       height: 2160
     },
-  ];
-  const ShortWeaponImages = [
     {
       src: 'assets/img/labProject/CPT_1M_2T_ZhaoDaniela_ShortWeapon_Exploration.png',
       width: 3840,
@@ -126,14 +118,12 @@ const LaboratoryDetails = () => {
     }
   ];
 
-  const LongWeaponCoverImages = [
+  const LongWeaponImages = [
     {
       src: 'assets/img/labProject/LongWeapon_Portada.png',
       width: 3840,
       height: 2160
     },
-  ];
-  const LongWeaponImages = [
     {
       src: 'assets/img/labProject/CPT_1M_2T_ZhaoDaniela_LongWeapon_Exploration.png',
       width: 3840,
@@ -146,6 +136,29 @@ const LaboratoryDetails = () => {
     },
     {
       src: 'assets/img/labProject/CPT_1M_2T_ZhaoDaniela_LongWeapon_Callouts.png',
+      width: 3840,
+      height: 2160
+    }
+  ];
+
+  const Bear3DImages = [
+    {
+      src: 'assets/img/labProject/Render_Creature_1.png',
+      width: 3840,
+      height: 2160
+    },
+    {
+      src: 'assets/img/labProject/Render_Creature_2.png',
+      width: 3840,
+      height: 2160
+    },
+    {
+      src: 'assets/img/labProject/Render_Creature_4.png',
+      width: 3840,
+      height: 2160
+    },
+    {
+      src: 'assets/img/labProject/Render_Creature_6.png',
       width: 3840,
       height: 2160
     }
@@ -169,19 +182,22 @@ const LaboratoryDetails = () => {
           {t('PROJECTS.LABORATORY.CONTEXT')}
         </div>
         <PhotoAlbum photos={LabPhotos} layout="rows" onClick={({index}) => {onPhotoClick(LabPhotos, index)}} />
-        <PhotoAlbum photos={LabAlternativeViews} layout="rows" onClick={({index}) => {onPhotoClick(LabAlternativeViews, index)}} />
         
-        <PhotoAlbum photos={SmallCreatureCoverImages} layout="rows" onClick={({index}) => {onPhotoClick(SmallCreatureCoverImages, index)}} />
         <PhotoAlbum photos={SmallCreatureImages} layout="rows" onClick={({index}) => {onPhotoClick(SmallCreatureImages, index)}} />
         
-        <PhotoAlbum photos={BigCreatureCoverImages} layout="rows" onClick={({index}) => {onPhotoClick(BigCreatureCoverImages, index)}} />
         <PhotoAlbum photos={BigCreatureImages} layout="rows" onClick={({index}) => {onPhotoClick(BigCreatureImages, index)}} />
         
-        <PhotoAlbum photos={ShortWeaponCoverImages} layout="rows" onClick={({index}) => {onPhotoClick(ShortWeaponCoverImages, index)}} />
         <PhotoAlbum photos={ShortWeaponImages} layout="rows" onClick={({index}) => {onPhotoClick(ShortWeaponImages, index)}} />
                 
-        <PhotoAlbum photos={LongWeaponCoverImages} layout="rows" onClick={({index}) => {onPhotoClick(LongWeaponCoverImages, index)}} />
         <PhotoAlbum photos={LongWeaponImages} layout="rows" onClick={({index}) => {onPhotoClick(LongWeaponImages, index)}} />
+
+        <div>
+          {t('PROJECTS.LABORATORY.3D')}
+        </div>
+        <div>
+          <video src="assets/img/labProject/3DTurnAround.mp4" controls />
+        </div>
+        <PhotoAlbum photos={Bear3DImages} layout="rows" onClick={({index}) => {onPhotoClick(Bear3DImages, index)}} />
       </div>
       {
         selectedPhoto &&
