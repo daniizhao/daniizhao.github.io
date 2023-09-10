@@ -1,7 +1,6 @@
 import "./Contact.scss";
 import { useTranslation } from "react-i18next";
 import { NAV_SECTIONS } from "../../config/constants";
-import ContactImage from "../../assets/img/Contact_bkg.png";
 import Icon from "../../components/icon/Icon";
 import { ART_CONTACT_INFO, TECH_CONTACT_INFO } from "../../config/contactInfo";
 import { motion } from "framer-motion";
@@ -35,7 +34,7 @@ const Contact = () => {
   return (
     <div id={NAV_SECTIONS[3].id} className="section-wrapper contact-wrapper">
       <div className="background-wrapper">
-        <img id='contactImg' src={ContactImage} alt="bkg_image" />
+        <img id='contactImg' src="assets/img/Contact_bkg.png" alt="bkg_image" />
         <div className="bkg-overlay"></div>
       </div>
       <div className="section-title">

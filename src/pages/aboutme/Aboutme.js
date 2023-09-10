@@ -1,5 +1,4 @@
 import './Aboutme.scss';
-import PortraitBkg from "../../assets/img/Portfolio_home.png";
 import { NAV_SECTIONS } from '../../config/constants';
 import { useTranslation } from 'react-i18next';
 import Icon from '../../components/icon/Icon';
@@ -23,7 +22,7 @@ const Aboutme = () => {
   return (
     <div id={NAV_SECTIONS[0].id}>
       <div className="background-wrapper">
-        <img id='portraitImg' src={PortraitBkg} alt="bkg_image" />
+        <img id='portraitImg' src="assets/img/Portfolio_home.png" alt="bkg_image" />
         {
           isMobile &&
           <div className='bkg-overlay'></div>
