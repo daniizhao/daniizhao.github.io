@@ -1,10 +1,5 @@
 import { useTranslation } from "react-i18next";
 import "../ProjectDetails.scss";
-import CompressionImage from "../../../assets/img/compressor/compression.png";
-import DecompressionImage from "../../../assets/img/compressor/decompression.png";
-import ComparationImage from "../../../assets/img/compressor/comparation.png";
-import ComparationTextImage from "../../../assets/img/compressor/comparationText.png";
-import StatisticsImage from "../../../assets/img/compressor/globalStatistics.png";
 import { useContext } from "react";
 import { IsMobileSizeContext } from "../../../App";
 
@@ -36,21 +31,21 @@ const CompressorDetails = () => {
         </div>
         <div className={`project-detail-${isMobile ? 'column' : 'row'}`}>
           <div>
-            <img src={CompressionImage} alt="compression-img" />
+            <img src="assets/img/compressor/compression.png" alt="compression-img" />
           </div>
           <div>
-            <img src={DecompressionImage} alt="decompression-img" />
+            <img src="assets/img/compressor/decompression.png" alt="decompression-img" />
           </div>
           <div>
-            <img src={StatisticsImage} alt="statistics-img" />
+            <img src="assets/img/compressor/globalStatistics.png" alt="statistics-img" />
           </div>
         </div>
         <div className={`project-detail-${isMobile ? 'column' : 'row'}`}>
           <div>
-            <img src={ComparationImage} alt="comparation-img" />
+            <img src="assets/img/compressor/comparation.png" alt="comparation-img" />
           </div>
           <div>
-            <img src={ComparationTextImage} alt="text-comparation-img" />
+            <img src="assets/img/compressor/comparationText.png" alt="text-comparation-img" />
           </div>
         </div>
       </div>

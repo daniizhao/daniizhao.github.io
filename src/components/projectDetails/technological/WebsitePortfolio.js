@@ -1,10 +1,5 @@
 import { useTranslation } from "react-i18next";
 import "../ProjectDetails.scss";
-import ColorsImage from "../../../assets/img/potfolio/colors.png";
-import FirstIdeaImage from "../../../assets/img/potfolio/first-idea.png";
-import SecondIdeaImage from "../../../assets/img/potfolio/second-idea.png";
-import StructureImage from "../../../assets/img/potfolio/structure.png";
-import FinalImage from "../../../assets/img/potfolio/FinalWebsite.png";
 
 const PortfolioDetails = () => {
 
@@ -41,7 +36,7 @@ const PortfolioDetails = () => {
             {t('PROJECTS.PORTFOLIO.SOLUTION_1')}
           </div>
           <div>
-            <img src={ColorsImage} alt="website_color_palette" />
+            <img src="assets/img/potfolio/colors.png" alt="website_color_palette" />
           </div>
         </div>
         <div className="project-detail-column">
@@ -50,10 +45,10 @@ const PortfolioDetails = () => {
           </div>
           <div className="project-detail-row">
             <div>
-              <img src={FirstIdeaImage} alt="first_idea" />
+              <img src="assets/img/potfolio/first-idea.png" alt="first_idea" />
             </div>
             <div>
-              <img src={SecondIdeaImage} alt="second_idea" />
+              <img src="assets/img/potfolio/second-idea.png" alt="second_idea" />
             </div>
           </div>
         </div>
@@ -63,10 +58,10 @@ const PortfolioDetails = () => {
           </div>
           <div className="project-detail-row">
             <div>
-              <img src={StructureImage} alt="final_structure" />
+              <img src="assets/img/potfolio/structure.png" alt="final_structure" />
             </div>
             <div>
-              <img src={FinalImage} alt="final_result" />
+              <img src="assets/img/potfolio/FinalWebsite.png" alt="final_result" />
             </div>
           </div>
         </div>

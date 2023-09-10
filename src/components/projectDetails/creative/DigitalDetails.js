@@ -1,25 +1,11 @@
 import { useTranslation } from "react-i18next";
 import "../ProjectDetails.scss";
 
-import Sketch1 from "../../../assets/img/artworks/sketches_Hands.png";
-import Sketch2 from "../../../assets/img/artworks/sketches_heads.png";
-import Sketch3 from "../../../assets/img/artworks/sketches.png";
-import Sketch4 from "../../../assets/img/artworks/sketches_2.png";
-
-import ArtworkSailorMoon from "../../../assets/img/artworks/sailormoonredraw.png";
-import ArtworkCrosshatching from "../../../assets/img/artworks/crosshatching.png";
-import ArtworkDTIYJustineFlorentino from "../../../assets/img/artworks/JustineFlorentinoChallenge.png";
-
-import ArtworkAlone from "../../../assets/img/artworks/alone.png";
-import ArtworkEmerald from "../../../assets/img/artworks/portraitEmerald.png";
-import ArtworkVampire from "../../../assets/img/artworks/vampire.png";
-import ArtworkYonaSpelling from "../../../assets/img/artworks/yonaSpelling.png";
-import ArtworkAstridBack from "../../../assets/img/artworks/AstridSheathe.png";
-
 import { useState } from "react";
 import PhotoAlbum from "react-photo-album";
 import Lightbox from "yet-another-react-lightbox";
 import "yet-another-react-lightbox/styles.css";
+import Zoom from "yet-another-react-lightbox/plugins/zoom";
 
 const DigitalDetails = () => {
 
@@ -27,22 +13,22 @@ const DigitalDetails = () => {
 
   const SketchesPhotos = [
     {
-      src: Sketch1,
+      src: 'assets/img/artworks/sketches_Hands.png',
       width: 2214,
       height: 1521
     },
     {
-      src: Sketch2,
+      src: 'assets/img/artworks/sketches_heads.png',
       width: 2162,
       height: 1521
     },
     {
-      src: Sketch3,
+      src: 'assets/img/artworks/sketches.png',
       width: 3840,
       height: 2160
     },
     {
-      src: Sketch4,
+      src: 'assets/img/artworks/sketches_2.png',
       width: 3840,
       height: 2160
     },
@@ -50,27 +36,27 @@ const DigitalDetails = () => {
   
   const ArtworksPhotos = [
     {
-      src: ArtworkAlone,
+      src: 'assets/img/artworks/alone.png',
       width: 4000,
       height: 3000
     },
     {
-      src: ArtworkEmerald,
+      src: 'assets/img/artworks/portraitEmerald.png',
       width: 3000,
       height: 4000
     },
     {
-      src: ArtworkVampire,
+      src: 'assets/img/artworks/vampire.png',
       width: 2160,
       height: 2772
     },
     {
-      src: ArtworkYonaSpelling,
+      src: 'assets/img/artworks/yonaSpelling.png',
       width: 4000,
       height: 3200
     },
     {
-      src: ArtworkAstridBack,
+      src: 'assets/img/artworks/AstridSheathe.png',
       width: 1080,
       height: 1920
     },
@@ -78,17 +64,17 @@ const DigitalDetails = () => {
   
   const ChallengesPhotos = [
     {
-      src: ArtworkSailorMoon,
+      src: 'assets/img/artworks/sailormoonredraw.png',
       width: 4000,
       height: 3000
     },
     {
-      src: ArtworkCrosshatching,
+      src: 'assets/img/artworks/crosshatching.png',
       width: 3200,
       height: 4000
     },
     {
-      src: ArtworkDTIYJustineFlorentino,
+      src: 'assets/img/artworks/JustineFlorentinoChallenge.png',
       width: 3200,
       height: 4000
     },
@@ -123,7 +109,7 @@ const DigitalDetails = () => {
       </div>
       {
         selectedPhoto &&
-        <Lightbox slides={selectedPhoto.photos} open={selectedPhoto} index={selectedPhoto.index} close={() => {setSelectedPhoto(null)}} />
+        <Lightbox slides={selectedPhoto.photos} open={selectedPhoto} index={selectedPhoto.index} close={() => {setSelectedPhoto(null)}} plugins={[Zoom]} carousel={{finite: true}} />
       }
     </div>
   )

@@ -1,12 +1,4 @@
 // import PlaceholderImage from "../assets/img/keyboard.jpg";
-import CompressorCover from "../assets/img/Compressor.png";
-import BreakInCover from "../assets/img/BreakIn_Cover.png";
-import QompCover from "../assets/img/AmongUs_Cover.png";
-import PortfolioCover from "../assets/img/Portfolio_Cover.png";
-import LabCover from "../assets/img/Lab_Cover.png";
-import FairytaleCover from "../assets/img/FairyTale_ZhaoDaniela_Cover.png";
-import PersonalCover from "../assets/img/artworks/yonaSpelling.png";
-import TraditionalCover from "../assets/img/artworks/traditional_cover.jpg";
 import FairyTaleDetails from "../components/projectDetails/creative/FairytaleDetails";
 import CompressorDetails from "../components/projectDetails/technological/CompressorDetails";
 import BreakInDetails from "../components/projectDetails/technological/BreakInDetails";
@@ -20,7 +12,7 @@ import DigitalDetails from "../components/projectDetails/creative/DigitalDetails
 export const TECH_PROJECTS = [
   {
     id: `tech-0`,
-    coverImage: CompressorCover,
+    coverImage: "assets/img/Compressor.png",
     titleKey: "PROJECTS.COMPRESSOR.TITLE",
     tagsKey: [
       "PROJECTS.TAGS.DEVELOPMENT",
@@ -31,7 +23,7 @@ export const TECH_PROJECTS = [
   },
   {
     id: `tech-1`,
-    coverImage: BreakInCover,
+    coverImage: "assets/img/BreakIn_Cover.png",
     titleKey: "PROJECTS.BREAKIN.TITLE",
     tagsKey: [
       "PROJECTS.TAGS.GAME",
@@ -43,7 +35,7 @@ export const TECH_PROJECTS = [
   },
   {
     id: `tech-2`,
-    coverImage: QompCover,
+    coverImage: "assets/img/AmongUs_Cover.png",
     titleKey: "PROJECTS.QOMP.TITLE",
     tagsKey: [
       "PROJECTS.TAGS.GAME",
@@ -55,7 +47,7 @@ export const TECH_PROJECTS = [
   },
   {
     id: `tech-3`,
-    coverImage: PortfolioCover,
+    coverImage: "assets/img/Portfolio_Cover.png",
     titleKey: "PROJECTS.PORTFOLIO.TITLE",
     tagsKey: [
       "Web",
@@ -69,7 +61,7 @@ export const TECH_PROJECTS = [
 export const ART_PROJECTS = [
   {
     id: `art-0`,
-    coverImage: PersonalCover,
+    coverImage: "assets/img/artworks/yonaSpelling.png",
     titleKey: "PROJECTS.DIGITAL.TITLE",
     tagsKey: [
       "PROJECTS.TAGS.DIGITAL",
@@ -79,7 +71,7 @@ export const ART_PROJECTS = [
   },
   {
     id: `art-1`,
-    coverImage: TraditionalCover,
+    coverImage: "assets/img/artworks/traditional_cover.jpg",
     titleKey: "PROJECTS.TRADITIONAL.TITLE",
     tagsKey: [
       "PROJECTS.TAGS.TRADITIONAL",
@@ -89,7 +81,7 @@ export const ART_PROJECTS = [
   },
   {
     id: `art-2`,
-    coverImage: LabCover,
+    coverImage: "assets/img/Lab_Cover.png",
     titleKey: "PROJECTS.LABORATORY.TITLE",
     tagsKey: [
       "PROJECTS.TAGS.DIGITAL",
@@ -100,7 +92,7 @@ export const ART_PROJECTS = [
   },
   {
     id: `art-3`,
-    coverImage: FairytaleCover,
+    coverImage: "assets/img/FairyTale_ZhaoDaniela_Cover.png",
     titleKey: "PROJECTS.FAIRYTALE.TITLE",
     tagsKey: [
       "PROJECTS.TAGS.DIGITAL",

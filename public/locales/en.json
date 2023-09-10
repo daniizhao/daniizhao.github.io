@@ -116,7 +116,7 @@
     },
     "LABORATORY": {
       "TITLE": "Sci-fi Laboratory",
-      "CONTEXT": ""
+      "CONTEXT": "Welcome to a laboratory nestled deep within a soon to be extinct forest, dedicated to combatting the looming threat of extinction. This state-of-the-art facility combines futuristic design with advanced technology, seamlessly integrating with the natural environment. Its modular rooms house cutting-edge research equipment, allows any laboratory combination depending on the needs of the facility.\n\nWhile the laboratory strives for scientific progress, it also prioritizes safety. Each laboratory is equipped with defense mechanisms and formidable weaponry, ready to protect both researchers and the precious specimens they study or to protect the researchers from the specimens... "
     },
     "FAIRYTALE": {
       "TITLE": "Fairy tale adaptation",
@@ -124,14 +124,14 @@
     },
     "DIGITAL": {
       "TITLE": "Digital Work",
-      "CONTEXT": "This is a collection of my favorite digital sketches & artworks through the years. As you will be able to see, I really enjoy drawing portraits, especially female portraits. \n\nMost of the work is done with Procreate and Clip Studio Paint. I use to switch between the iPad Pro (2018), XP PEN Artist 15.6 Pro, Wacom One 13 and Wacom Intuos M.",
+      "CONTEXT": "This is a collection of my favorite digital sketches & artworks over the years. As you will be able to see, I really enjoy drawing portraits, especially female portraits. \n\nMost of the work is done with Procreate and Clip Studio Paint. I use to switch between the iPad Pro (2018), XP PEN Artist 15.6 Pro, Wacom One 13 and Wacom Intuos M.",
       "SKETCHES": "Sketches",
       "ARTWORKS": "Artworks",
       "CHALLENGES": "Challenges"
     },
     "TRADITIONAL": {
       "TITLE": "Traditional Work",
-      "CONTEXT": "This is a collection of my favorite traditional artworks through the years",
+      "CONTEXT": "This is a collection of my favorite traditional artworks over the years",
       "SKETCHBOOK": "Sketchbook",
       "ARTWORKS": "Artworks"
     }
