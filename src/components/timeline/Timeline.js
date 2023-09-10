@@ -2,9 +2,6 @@ import "./Timeline.scss";
 import Star from '@mui/icons-material/Star';
 import { Timeline, TimelineItem, TimelineSeparator, TimelineConnector, TimelineContent, TimelineDot, timelineItemClasses } from "@mui/lab";
 import { useTranslation } from "react-i18next";
-import UPCLogo from "../../assets/img/Logo_UPC.png";
-import SlashLogo from "../../assets/img/Logo_Slash.png";
-import FXLogo from "../../assets/img/Logo_FX.png";
 import { FX_LINK, SLASH_LINK, UPC_LINK } from "../../config/constants";
 import { motion, useInView } from "framer-motion";
 import { useContext, useRef } from "react";
@@ -58,10 +55,10 @@ const TimelineComponent = () => {
 
   return (
     <Timeline 
-      sx={isMobile && {
+      sx={{
         [`& .${timelineItemClasses.root}:before`]: {
-          flex: 0,
-          padding: 0,
+          flex: isMobile ? 0 : 'auto',
+          padding: isMobile ? 0 : 'auto',
         },
       }}
     >
@@ -69,7 +66,7 @@ const TimelineComponent = () => {
         <div className='element-content-title' onClick={() => {openLink(FX_LINK)}}>
           {t('ABOUTME.STORY.FX_ANIMATION.TITLE')}
           <div className='logo-container'>
-            <img src={FXLogo} alt='FXAnimation_logo' />
+            <img src="assets/img/Logo_FX.png" alt='FXAnimation_logo' />
           </div>
         </div>
         <div className='element-content-subtitle'>
@@ -91,7 +88,7 @@ const TimelineComponent = () => {
         <div className='element-content-title' onClick={() => {openLink(SLASH_LINK)}}>
           {t('ABOUTME.STORY.SLASHMOBILITY.TITLE')}
           <div className='logo-container'>
-            <img src={SlashLogo} alt='SlashMobility_logo' />
+            <img src="assets/img/Logo_Slash.png" alt='SlashMobility_logo' />
           </div>
         </div>
         <div className='element-content-subtitle'>
@@ -113,7 +110,7 @@ const TimelineComponent = () => {
         <div className='element-content-title' onClick={() => {openLink(UPC_LINK)}}>
           {t('ABOUTME.STORY.COLLEGE_DEGREE.TITLE')}
           <div className='logo-container'>
-            <img src={UPCLogo} alt='UPC_logo' />
+            <img src="assets/img/Logo_UPC.png" alt='UPC_logo' />
           </div>
         </div>
         <div className='element-content-subtitle'>

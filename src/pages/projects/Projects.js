@@ -15,9 +15,8 @@ const Projects = () => {
   const [selectedProject, setSelectedProject] = useState(null);
 
   const handleProjectClick = (projectDetails) => {
-    // TODO: uncomment when projects details are done
-    // if (selectedProject && selectedProject.id === projectDetails.id) setSelectedProject(null);
-    // else setSelectedProject(projectDetails);
+    if (selectedProject && selectedProject.id === projectDetails.id) setSelectedProject(null);
+    else setSelectedProject(projectDetails);
   };
 
   return (
@@ -44,10 +43,10 @@ const Projects = () => {
         {
           selectedProject &&
           <Modal
-            open={selectedProject}
+            open={selectedProject != null}
             onClose={()=>{setSelectedProject(null)}}
+            style={{display: 'flex', alignItems: 'center', justifyContent: 'center'}}
           >
-          {/* <div className="modal-wrapper"> */}
             <motion.div
               className="modal-container"
               initial={{
@@ -74,9 +73,9 @@ const Projects = () => {
                     </div>
                     <div className="modal-header-info-tags">
                       {
-                        selectedProject.tagsKey.map((tag) => {
+                        selectedProject.tagsKey.map((tag, i) => {
                           return (
-                            <div className="modal-header-info-tags-tag">
+                            <div key={`modal-${selectedProject.id}-header-tag-${i}`} className="modal-header-info-tags-tag">
                               {t(tag)}
                             </div>
                           )
@@ -93,7 +92,6 @@ const Projects = () => {
                 {selectedProject.detailsComponent}
               </motion.div>
             </motion.div>
-          {/* </div> */}
           </Modal>
         }
       </AnimatePresence>
