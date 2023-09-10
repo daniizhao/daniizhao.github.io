@@ -90,16 +90,6 @@ const PortfolioDetails = () => {
             </div>
           </div>
         </div>
-        <div className="project-links-container">
-          <div className="project-detail-title">
-            {t('PROJECTS.SECTIONS.CONTRIBUTORS')}
-          </div>
-          <div className="project-links-column">
-            <div>
-              Daniela Zhao
-            </div>
-          </div>
-        </div>
       </div>
     </div>
   )
