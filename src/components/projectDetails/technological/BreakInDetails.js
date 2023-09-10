@@ -39,11 +39,6 @@ const BreakInDetails = () => {
               {t('PROJECTS.MORE_INFO.GITHUB_LINK')}
             </a> 
           </div>
-          <div className="project-links-item">
-            <a href="https://www.youtube.com/watch?v=0BtZWmPCz8Y" target="_blank" rel="noreferrer">
-              {t('PROJECTS.MORE_INFO.YOUTUBE_LINK')}
-            </a> 
-          </div>
         </div>
         <div className="project-links-container">
           <div className="project-detail-title">
