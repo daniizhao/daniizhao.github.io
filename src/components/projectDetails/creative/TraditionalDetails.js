@@ -154,9 +154,9 @@ const TraditionalDetails = () => {
       height: 3438
     },
     {
-      src: 'assets/img/artworks/traditional_0024.jpg',
-      width: 2410,
-      height: 3438
+      src: 'assets/img/artworks/traditional_0029.jpg',
+      width: 3437,
+      height: 2410
     },
     {
       src: 'assets/img/artworks/traditional_0025.jpg',
@@ -172,6 +172,64 @@ const TraditionalDetails = () => {
       src: 'assets/img/artworks/traditional_0028.jpg',
       width: 2410,
       height: 3438
+    },
+  ];
+
+  const LiveDrawings = [
+    {
+      src: 'assets/img/artworks/Modelo_20230203_003.jpg',
+      width: 3614,
+      height: 3156
+    },
+    {
+      src: 'assets/img/artworks/Modelo_20230203_006.jpg',
+      width: 2155,
+      height: 1977
+    },
+    {
+      src: 'assets/img/artworks/Modelo_20230223_001.jpg',
+      width: 1739,
+      height: 2869
+    },
+    {
+      src: 'assets/img/artworks/Modelo_20230223_004.jpg',
+      width: 1981,
+      height: 2096
+    },
+    {
+      src: 'assets/img/artworks/Modelo_20230223_005.jpg',
+      width: 1358,
+      height: 2366
+    },
+    {
+      src: 'assets/img/artworks/Modelo_20230317_003.jpg',
+      width: 2022,
+      height: 2996
+    },
+    {
+      src: 'assets/img/artworks/modelo_20230428_0001.jpg',
+      width: 2229,
+      height: 3827
+    },
+    {
+      src: 'assets/img/artworks/modelo_20230428_0002.jpg',
+      width: 4093,
+      height: 1431
+    },
+    {
+      src: 'assets/img/artworks/modelo_20230428_0003.jpg',
+      width: 1995,
+      height: 2884
+    },
+    {
+      src: 'assets/img/artworks/modelo_20230428_0004.jpg',
+      width: 3125,
+      height: 2496
+    },
+    {
+      src: 'assets/img/artworks/modelo_20230428_0006.jpg',
+      width: 1813,
+      height: 3017
     },
   ];
 
@@ -199,6 +257,10 @@ const TraditionalDetails = () => {
           {t('PROJECTS.TRADITIONAL.ARTWORKS')}
         </div>
         <PhotoAlbum photos={ArtworksPhotos} layout="rows" onClick={({index}) => {onPhotoClick(ArtworksPhotos, index)}} />
+        <div className="project-detail-subtitle">
+          {t('PROJECTS.TRADITIONAL.LIVE')}
+        </div>
+        <PhotoAlbum photos={LiveDrawings} layout="rows" onClick={({index}) => {onPhotoClick(LiveDrawings, index)}} />
       </div>
       {
         selectedPhoto &&
