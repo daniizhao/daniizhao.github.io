@@ -48,7 +48,8 @@
       "LEVELS": {
         "BASIC": "Basic",
         "INTERMEDIATE": "Intermediate",
-        "FLUENT": "Fluent"
+        "FLUENT": "Fluent",
+        "NATIVE": "Native"
       }
     },
     "OTHER": {
