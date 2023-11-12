@@ -35,11 +35,11 @@ export const TECH_SKILLS_INFO = [
     lvl_id: 1
   },
   {
-    title: 'C++',
+    title: 'C++ / C#',
     lvl_id: 1
   },
   {
-    title: 'C#',
+    title: 'Python',
     lvl_id: 0 
   },
   {
@@ -107,12 +107,12 @@ export const LANGUAGES_INFO = [
   {
     lang: 'Español',
     code: 'es-ES',
-    lvl: 'SKILLS.LANGUAGES.LEVELS.FLUENT'
+    lvl: 'SKILLS.LANGUAGES.LEVELS.NATIVE'
   },
   {
     lang: 'Català',
     code: 'ca-ES',
-    lvl: 'SKILLS.LANGUAGES.LEVELS.FLUENT'
+    lvl: 'SKILLS.LANGUAGES.LEVELS.NATIVE'
   },
   {
     lang: 'English',
