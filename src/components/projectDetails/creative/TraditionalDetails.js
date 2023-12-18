@@ -1,235 +1,236 @@
 import "../ProjectDetails.scss";
 
 import { useTranslation } from "react-i18next";
-import { useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 import PhotoAlbum from "react-photo-album";
 import Lightbox from "yet-another-react-lightbox";
 import "yet-another-react-lightbox/styles.css";
 import Zoom from "yet-another-react-lightbox/plugins/zoom";
+import { ESC_KEY } from "../../../utils/keyboadEvents";
 
 const TraditionalDetails = () => {
 
   const SketchbookPhotos = [
     {
       src: 'assets/img/artworks/sketchbook.jpg',
-      width: 2345,
-      height: 2321
+      width: 1173,
+      height: 1161
     },
     {
       src: 'assets/img/artworks/sketchbook_0005.jpg',
-      width: 1868,
-      height: 2479
+      width: 934,
+      height: 1240
     },
     {
       src: 'assets/img/artworks/sketchbook_0006.jpg',
-      width: 2401,
-      height: 3078
+      width: 1201,
+      height: 1539
     },
     {
       src: 'assets/img/artworks/sketchbook_0007.jpg',
-      width: 1897,
-      height: 2664
+      width: 949,
+      height: 1332
     },
     {
       src: 'assets/img/artworks/sketchbook_0008.jpg',
-      width: 1661,
-      height: 2056
+      width: 831,
+      height: 1024
     },
     {
       src: 'assets/img/artworks/sketchbook_0009.jpg',
-      width: 1755,
-      height: 2618
+      width: 878,
+      height: 1309
     },
     {
       src: 'assets/img/artworks/sketchbook_0011.jpg',
-      width: 1804,
-      height: 2557
+      width: 902,
+      height: 1279
     },
     {
       src: 'assets/img/artworks/sketchbook_0013.jpg',
-      width: 1711,
-      height: 2432
+      width: 856,
+      height: 1216
     },
     {
       src: 'assets/img/artworks/sketchbook_0014.jpg',
-      width: 1682,
-      height: 2415
+      width: 841,
+      height: 1208
     },
     {
       src: 'assets/img/artworks/sketchbook_0015.jpg',
-      width: 1814,
-      height: 2053
+      width: 907,
+      height: 1026
     },
     {
       src: 'assets/img/artworks/sketchbook_0019.jpg',
-      width: 2676,
-      height: 1757
+      width: 1338,
+      height: 879
     },
     {
       src: 'assets/img/artworks/sketchbook_0020.jpg',
-      width: 1693,
-      height: 2009
+      width: 847,
+      height: 1005
     },
     {
       src: 'assets/img/artworks/sketchbook_0025.jpg',
-      width: 1695,
-      height: 1655
+      width: 848,
+      height: 828
     },
     {
       src: 'assets/img/artworks/sketchbook_0032.jpg',
-      width: 2422,
-      height: 2862
+      width: 1211,
+      height: 1431
     },
     {
       src: 'assets/img/artworks/sketchbook_0036.jpg',
-      width: 1638,
-      height: 2468
+      width: 819,
+      height: 1234
     },
     {
       src: 'assets/img/artworks/sketchbook_0042.jpg',
-      width: 2166,
-      height: 2355
+      width: 1083,
+      height: 1178
     },
     {
       src: 'assets/img/artworks/sketchbook_0043.jpg',
-      width: 2629,
-      height: 3852
+      width: 1315,
+      height: 1926
     },
     {
       src: 'assets/img/artworks/sketchbook_0044.jpg',
-      width: 1725,
-      height: 2606
+      width: 863,
+      height: 1303
     },
     {
       src: 'assets/img/artworks/sketchbook_0047.jpg',
-      width: 1722,
-      height: 2709
+      width: 861,
+      height: 1355
     },
   ];
 
   const ArtworksPhotos = [
     {
       src: 'assets/img/artworks/traditional.jpg',
-      width: 2410,
-      height: 3438
+      width: 1205,
+      height: 1719
     },
     {
       src: 'assets/img/artworks/traditional_0001.jpg',
-      width: 2410,
-      height: 3438
+      width: 1205,
+      height: 1719
     },
     {
       src: 'assets/img/artworks/traditional_0002.jpg',
-      width: 2410,
-      height: 3438
+      width: 1205,
+      height: 1719
     },
     {
       src: 'assets/img/artworks/traditional_0003.jpg',
-      width: 2410,
-      height: 3438
+      width: 1205,
+      height: 1719
     },
     {
       src: 'assets/img/artworks/traditional_0004.jpg',
-      width: 2410,
-      height: 3438
+      width: 1205,
+      height: 1719
     },
     {
       src: 'assets/img/artworks/traditional_0005.jpg',
-      width: 2410,
-      height: 3438
+      width: 1205,
+      height: 1719
     },
     {
       src: 'assets/img/artworks/traditional_0006.jpg',
-      width: 2410,
-      height: 3438
+      width: 1205,
+      height: 1719
     },
     {
       src: 'assets/img/artworks/traditional_0007.jpg',
-      width: 2410,
-      height: 3438
+      width: 1205,
+      height: 1719
     },
     {
       src: 'assets/img/artworks/traditional_0008.jpg',
-      width: 2410,
-      height: 3438
+      width: 1205,
+      height: 1719
     },
     {
       src: 'assets/img/artworks/traditional_0029.jpg',
-      width: 3437,
-      height: 2410
+      width: 1719,
+      height: 1205
     },
     {
       src: 'assets/img/artworks/traditional_0025.jpg',
-      width: 2410,
-      height: 3438
+      width: 1205,
+      height: 1719
     },
     {
       src: 'assets/img/artworks/traditional_0027.jpg',
-      width: 2410,
-      height: 3438
+      width: 1205,
+      height: 1719
     },
     {
       src: 'assets/img/artworks/traditional_0028.jpg',
-      width: 2410,
-      height: 3438
+      width: 1205,
+      height: 1719
     },
   ];
 
   const LiveDrawings = [
     {
       src: 'assets/img/artworks/Modelo_20230203_003.jpg',
-      width: 3614,
-      height: 3156
+      width: 1807,
+      height: 1578
     },
     {
       src: 'assets/img/artworks/Modelo_20230203_006.jpg',
-      width: 2155,
-      height: 1977
+      width: 1078,
+      height: 989
     },
     {
       src: 'assets/img/artworks/Modelo_20230223_001.jpg',
-      width: 1739,
-      height: 2869
+      width: 870,
+      height: 1435
     },
     {
       src: 'assets/img/artworks/Modelo_20230223_004.jpg',
-      width: 1981,
-      height: 2096
+      width: 991,
+      height: 1048
     },
     {
       src: 'assets/img/artworks/Modelo_20230223_005.jpg',
-      width: 1358,
-      height: 2366
+      width: 679,
+      height: 1183
     },
     {
       src: 'assets/img/artworks/Modelo_20230317_003.jpg',
-      width: 2022,
-      height: 2996
+      width: 1011,
+      height: 1498
     },
     {
       src: 'assets/img/artworks/modelo_20230428_0001.jpg',
-      width: 2229,
-      height: 3827
+      width: 1115,
+      height: 1914
     },
     {
       src: 'assets/img/artworks/modelo_20230428_0002.jpg',
-      width: 4093,
-      height: 1431
+      width: 2047,
+      height: 716
     },
     {
       src: 'assets/img/artworks/modelo_20230428_0003.jpg',
-      width: 1995,
-      height: 2884
+      width: 998,
+      height: 1442
     },
     {
       src: 'assets/img/artworks/modelo_20230428_0004.jpg',
-      width: 3125,
-      height: 2496
+      width: 1563,
+      height: 1248
     },
     {
       src: 'assets/img/artworks/modelo_20230428_0006.jpg',
-      width: 1813,
-      height: 3017
+      width: 907,
+      height: 1509
     },
   ];
 
@@ -242,6 +243,19 @@ const TraditionalDetails = () => {
       index: index
     });
   };
+
+  const handleEsc = useCallback((event) => {
+    if (event.key === ESC_KEY && selectedPhoto !== null) {
+      event.stopPropagation();
+    }
+  }, [selectedPhoto]);
+  
+  useEffect(() => {
+    document.addEventListener('keydown', handleEsc, true);
+    return  () => {
+      document.removeEventListener('keydown', handleEsc, true);
+    }
+  }, [handleEsc]);
 
   return (
     <div className="project-detail-wrapper">

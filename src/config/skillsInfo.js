@@ -47,25 +47,23 @@ export const TECH_SKILLS_INFO = [
     lvl_id: 1
   },
   {
-    title: '',
-    lvl_id: null
+    lvl_id: -1,
+    title: 'Frameworks',
+    list: [
+      'Angular',
+      'Ionic',
+      'ReactJS',
+      'React Native',
+    ]
   },
   {
-    title: 'Angular',
-    lvl_id: 2
-  },
-  {
-    title: 'Ionic',
-    lvl_id: 2
-  },
-  {
-    title: 'ReactJS',
-    lvl_id: 1
-  },
-  {
-    title: 'React Native',
-    lvl_id: 1
-  },
+    lvl_id: -1,
+    title: 'SKILLS.ADDITIONAL.KNOWLEDGE',
+    list: [
+      'GitFlow',
+      'SCRUM'
+    ]
+  }
 ];
 
 export const ART_SKILLS_INFO = [
@@ -91,6 +89,10 @@ export const ART_SKILLS_INFO = [
   },
   {
     title: 'Substance Painter',
+    lvl_id: 0
+  },
+  {
+    title: 'Maya',
     lvl_id: 0
   },
   {

@@ -7,6 +7,7 @@ import PortfolioDetails from "../components/projectDetails/technological/Website
 import TraditionalDetails from "../components/projectDetails/creative/TraditionalDetails";
 import LaboratoryDetails from "../components/projectDetails/creative/LaboratoryDetails";
 import DigitalDetails from "../components/projectDetails/creative/DigitalDetails";
+import CastleDetails from "../components/projectDetails/creative/CastleDetails";
 
 
 export const TECH_PROJECTS = [
@@ -60,26 +61,6 @@ export const TECH_PROJECTS = [
 
 export const ART_PROJECTS = [
   {
-    id: `art-0`,
-    coverImage: "assets/img/artworks/yonaSpelling.png",
-    titleKey: "PROJECTS.DIGITAL.TITLE",
-    tagsKey: [
-      "PROJECTS.TAGS.DIGITAL",
-      "2D",
-    ],
-    detailsComponent: <DigitalDetails />
-  },
-  {
-    id: `art-1`,
-    coverImage: "assets/img/artworks/traditional_cover.jpg",
-    titleKey: "PROJECTS.TRADITIONAL.TITLE",
-    tagsKey: [
-      "PROJECTS.TAGS.TRADITIONAL",
-      "2D",
-    ],
-    detailsComponent: <TraditionalDetails />
-  },
-  {
     id: `art-2`,
     coverImage: "assets/img/Lab_Cover.png",
     titleKey: "PROJECTS.LABORATORY.TITLE",
@@ -100,5 +81,36 @@ export const ART_PROJECTS = [
       "FX Animation",
     ],
     detailsComponent: <FairyTaleDetails />
+  },
+  {
+    id: `art-4`,
+    coverImage: "assets/img/Castle_Cover.png",
+    titleKey: "PROJECTS.CASTLE.TITLE",
+    tagsKey: [
+      "PROJECTS.TAGS.DIGITAL",
+      "2D & 3D",
+      "FX Animation",
+    ],
+    detailsComponent: <CastleDetails />
+  },
+  {
+    id: `art-1`,
+    coverImage: "assets/img/artworks/traditional_cover.jpg",
+    titleKey: "PROJECTS.TRADITIONAL.TITLE",
+    tagsKey: [
+      "PROJECTS.TAGS.TRADITIONAL",
+      "2D",
+    ],
+    detailsComponent: <TraditionalDetails />
+  },
+  {
+    id: `art-0`,
+    coverImage: "assets/img/artworks/yonaSpelling.png",
+    titleKey: "PROJECTS.DIGITAL.TITLE",
+    tagsKey: [
+      "PROJECTS.TAGS.DIGITAL",
+      "2D",
+    ],
+    detailsComponent: <DigitalDetails />
   },
 ];

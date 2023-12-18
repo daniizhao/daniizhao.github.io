@@ -1,7 +1,7 @@
 {
   "homepage": "http://daniizhao.github.io/",
   "name": "portfolio",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.11.1",
