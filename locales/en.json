@@ -30,8 +30,8 @@
       "FX_ANIMATION": {
         "TITLE": "Master in Concept Art @ FX Animation School",
         "DESCRIPTION": "Create and design 2D characters, creatures, props and environments for projects",
-        "DESCRIPTION_2": "Build 3D models (characters, creatures, ...)",
-        "STACK": "Clip Studio Paint, Adobe Photoshop, ZBrush, Blender, Substance Painter"
+        "DESCRIPTION_2": "Build 3D models (characters, creatures, environments ...)",
+        "STACK": "Clip Studio Paint, Adobe Photoshop, ZBrush, Blender, Substance Painter, Maya"
       }
     }
   },
@@ -52,12 +52,15 @@
         "NATIVE": "Native"
       }
     },
+    "ADDITIONAL": {
+      "KNOWLEDGE": "Knowledge"
+    },
     "OTHER": {
       "TITLE": "Soft Skills",
       "COMM": "Communication",
       "TEAMWORK": "Teamwork",
       "PROJ_MGM": "Project management",
-      "DETAILS": "Keen to details" 
+      "DETAILS": "Keen to details"
     },
     "HOBBIES": {
       "TITLE": "Hobbies & Interests",
@@ -124,6 +127,13 @@
       "TITLE": "Fairy tale adaptation",
       "CONTEXT": "In ancient China, a modest family in a village owned a bakery specializing in Moon Cakes. During the busy Mid-Autumn Festival, they sent their daughter, Hong Mei, to keep her weak grandmother company until they closed the bakery and could celebrate the Festilval together.\n\nUnbeknownst to Hong Mei, a mischievous creature named Sun Wukong planned to steal her Moon Cakes. He ambushed the grandmother's house, disguised himself as her and awaited Hong Mei's arrival. Suspicious of the darkness and the 'grandmother's' strange behaviour, she realized the impostor and using her Kung Fu skills, defeated Sun Wukong and freed her grandmother. The family reunited, praising HM but also scolding her for the danger she faced.",
       "3D": "In each project, there's a 3D module and for this project we had to build a 3D model of a character and I really enjoyed the process. Here you can see it:"
+    },
+    "CASTLE": {
+      "TITLE": "Victorian Castle",
+      "CONTEXT": "Once upon a time there was a young woman excited for life. Katrina Scharlach was an ambitious girl that wanted to do a lot of things in life. She thought life was too short for her and searched for the eternity. One night, she encountered a demon and they reached an agreement. Mephisto the demon turned Katrina into a vampire in exchenge of her soul. This exchange was reflected in their eyes as they now shared their fate. The demon then decided to stay in Earth and accompany Katrina in her eternal life.",
+      "": "",
+      "3D": "In each project, there's a 3D module and for this project we had to build a 3D model of a character and I really enjoyed the process, as it allowed me to improve my sculpting skills with ZBrush and experiment with Marvelous Designer with the skirt.",
+      "3D_credits": "Modeled with ZBrush, skirt made with Marvelous Designer, Rendered with Arnold (Maya) and background and details added with Clip Studio Paint"
     },
     "DIGITAL": {
       "TITLE": "Digital Work",
