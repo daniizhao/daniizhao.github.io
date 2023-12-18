@@ -32,8 +32,10 @@ const SkillsList = (props) => {
   const isMobile = useContext(IsMobileSizeContext);
 
   const getPercFromLvl = (lvlId) => {
-    return SKILL_LEVELS_LIST.find(skill => skill.id === lvlId).perc;
+    return SKILL_LEVELS_LIST.find(skill => skill.id === lvlId)?.perc;
   };
+
+  const additionalSkills = props.list.filter(skill => skill.lvl_id == -1);
 
   return (
     <div className={`skills-list ${isLeftSide && !isMobile && 'align-right'}`}>
@@ -57,15 +59,39 @@ const SkillsList = (props) => {
         {
           props.list.map((skill, i) => {
             return (
-              <div key={`skill-${i}`} className={`skills-list-content-row ${isLeftSide && !isMobile && 'align-right'}`}>
-                <div className={`skills-list-content-row-title skill-name ${
-                  !isLeftSide && !isMobile && 'align-right'}`}>
-                  {skill.title}
-                </div>
+              <>
                 {
-                  skill.lvl_id !== null &&
-                  <SkillBar level={getPercFromLvl(skill.lvl_id)} isLeftSide={isLeftSide} />
+                  skill.lvl_id !== -1 &&
+                  (
+                    <div key={`skill-${i}`} className={`skills-list-content-row ${isLeftSide && !isMobile && 'align-right'}`}>
+                      <div className={`skills-list-content-row-title skill-name ${
+                        !isLeftSide && !isMobile && 'align-right'}`}>
+                        {skill.title}
+                      </div>
+                      {
+                        skill.lvl_id !== null ?
+                        <SkillBar level={getPercFromLvl(skill.lvl_id)} isLeftSide={isLeftSide} />
+                        :
+                        <div></div>
+                      }
+                    </div>
+                  )
                 }
+              </>
+            )
+          })
+        }
+      </div>
+      
+      <div className={`skills-list-content-additional`}>
+        {
+          additionalSkills.map((skill, i) => {
+            return (
+              <div key={`skill-${i}`} className={`skills-list-content-additional-skill`}>
+                <div className={`section-title`}>
+                  {t(skill.title)}
+                </div>
+                <div className={`skills-list-content-additional-skill-list`}> {skill.list.join('\n')} </div>
               </div>
             )
           })

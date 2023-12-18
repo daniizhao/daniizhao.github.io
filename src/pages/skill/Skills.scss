@@ -5,6 +5,7 @@
   .skills-hard-container {
     display: flex;
     flex-direction: row;
+    align-items: flex-start;
     gap: 3%;
     .skills-list {
       display: flex;
@@ -64,6 +65,25 @@
           }
           &.align-right {
             flex-direction: row-reverse;
+          }
+        }
+        &-additional {
+          margin: 0 25% 0 5%;
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          &-skill {
+            display: flex;
+            flex-direction: column;
+            margin: 0 5%;
+            .section-title {
+              font-size: 24px;
+              padding: 0;
+            }
+            &-list {
+              white-space: pre-line;
+              text-align: center;
+            }
           }
         }
       }

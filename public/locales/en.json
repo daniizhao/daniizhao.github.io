@@ -52,12 +52,15 @@
         "NATIVE": "Native"
       }
     },
+    "ADDITIONAL": {
+      "KNOWLEDGE": "Knowledge"
+    },
     "OTHER": {
       "TITLE": "Soft Skills",
       "COMM": "Communication",
       "TEAMWORK": "Teamwork",
       "PROJ_MGM": "Project management",
-      "DETAILS": "Keen to details" 
+      "DETAILS": "Keen to details"
     },
     "HOBBIES": {
       "TITLE": "Hobbies & Interests",
