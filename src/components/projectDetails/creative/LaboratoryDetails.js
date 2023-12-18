@@ -194,10 +194,10 @@ const LaboratoryDetails = () => {
         <div>
           {t('PROJECTS.LABORATORY.3D')}
         </div>
+        <PhotoAlbum photos={Bear3DImages} layout="rows" onClick={({index}) => {onPhotoClick(Bear3DImages, index)}} />
         <div>
           <video src="assets/img/labProject/3DTurnAround.mp4" controls />
         </div>
-        <PhotoAlbum photos={Bear3DImages} layout="rows" onClick={({index}) => {onPhotoClick(Bear3DImages, index)}} />
       </div>
       {
         selectedPhoto &&

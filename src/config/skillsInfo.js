@@ -94,6 +94,10 @@ export const ART_SKILLS_INFO = [
     lvl_id: 0
   },
   {
+    title: 'Maya',
+    lvl_id: 0
+  },
+  {
     title: '',
     lvl_id: null
   },
