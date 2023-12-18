@@ -35,7 +35,7 @@ const SkillsList = (props) => {
     return SKILL_LEVELS_LIST.find(skill => skill.id === lvlId)?.perc;
   };
 
-  const additionalSkills = props.list.filter(skill => skill.lvl_id == -1);
+  const additionalSkills = props.list.filter(skill => skill.lvl_id === -1);
 
   return (
     <div className={`skills-list ${isLeftSide && !isMobile && 'align-right'}`}>

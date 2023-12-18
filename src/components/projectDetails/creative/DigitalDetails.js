@@ -1,11 +1,12 @@
 import { useTranslation } from "react-i18next";
 import "../ProjectDetails.scss";
 
-import { useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 import PhotoAlbum from "react-photo-album";
 import Lightbox from "yet-another-react-lightbox";
 import "yet-another-react-lightbox/styles.css";
 import Zoom from "yet-another-react-lightbox/plugins/zoom";
+import { ESC_KEY } from "../../../utils/keyboadEvents";
 
 const DigitalDetails = () => {
 
@@ -87,6 +88,19 @@ const DigitalDetails = () => {
       index: index
     });
   };
+
+  const handleEsc = useCallback((event) => {
+    if (event.key === ESC_KEY && selectedPhoto !== null) {
+      event.stopPropagation();
+    }
+  }, [selectedPhoto]);
+  
+  useEffect(() => {
+    document.addEventListener('keydown', handleEsc, true);
+    return  () => {
+      document.removeEventListener('keydown', handleEsc, true);
+    }
+  }, [handleEsc]);
 
   return (
     <div className="project-detail-wrapper">
