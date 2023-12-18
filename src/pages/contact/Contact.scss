@@ -16,6 +16,20 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    .contact-item {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: flex-start;
+      gap: 16px;
+      &-icon {
+        width: 32px;
+        height: 32px;
+      }
+      &-name {
+        font-size: 32px;
+      }
+    }
     &-side {
       display: flex;
       flex-direction: column;
@@ -25,24 +39,21 @@
       &.align-right {
         justify-content: flex-end;
       }
-      .contact-item {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: flex-start;
-        gap: 16px;
-        width: 100%;
-        &-icon {
-          width: 32px;
-          height: 32px;
-        }
-        &-name {
-          font-size: 32px;
-        }
-      }
       &.align-right .contact-item {
         flex-direction: row-reverse;
       }
+      .contact-item {
+        width: 100%;
+      }
+    }
+    &.common {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      height: 20%;
+      width: calc(100% / 3);
+      margin: 0 auto;
+      gap: 16px;
     }
   }
   .footer-wrapper {
@@ -60,18 +71,23 @@
       justify-content: center;
       flex-direction: column;
       margin: 0 20px;
+      .contact-item {
+        &-icon {
+          width: 24px;
+          height: 24px;
+        }
+        &-name {
+          font-size: 18px;
+        }
+      }
       &-side {
         width: 100%;
         .contact-item {
           width: 75%;
-          &-icon {
-            width: 24px;
-            height: 24px;
-          }
-          &-name {
-            font-size: 18px;
-          }
         }
+      }
+      &.common {
+        width: 100%;
       }
       .separator {
         font-family: var(--title-font);

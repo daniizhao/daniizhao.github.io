@@ -1,11 +1,5 @@
 export const TECH_CONTACT_INFO = [
   {
-    id: 'contact-tech-0',
-    icon: 'fa-solid fa-at',
-    name: 'daniela.zhao4@gmail.com',
-    url: 'mailto: daniela.zhao4@gmail.com'
-  },
-  {
     id: 'contact-tech-1',
     icon: 'fa-brands fa-linkedin',
     name: 'daniela-zhao',
@@ -21,12 +15,6 @@ export const TECH_CONTACT_INFO = [
 
 export const ART_CONTACT_INFO = [
   {
-    id: 'contact-art-0',
-    icon: 'fa-solid fa-at',
-    name: 'daniela.zhao4@gmail.com',
-    url: 'mailto: daniela.zhao4@gmail.com'
-  },
-  {
     id: 'contact-art-1',
     icon: 'fa-brands fa-instagram',
     name: 'nydalae.art',
@@ -39,3 +27,19 @@ export const ART_CONTACT_INFO = [
     url: 'https://nydalae.artstation.com'
   },
 ];
+
+export const COMMON_CONTACT_INFO = [
+  {
+    id: 'contact-common-0',
+    icon: 'fa-solid fa-at',
+    name: 'daniela.zhao4@gmail.com',
+    url: 'mailto: daniela.zhao4@gmail.com'
+  },
+  {
+    id: 'contact-common-1',
+    icon: 'fa-solid fa-file-arrow-down',
+    name: 'CV',
+    url: 'pdf',
+    filePath: '/assets/files/CV_ENG.pdf' 
+  },
+]

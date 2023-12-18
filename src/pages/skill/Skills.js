@@ -83,7 +83,7 @@ const SkillsList = (props) => {
         }
       </div>
       
-      <div className={`skills-list-content-additional`}>
+      <div className={`skills-list-content-additional ${isMobile && 'isMobile'}`}>
         {
           additionalSkills.map((skill, i) => {
             return (
