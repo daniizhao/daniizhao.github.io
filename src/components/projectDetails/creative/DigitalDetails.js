@@ -14,46 +14,46 @@ const DigitalDetails = () => {
   const SketchesPhotos = [
     {
       src: 'assets/img/artworks/sketches_Hands.png',
-      width: 2214,
-      height: 1521
+      width: 1107,
+      height: 761
     },
     {
       src: 'assets/img/artworks/sketches_heads.png',
-      width: 2162,
-      height: 1521
+      width: 1081,
+      height: 761
     },
     {
       src: 'assets/img/artworks/sketches.png',
-      width: 3840,
-      height: 2160
+      width: 1920,
+      height: 1080
     },
     {
       src: 'assets/img/artworks/sketches_2.png',
-      width: 3840,
-      height: 2160
+      width: 1920,
+      height: 1080
     },
   ];
   
   const ArtworksPhotos = [
     {
       src: 'assets/img/artworks/alone.png',
-      width: 4000,
-      height: 3000
+      width: 2000,
+      height: 1500
     },
     {
       src: 'assets/img/artworks/portraitEmerald.png',
-      width: 3000,
-      height: 4000
+      width: 1500,
+      height: 2000
     },
     {
       src: 'assets/img/artworks/vampire.png',
-      width: 2160,
-      height: 2772
+      width: 1080,
+      height: 1386
     },
     {
       src: 'assets/img/artworks/yonaSpelling.png',
-      width: 4000,
-      height: 3200
+      width: 2000,
+      height: 1600
     },
     {
       src: 'assets/img/artworks/AstridSheathe.png',
@@ -65,18 +65,18 @@ const DigitalDetails = () => {
   const ChallengesPhotos = [
     {
       src: 'assets/img/artworks/sailormoonredraw.png',
-      width: 4000,
-      height: 3000
+      width: 2000,
+      height: 1500
     },
     {
       src: 'assets/img/artworks/crosshatching.png',
-      width: 3200,
-      height: 4000
+      width: 1600,
+      height: 2000
     },
     {
       src: 'assets/img/artworks/JustineFlorentinoChallenge.png',
-      width: 3200,
-      height: 4000
+      width: 1600,
+      height: 2000
     },
   ];
 
