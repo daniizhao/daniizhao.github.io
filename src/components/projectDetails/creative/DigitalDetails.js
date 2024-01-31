@@ -61,6 +61,11 @@ const DigitalDetails = () => {
       width: 1080,
       height: 1920
     },
+    {
+      src: 'assets/img/artworks/mononoke.png',
+      width: 874,
+      height: 1240
+    },
   ];
   
   const ChallengesPhotos = [
