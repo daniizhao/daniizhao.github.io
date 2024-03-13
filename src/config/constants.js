@@ -1,6 +1,5 @@
 import Aboutme from "../pages/aboutme/Aboutme";
 import Contact from "../pages/contact/Contact";
-import Projects from "../pages/projects/Projects";
 import Skills from "../pages/skill/Skills";
 
 export const NAV_SECTIONS = [
@@ -13,11 +12,6 @@ export const NAV_SECTIONS = [
     id: 'skills',
     title: 'SKILLS.TITLE',
     component: <Skills />
-  },
-  {
-    id: 'projects',
-    title: 'PROJECTS.TITLE',
-    component: <Projects />
   },
   {
     id: 'contact',
@@ -36,5 +30,6 @@ export const INSTAGRAM_PAGE = 'https://www.instagram.com/nydalae.art/';
 export const UPC_LINK = "https://www.upc.edu/en/bachelors/informatics-engineering-barcelona-fib";
 export const SLASH_LINK = "https://slashmobility.com/?lang=en";
 export const FX_LINK = "https://fxanimation.es/en/superior-master-in-modeling-and-concept-art/";
+export const SCRUFFY_LINK = "https://www.scruffydogltd.com/";
 
 export const MOBILE_SIZE = 768;

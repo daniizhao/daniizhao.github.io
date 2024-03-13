@@ -5,7 +5,9 @@
       "DEV": "Frontend developer",
       "CONCEPT": "Artist",
       "SHORT_INTRO": "",
-      "SCROLL": "Scroll down to get to know me better!"
+      "SCROLL": "Scroll down to get to know me better!",
+      "PROJECTS": "View Projects",
+      "PORTFOLIO": "View Portfolio"
     }
   },
   "ABOUTME": {
@@ -32,6 +34,12 @@
         "DESCRIPTION": "Create and design 2D characters, creatures, props and environments for projects",
         "DESCRIPTION_2": "Build 3D models (characters, creatures, environments ...)",
         "STACK": "Clip Studio Paint, Adobe Photoshop, ZBrush, Blender, Substance Painter, Maya"
+      },
+      "SCRUFFYDOG": {
+        "TITLE": "Concept Art Internship @ Scruffy Dog",
+        "DESCRIPTION": "Design and generate visuals from a given pitch",
+        "DESCRIPTION_2": "",
+        "STACK": "Adobe Photoshop, Blender"
       }
     }
   },

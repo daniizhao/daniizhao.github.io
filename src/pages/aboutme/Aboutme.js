@@ -1,15 +1,18 @@
 import './Aboutme.scss';
-import { NAV_SECTIONS } from '../../config/constants';
+import { NAV_SECTIONS, PRIMARY_BUTTON } from '../../config/constants';
 import { useTranslation } from 'react-i18next';
 import Icon from '../../components/icon/Icon';
 import TimelineComponent from '../../components/timeline/Timeline';
 import { moveElementHandler } from '../../utils/mouseEvents';
 import { useContext, useEffect } from 'react';
 import { IsMobileSizeContext } from '../../App';
+import { useNavigate } from 'react-router';
+import Button from '../../components/button/Button';
 
 const Aboutme = () => {
 
   const { t } = useTranslation();
+  const navigate = useNavigate();
 
   const isMobile = useContext(IsMobileSizeContext);
 
@@ -40,6 +43,11 @@ const Aboutme = () => {
             <div className='role'>
               {t('HOME.INTRODUCTION.DEV')}
             </div>
+            <div className='button-container'>
+              <Button style={PRIMARY_BUTTON} buttonText={t('HOME.INTRODUCTION.PROJECTS')} onClick={() => {
+                navigate('/projects');
+              }} />
+            </div>
           </div>
           {
             isMobile && (
@@ -56,6 +64,11 @@ const Aboutme = () => {
             </div>
             <div className='role'>
               {t('HOME.INTRODUCTION.CONCEPT')}
+            </div>
+            <div className='button-container'>
+              <Button style={PRIMARY_BUTTON} buttonText={t('HOME.INTRODUCTION.PORTFOLIO')} onClick={() => {
+                navigate('/portfolio');
+              }} />
             </div>
           </div>
         </div>
