@@ -2,7 +2,6 @@ import * as React from "react";
 import * as Ariakit from "@ariakit/react";
 import clsx from "clsx";
 import { Link, useHref, useLocation } from "react-router-dom";
-import { LinkProps } from "react-router-dom";
 
 export function Tabs(props) {
   const { pathname } = useLocation();

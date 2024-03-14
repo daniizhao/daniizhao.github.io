@@ -1,4 +1,4 @@
-import { HashRouter, MemoryRouter, Route, Routes } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
 import './App.scss';
 import Home from './pages/home/Home';
 import { createContext, useEffect, useState } from 'react';
