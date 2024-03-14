@@ -31,21 +31,21 @@ const CompressorDetails = () => {
         </div>
         <div className={`project-detail-${isMobile ? 'column' : 'row'}`}>
           <div>
-            <img src="assets/img/compressor/compression.png" alt="compression-img" />
+            <img src="/assets/img/compressor/compression.png" alt="compression-img" />
           </div>
           <div>
-            <img src="assets/img/compressor/decompression.png" alt="decompression-img" />
+            <img src="/assets/img/compressor/decompression.png" alt="decompression-img" />
           </div>
           <div>
-            <img src="assets/img/compressor/globalStatistics.png" alt="statistics-img" />
+            <img src="/assets/img/compressor/globalStatistics.png" alt="statistics-img" />
           </div>
         </div>
         <div className={`project-detail-${isMobile ? 'column' : 'row'}`}>
           <div>
-            <img src="assets/img/compressor/comparation.png" alt="comparation-img" />
+            <img src="/assets/img/compressor/comparation.png" alt="comparation-img" />
           </div>
           <div>
-            <img src="assets/img/compressor/comparationText.png" alt="text-comparation-img" />
+            <img src="/assets/img/compressor/comparationText.png" alt="text-comparation-img" />
           </div>
         </div>
       </div>

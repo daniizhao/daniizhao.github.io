@@ -25,7 +25,7 @@ const Aboutme = () => {
   return (
     <div id={NAV_SECTIONS[0].id}>
       <div className="background-wrapper">
-        <img id='portraitImg' src="assets/img/Portfolio_home.png" alt="bkg_image" />
+        <img id='portraitImg' src="/assets/img/Portfolio_home.png" alt="bkg_image" />
         {
           isMobile &&
           <div className='bkg-overlay'></div>
@@ -67,7 +67,7 @@ const Aboutme = () => {
             </div>
             <div className='button-container'>
               <Button style={PRIMARY_BUTTON} buttonText={t('HOME.INTRODUCTION.PORTFOLIO')} onClick={() => {
-                navigate('/portfolio');
+                navigate('/portfolio/character');
               }} />
             </div>
           </div>

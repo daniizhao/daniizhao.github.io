@@ -13,47 +13,47 @@ const CastleDetails = () => {
 
   const KatrinaImages = [
     {
-      src: 'assets/img/castleProject/CPT_2M_1T_ZhaoDaniela_Katrina_Cover.png',
+      src: '/assets/img/castleProject/CPT_2M_1T_ZhaoDaniela_Katrina_Cover.png',
       width: 1920,
       height: 1080
     },
     {
-      src: 'assets/img/castleProject/CPT_2M_1T_ZhaoDaniela_Katrina_Exploration.png',
+      src: '/assets/img/castleProject/CPT_2M_1T_ZhaoDaniela_Katrina_Exploration.png',
       width: 1920,
       height: 1080
     },
     {
-      src: 'assets/img/castleProject/CPT_2M_1T_ZhaoDaniela_Katrina_Color_Exploration.png',
+      src: '/assets/img/castleProject/CPT_2M_1T_ZhaoDaniela_Katrina_Color_Exploration.png',
       width: 1920,
       height: 1080
     },
     {
-      src: 'assets/img/castleProject/CPT_2M_1T_ZhaoDaniela_Katrina_Face_Exploration.png',
+      src: '/assets/img/castleProject/CPT_2M_1T_ZhaoDaniela_Katrina_Face_Exploration.png',
       width: 1920,
       height: 1080
     },
     {
-      src: 'assets/img/castleProject/CPT_2M_1T_ZhaoDaniela_Katrina_Expressions.png',
+      src: '/assets/img/castleProject/CPT_2M_1T_ZhaoDaniela_Katrina_Expressions.png',
       width: 1920,
       height: 1080
     },
     {
-      src: 'assets/img/castleProject/CPT_2M_1T_ZhaoDaniela_Katrina_Body_Attitude.png',
+      src: '/assets/img/castleProject/CPT_2M_1T_ZhaoDaniela_Katrina_Body_Attitude.png',
       width: 1920,
       height: 1080
     },
     {
-      src: 'assets/img/castleProject/CPT_2M_1T_ZhaoDaniela_Katrina_TurnAround.png',
+      src: '/assets/img/castleProject/CPT_2M_1T_ZhaoDaniela_Katrina_TurnAround.png',
       width: 1920,
       height: 1080
     },
     {
-      src: 'assets/img/castleProject/CPT_2M_1T_ZhaoDaniela_Katrina_Callouts.png',
+      src: '/assets/img/castleProject/CPT_2M_1T_ZhaoDaniela_Katrina_Callouts.png',
       width: 1920,
       height: 1080
     },
     {
-      src: 'assets/img/castleProject/CPT_2M_1T_ZhaoDaniela_Character_Render.png',
+      src: '/assets/img/castleProject/CPT_2M_1T_ZhaoDaniela_Character_Render.png',
       width: 1080,
       height: 1920
     },
@@ -61,37 +61,37 @@ const CastleDetails = () => {
 
   const MephistoImages = [
     {
-      src: 'assets/img/castleProject/CPT_2M_1T_ZhaoDaniela_Mephisto_Cover.png',
+      src: '/assets/img/castleProject/CPT_2M_1T_ZhaoDaniela_Mephisto_Cover.png',
       width: 1920,
       height: 1080
     },
     {
-      src: 'assets/img/castleProject/CPT_2M_1T_ZhaoDaniela_Mephisto_Exploration.png',
+      src: '/assets/img/castleProject/CPT_2M_1T_ZhaoDaniela_Mephisto_Exploration.png',
       width: 1920,
       height: 1080
     },
     {
-      src: 'assets/img/castleProject/CPT_2M_1T_ZhaoDaniela_Mephisto_Color_Exploration.png',
+      src: '/assets/img/castleProject/CPT_2M_1T_ZhaoDaniela_Mephisto_Color_Exploration.png',
       width: 1920,
       height: 1080
     },
     {
-      src: 'assets/img/castleProject/CPT_2M_1T_ZhaoDaniela_Mephisto_Body_Attitude.png',
+      src: '/assets/img/castleProject/CPT_2M_1T_ZhaoDaniela_Mephisto_Body_Attitude.png',
       width: 1920,
       height: 1080
     },
     {
-      src: 'assets/img/castleProject/CPT_2M_1T_ZhaoDaniela_Mephisto_TurnAround.png',
+      src: '/assets/img/castleProject/CPT_2M_1T_ZhaoDaniela_Mephisto_TurnAround.png',
       width: 1920,
       height: 1080
     },
     {
-      src: 'assets/img/castleProject/CPT_2M_1T_ZhaoDaniela_Mephisto_Callouts.png',
+      src: '/assets/img/castleProject/CPT_2M_1T_ZhaoDaniela_Mephisto_Callouts.png',
       width: 1920,
       height: 1080
     },
     {
-      src: 'assets/img/castleProject/CPT_2M_1T_ZhaoDaniela_Creature_Render.png',
+      src: '/assets/img/castleProject/CPT_2M_1T_ZhaoDaniela_Creature_Render.png',
       width: 1080,
       height: 1920
     },
@@ -99,42 +99,42 @@ const CastleDetails = () => {
 
   const PropImages = [
     {
-      src: 'assets/img/castleProject/CPT_2M_1T_ZhaoDaniela_Props_Cover.png',
+      src: '/assets/img/castleProject/CPT_2M_1T_ZhaoDaniela_Props_Cover.png',
       width: 1920,
       height: 1080
     },
     {
-      src: 'assets/img/castleProject/CPT_2M_1T_ZhaoDaniela_Props_Exploration.png',
+      src: '/assets/img/castleProject/CPT_2M_1T_ZhaoDaniela_Props_Exploration.png',
       width: 1920,
       height: 1080
     },
     {
-      src: 'assets/img/castleProject/CPT_2M_1T_ZhaoDaniela_Props_Exploration_2.png',
+      src: '/assets/img/castleProject/CPT_2M_1T_ZhaoDaniela_Props_Exploration_2.png',
       width: 1920,
       height: 1080
     },
     {
-      src: 'assets/img/castleProject/CPT_2M_1T_ZhaoDaniela_Props_Color_Exploration.png',
+      src: '/assets/img/castleProject/CPT_2M_1T_ZhaoDaniela_Props_Color_Exploration.png',
       width: 1920,
       height: 1080
     },
     {
-      src: 'assets/img/castleProject/CPT_2M_1T_ZhaoDaniela_Props_Design_Exploration.png',
+      src: '/assets/img/castleProject/CPT_2M_1T_ZhaoDaniela_Props_Design_Exploration.png',
       width: 1920,
       height: 1080
     },
     {
-      src: 'assets/img/castleProject/CPT_2M_1T_ZhaoDaniela_Props_TurnAround.png',
+      src: '/assets/img/castleProject/CPT_2M_1T_ZhaoDaniela_Props_TurnAround.png',
       width: 1920,
       height: 1080
     },
     {
-      src: 'assets/img/castleProject/CPT_2M_1T_ZhaoDaniela_Props_Callouts.png',
+      src: '/assets/img/castleProject/CPT_2M_1T_ZhaoDaniela_Props_Callouts.png',
       width: 1920,
       height: 1080
     },
     {
-      src: 'assets/img/castleProject/CPT_2M_1T_ZhaoDaniela_Prop_Render.png',
+      src: '/assets/img/castleProject/CPT_2M_1T_ZhaoDaniela_Prop_Render.png',
       width: 1080,
       height: 1920
     },
@@ -143,22 +143,22 @@ const CastleDetails = () => {
   
   const KitchenImages = [
     {
-      src: 'assets/img/castleProject/CPT_2M_1T_ZhaoDaniela_Kitchen_Cover.png',
+      src: '/assets/img/castleProject/CPT_2M_1T_ZhaoDaniela_Kitchen_Cover.png',
       width: 1920,
       height: 1080
     },
     {
-      src: 'assets/img/castleProject/CPT_2M_1T_ZhaoDaniela_Kitchen_Thumbnails.png',
+      src: '/assets/img/castleProject/CPT_2M_1T_ZhaoDaniela_Kitchen_Thumbnails.png',
       width: 1920,
       height: 1080
     },
     {
-      src: 'assets/img/castleProject/CPT_2M_1T_ZhaoDaniela_Kitchen_Color_Exploration.png',
+      src: '/assets/img/castleProject/CPT_2M_1T_ZhaoDaniela_Kitchen_Color_Exploration.png',
       width: 1920,
       height: 1080
     },
     {
-      src: 'assets/img/castleProject/CPT_2M_1T_ZhaoDaniela_Kitchen_Render.png',
+      src: '/assets/img/castleProject/CPT_2M_1T_ZhaoDaniela_Kitchen_Render.png',
       width: 1920,
       height: 1080
     },
@@ -166,22 +166,22 @@ const CastleDetails = () => {
 
   const BedroomImages = [
     {
-      src: 'assets/img/castleProject/CPT_2M_1T_ZhaoDaniela_Bedroom_Cover.png',
+      src: '/assets/img/castleProject/CPT_2M_1T_ZhaoDaniela_Bedroom_Cover.png',
       width: 1920,
       height: 1080
     },
     {
-      src: 'assets/img/castleProject/CPT_2M_1T_ZhaoDaniela_Bedroom_Thumbnails.png',
+      src: '/assets/img/castleProject/CPT_2M_1T_ZhaoDaniela_Bedroom_Thumbnails.png',
       width: 1920,
       height: 1080
     },
     {
-      src: 'assets/img/castleProject/CPT_2M_1T_ZhaoDaniela_Bedroom_Color_Exploration.png',
+      src: '/assets/img/castleProject/CPT_2M_1T_ZhaoDaniela_Bedroom_Color_Exploration.png',
       width: 1920,
       height: 1080
     },
     {
-      src: 'assets/img/castleProject/CPT_2M_1T_ZhaoDaniela_Bedroom_Render.png',
+      src: '/assets/img/castleProject/CPT_2M_1T_ZhaoDaniela_Bedroom_Render.png',
       width: 1920,
       height: 1080
     },
@@ -189,22 +189,22 @@ const CastleDetails = () => {
 
   const LibraryImages = [
     {
-      src: 'assets/img/castleProject/CPT_2M_1T_ZhaoDaniela_Library_Cover.png',
+      src: '/assets/img/castleProject/CPT_2M_1T_ZhaoDaniela_Library_Cover.png',
       width: 1920,
       height: 1080
     },
     {
-      src: 'assets/img/castleProject/CPT_2M_1T_ZhaoDaniela_Library_Thumbnails.png',
+      src: '/assets/img/castleProject/CPT_2M_1T_ZhaoDaniela_Library_Thumbnails.png',
       width: 1920,
       height: 1080
     },
     {
-      src: 'assets/img/castleProject/CPT_2M_1T_ZhaoDaniela_Library_Color_Exploration.png',
+      src: '/assets/img/castleProject/CPT_2M_1T_ZhaoDaniela_Library_Color_Exploration.png',
       width: 1920,
       height: 1080
     },
     {
-      src: 'assets/img/castleProject/CPT_2M_1T_ZhaoDaniela_Library_Render.png',
+      src: '/assets/img/castleProject/CPT_2M_1T_ZhaoDaniela_Library_Render.png',
       width: 1920,
       height: 1080
     },
@@ -212,27 +212,27 @@ const CastleDetails = () => {
 
   const Character3DImages = [
     {
-      src: 'assets/img/castleProject/CPT_2M_1T_ZhaoDaniela_3d_Cover.png',
+      src: '/assets/img/castleProject/CPT_2M_1T_ZhaoDaniela_3d_Cover.png',
       width: 1920,
       height: 1080
     },
     {
-      src: 'assets/img/castleProject/CPT_2M_1T_ZhaoDaniela_3d_Process_1.png',
+      src: '/assets/img/castleProject/CPT_2M_1T_ZhaoDaniela_3d_Process_1.png',
       width: 1920,
       height: 1080
     },
     {
-      src: 'assets/img/castleProject/CPT_2M_1T_ZhaoDaniela_3d_Process_2.png',
+      src: '/assets/img/castleProject/CPT_2M_1T_ZhaoDaniela_3d_Process_2.png',
       width: 1920,
       height: 1080
     },
     // {
-    //   src: 'assets/img/castleProject/CPT_2M_1T_ZhaoDaniela_3d_Process_3.png',
+    //   src: '/assets/img/castleProject/CPT_2M_1T_ZhaoDaniela_3d_Process_3.png',
     //   width: 1920,
     //   height: 1080
     // },
     {
-      src: 'assets/img/castleProject/Katrina_Render_Final.png',
+      src: '/assets/img/castleProject/Katrina_Render_Final.png',
       width: 1920,
       height: 1080
     },
@@ -284,7 +284,7 @@ const CastleDetails = () => {
         <PhotoAlbum photos={Character3DImages} layout="rows" onClick={({index}) => {onPhotoClick(Character3DImages, index)}} />
 
         <div>
-          <video src="assets/img/castleProject/TURN_AROUND_KATRINA.mp4" controls />
+          <video src="//assets/img/castleProject/TURN_AROUND_KATRINA.mp4" controls />
         </div>
         <div>
           {t('PROJECTS.CASTLE.3D_credits')}

@@ -1,4 +1,5 @@
 import "./Projects.scss";
+import "../home/Home.scss";
 import { useTranslation } from "react-i18next";
 import { NAV_SECTIONS } from "../../config/constants";
 import ProjectList from "../../components/projectList/ProjectList";
@@ -23,6 +24,9 @@ const Projects = () => {
   return (
     <>
       <HeaderBack />
+      <div className="background-wrapper general-bkg">
+        <img src="/assets/img/Portfolio_bkg.png" alt="bkg_image" />
+      </div>
       <div id={NAV_SECTIONS[2].id} className="section-wrapper projects-wrapper">
         <div className="project-list-container">
           <div className="project-list">

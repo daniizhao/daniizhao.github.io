@@ -36,7 +36,7 @@ const PortfolioDetails = () => {
             {t('PROJECTS.PORTFOLIO.SOLUTION_1')}
           </div>
           <div>
-            <img src="assets/img/potfolio/colors.png" alt="website_color_palette" />
+            <img src="/assets/img/potfolio/colors.png" alt="website_color_palette" />
           </div>
         </div>
         <div className="project-detail-column">
@@ -45,10 +45,10 @@ const PortfolioDetails = () => {
           </div>
           <div className="project-detail-row">
             <div>
-              <img src="assets/img/potfolio/first-idea.png" alt="first_idea" />
+              <img src="/assets/img/potfolio/first-idea.png" alt="first_idea" />
             </div>
             <div>
-              <img src="assets/img/potfolio/second-idea.png" alt="second_idea" />
+              <img src="/assets/img/potfolio/second-idea.png" alt="second_idea" />
             </div>
           </div>
         </div>
@@ -58,10 +58,10 @@ const PortfolioDetails = () => {
           </div>
           <div className="project-detail-row">
             <div>
-              <img src="assets/img/potfolio/structure.png" alt="final_structure" />
+              <img src="/assets/img/potfolio/structure.png" alt="final_structure" />
             </div>
             <div>
-              <img src="assets/img/potfolio/FinalWebsite.png" alt="final_result" />
+              <img src="/assets/img/potfolio/FinalWebsite.png" alt="final_result" />
             </div>
           </div>
         </div>

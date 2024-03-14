@@ -81,6 +81,15 @@
     "TITLE": "Projects",
     "TECH_TITLE": "Technical projects",
     "CREATIVE_TITLE": "Creative projects",
+    "CATEGORIES": {
+      "CHARACTER": "Character Design",
+      "CREATURE": "Creature Design",
+      "PROP": "Prop Design",
+      "ENVIRONMENT": "Environment Design",
+      "3D": "3D",
+      "TRADITONAL": "Traditional Illustrations",
+      "DIGITAL": "Digital Illustrations"
+    },
     "TAGS": {
       "DESIGN": "Design",
       "DEVELOPMENT": "Development",

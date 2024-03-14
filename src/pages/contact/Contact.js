@@ -41,7 +41,7 @@ const Contact = () => {
   return (
     <div id={NAV_SECTIONS[2].id} className="section-wrapper contact-wrapper">
       <div className="background-wrapper">
-        <img id='contactImg' src="assets/img/Contact_bkg.png" alt="bkg_image" />
+        <img id='contactImg' src="/assets/img/Contact_bkg.png" alt="bkg_image" />
         <div className="bkg-overlay"></div>
       </div>
       <div className="section-title">

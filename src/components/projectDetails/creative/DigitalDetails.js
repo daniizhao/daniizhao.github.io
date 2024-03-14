@@ -14,22 +14,22 @@ const DigitalDetails = () => {
 
   const SketchesPhotos = [
     {
-      src: 'assets/img/artworks/sketches_Hands.png',
+      src: '/assets/img/artworks/sketches_Hands.png',
       width: 1107,
       height: 761
     },
     {
-      src: 'assets/img/artworks/sketches_heads.png',
+      src: '/assets/img/artworks/sketches_heads.png',
       width: 1081,
       height: 761
     },
     {
-      src: 'assets/img/artworks/sketches.png',
+      src: '/assets/img/artworks/sketches.png',
       width: 1920,
       height: 1080
     },
     {
-      src: 'assets/img/artworks/sketches_2.png',
+      src: '/assets/img/artworks/sketches_2.png',
       width: 1920,
       height: 1080
     },
@@ -37,32 +37,32 @@ const DigitalDetails = () => {
   
   const ArtworksPhotos = [
     {
-      src: 'assets/img/artworks/alone.png',
+      src: '/assets/img/artworks/alone.png',
       width: 2000,
       height: 1500
     },
     {
-      src: 'assets/img/artworks/portraitEmerald.png',
+      src: '/assets/img/artworks/portraitEmerald.png',
       width: 1500,
       height: 2000
     },
     {
-      src: 'assets/img/artworks/vampire.png',
+      src: '/assets/img/artworks/vampire.png',
       width: 1080,
       height: 1386
     },
     {
-      src: 'assets/img/artworks/yonaSpelling.png',
+      src: '/assets/img/artworks/yonaSpelling.png',
       width: 2000,
       height: 1600
     },
     {
-      src: 'assets/img/artworks/AstridSheathe.png',
+      src: '/assets/img/artworks/AstridSheathe.png',
       width: 1080,
       height: 1920
     },
     {
-      src: 'assets/img/artworks/mononoke.png',
+      src: '/assets/img/artworks/mononoke.png',
       width: 874,
       height: 1240
     },
@@ -70,17 +70,17 @@ const DigitalDetails = () => {
   
   const ChallengesPhotos = [
     {
-      src: 'assets/img/artworks/sailormoonredraw.png',
+      src: '/assets/img/artworks/sailormoonredraw.png',
       width: 2000,
       height: 1500
     },
     {
-      src: 'assets/img/artworks/crosshatching.png',
+      src: '/assets/img/artworks/crosshatching.png',
       width: 1600,
       height: 2000
     },
     {
-      src: 'assets/img/artworks/JustineFlorentinoChallenge.png',
+      src: '/assets/img/artworks/JustineFlorentinoChallenge.png',
       width: 1600,
       height: 2000
     },
@@ -110,9 +110,9 @@ const DigitalDetails = () => {
   return (
     <div className="project-detail-wrapper">
       <div className="project-detail-column">
-        <div>
+        {/* <div>
           {t('PROJECTS.DIGITAL.CONTEXT')}
-        </div>
+        </div> */}
         <div className="project-detail-subtitle">
           {t('PROJECTS.DIGITAL.SKETCHES')}
         </div>

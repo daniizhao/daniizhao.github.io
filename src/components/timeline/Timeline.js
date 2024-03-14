@@ -85,7 +85,7 @@ const TimelineComponent = () => {
         <div className='element-content-title' onClick={() => {openLink(FX_LINK)}}>
           {t('ABOUTME.STORY.FX_ANIMATION.TITLE')}
           <div className='logo-container'>
-            <img src="assets/img/Logo_FX.png" alt='FXAnimation_logo' />
+            <img src="/assets/img/Logo_FX.png" alt='FXAnimation_logo' />
           </div>
         </div>
         <div className='element-content-subtitle'>
@@ -107,7 +107,7 @@ const TimelineComponent = () => {
         <div className='element-content-title' onClick={() => {openLink(SLASH_LINK)}}>
           {t('ABOUTME.STORY.SLASHMOBILITY.TITLE')}
           <div className='logo-container'>
-            <img src="assets/img/Logo_Slash.png" alt='SlashMobility_logo' />
+            <img src="/assets/img/Logo_Slash.png" alt='SlashMobility_logo' />
           </div>
         </div>
         <div className='element-content-subtitle'>
@@ -129,7 +129,7 @@ const TimelineComponent = () => {
         <div className='element-content-title' onClick={() => {openLink(UPC_LINK)}}>
           {t('ABOUTME.STORY.COLLEGE_DEGREE.TITLE')}
           <div className='logo-container'>
-            <img src="assets/img/Logo_UPC.png" alt='UPC_logo' />
+            <img src="/assets/img/Logo_UPC.png" alt='UPC_logo' />
           </div>
         </div>
         <div className='element-content-subtitle'>

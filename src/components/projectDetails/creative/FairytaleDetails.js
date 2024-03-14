@@ -14,32 +14,32 @@ const FairyTaleDetails = () => {
 
   const RedHoodImages = [
     {
-      src: 'assets/img/fairyTale/CPT_1M_3T_ZhaoDaniela_Character.png',
+      src: '/assets/img/fairyTale/CPT_1M_3T_ZhaoDaniela_Character.png',
       width: 1920,
       height: 1080
     },
     {
-      src: 'assets/img/fairyTale/CPT_1M_3T_ZhaoDaniela_Character_Exploration.png',
+      src: '/assets/img/fairyTale/CPT_1M_3T_ZhaoDaniela_Character_Exploration.png',
       width: 1920,
       height: 1080
     },
     {
-      src: 'assets/img/fairyTale/CPT_1M_3T_ZhaoDaniela_Character_ColorExploration.png',
+      src: '/assets/img/fairyTale/CPT_1M_3T_ZhaoDaniela_Character_ColorExploration.png',
       width: 1920,
       height: 1080
     },
     {
-      src: 'assets/img/fairyTale/CPT_1M_3T_ZhaoDaniela_Character_Atittude.png',
+      src: '/assets/img/fairyTale/CPT_1M_3T_ZhaoDaniela_Character_Atittude.png',
       width: 1920,
       height: 1080
     },
     {
-      src: 'assets/img/fairyTale/CPT_1M_3T_ZhaoDaniela_Character_TurnAround.png',
+      src: '/assets/img/fairyTale/CPT_1M_3T_ZhaoDaniela_Character_TurnAround.png',
       width: 1920,
       height: 1080
     },
     {
-      src: 'assets/img/fairyTale/CPT_1M_3T_ZhaoDaniela_Character_Callouts.png',
+      src: '/assets/img/fairyTale/CPT_1M_3T_ZhaoDaniela_Character_Callouts.png',
       width: 1920,
       height: 1080
     },
@@ -47,32 +47,32 @@ const FairyTaleDetails = () => {
 
   const WuKongImages = [
     {
-      src: 'assets/img/fairyTale/CPT_1M_3T_ZhaoDaniela_Creature.png',
+      src: '/assets/img/fairyTale/CPT_1M_3T_ZhaoDaniela_Creature.png',
       width: 1920,
       height: 1080
     },
     {
-      src: 'assets/img/fairyTale/CPT_1M_3T_ZhaoDaniela_Creature_Exploration.png',
+      src: '/assets/img/fairyTale/CPT_1M_3T_ZhaoDaniela_Creature_Exploration.png',
       width: 1920,
       height: 1080
     },
     {
-      src: 'assets/img/fairyTale/CPT_1M_3T_ZhaoDaniela_Creature_ColorExploration.png',
+      src: '/assets/img/fairyTale/CPT_1M_3T_ZhaoDaniela_Creature_ColorExploration.png',
       width: 1920,
       height: 1080
     },
     {
-      src: 'assets/img/fairyTale/CPT_1M_3T_ZhaoDaniela_Creature_TurnAround.png',
+      src: '/assets/img/fairyTale/CPT_1M_3T_ZhaoDaniela_Creature_TurnAround.png',
       width: 1920,
       height: 1080
     },
     {
-      src: 'assets/img/fairyTale/CPT_1M_3T_ZhaoDaniela_Creature_Attitude.png',
+      src: '/assets/img/fairyTale/CPT_1M_3T_ZhaoDaniela_Creature_Attitude.png',
       width: 1920,
       height: 1080
     },
     {
-      src: 'assets/img/fairyTale/CPT_1M_3T_ZhaoDaniela_Creature_Callouts.png',
+      src: '/assets/img/fairyTale/CPT_1M_3T_ZhaoDaniela_Creature_Callouts.png',
       width: 1920,
       height: 1080
     }
@@ -80,27 +80,27 @@ const FairyTaleDetails = () => {
 
   const PropImages = [
     {
-      src: 'assets/img/fairyTale/CPT_1M_3T_ZhaoDaniela_Prop.png',
+      src: '/assets/img/fairyTale/CPT_1M_3T_ZhaoDaniela_Prop.png',
       width: 1920,
       height: 1080
     },
     {
-      src: 'assets/img/fairyTale/CPT_1M_3T_ZhaoDaniela_Prop_ColorExploration.png',
+      src: '/assets/img/fairyTale/CPT_1M_3T_ZhaoDaniela_Prop_ColorExploration.png',
       width: 1920,
       height: 1080
     },
     {
-      src: 'assets/img/fairyTale/CPT_1M_3T_ZhaoDaniela_Prop_Exploration.png',
+      src: '/assets/img/fairyTale/CPT_1M_3T_ZhaoDaniela_Prop_Exploration.png',
       width: 1920,
       height: 1080
     },
     {
-      src: 'assets/img/fairyTale/CPT_1M_3T_ZhaoDaniela_Prop_TurnAround.png',
+      src: '/assets/img/fairyTale/CPT_1M_3T_ZhaoDaniela_Prop_TurnAround.png',
       width: 1920,
       height: 1080
     },
     {
-      src: 'assets/img/fairyTale/CPT_1M_3T_ZhaoDaniela_Prop_Callouts.png',
+      src: '/assets/img/fairyTale/CPT_1M_3T_ZhaoDaniela_Prop_Callouts.png',
       width: 1920,
       height: 1080
     }
@@ -108,27 +108,27 @@ const FairyTaleDetails = () => {
 
   const EnvirontmentImages = [
     {
-      src: 'assets/img/fairyTale/CPT_1M_3T_ZhaoDaniela_Environment_Render_Presentation.png',
+      src: '/assets/img/fairyTale/CPT_1M_3T_ZhaoDaniela_Environment_Render_Presentation.png',
       width: 1920,
       height: 1080
     },
     {
-      src: 'assets/img/fairyTale/CPT_1M_3T_ZhaoDaniela_Environment_Exploration.png',
+      src: '/assets/img/fairyTale/CPT_1M_3T_ZhaoDaniela_Environment_Exploration.png',
       width: 1920,
       height: 1080
     },
     {
-      src: 'assets/img/fairyTale/CPT_1M_3T_ZhaoDaniela_Environment_ColorExploration.png',
+      src: '/assets/img/fairyTale/CPT_1M_3T_ZhaoDaniela_Environment_ColorExploration.png',
       width: 1920,
       height: 1080
     },
     {
-      src: 'assets/img/fairyTale/CPT_1M_3T_ZhaoDaniela_Environment_Render_View1.png',
+      src: '/assets/img/fairyTale/CPT_1M_3T_ZhaoDaniela_Environment_Render_View1.png',
       width: 1920,
       height: 1080
     },
     {
-      src: 'assets/img/fairyTale/CPT_1M_3T_ZhaoDaniela_Environment_Render_View2.png',
+      src: '/assets/img/fairyTale/CPT_1M_3T_ZhaoDaniela_Environment_Render_View2.png',
       width: 1920,
       height: 1080
     }
@@ -136,17 +136,17 @@ const FairyTaleDetails = () => {
 
   const Character3DImages = [
     {
-      src: 'assets/img/fairyTale/CPT_1M_3T_ZhaoDaniela_3D_Render_Presentation.png',
+      src: '/assets/img/fairyTale/CPT_1M_3T_ZhaoDaniela_3D_Render_Presentation.png',
       width: 1920,
       height: 1080
     },
     {
-      src: 'assets/img/fairyTale/CPT_1M_3T_ZhaoDaniela_3D_process.png',
+      src: '/assets/img/fairyTale/CPT_1M_3T_ZhaoDaniela_3D_process.png',
       width: 1920,
       height: 1080
     },
     {
-      src: 'assets/img/fairyTale/CPT_1M_3T_ZhaoDaniela_3D_finalTurnAround.png',
+      src: '/assets/img/fairyTale/CPT_1M_3T_ZhaoDaniela_3D_finalTurnAround.png',
       width: 1920,
       height: 1080
     },

@@ -2,10 +2,6 @@ import "./ProjectList.scss";
 import ProjectCard from "../projectCard/ProjectCard";
 import { useTranslation } from "react-i18next";
 
-import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/css';
-import 'swiper/css/pagination';
-
 const ProjectList = (props) => {
 
   const { t } = useTranslation();
