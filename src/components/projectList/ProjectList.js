@@ -11,23 +11,21 @@ const ProjectList = (props) => {
   const { t } = useTranslation();
 
   return (
-    <Swiper
-      slidesPerView='auto'
-    >
+    <div className="project-list-wrapper">
       {
         props.list.map((item) => {
           return (
-            <SwiperSlide key={`project-${item.id}`} >
+            <div key={`project-${item.id}`} className="project-card-container">
               <div onClick={() => {
                 props.handleProjectClick(item);
               }}>
                 <ProjectCard img={item.coverImage} projectName={t(item.titleKey)} tags={item.tagsKey}/>
               </div>
-            </SwiperSlide>
+            </div>
           )
         })
       }
-    </Swiper>
+    </div>
   )
 };
 

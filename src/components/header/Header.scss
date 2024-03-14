@@ -35,7 +35,16 @@
     align-items: center;
     gap: 16px;
   }
+
+  &.back {
+    justify-content: space-between;
+    .back-icon-container {
+      height: 32px;
+      cursor: pointer;
+    }
+  }
 }
+
 .navItem {
   cursor: pointer;
   text-decoration: none;

@@ -7,10 +7,31 @@
   }
 }
 
+.project-list-wrapper {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.project-card-container {
+  width: 40%;
+  padding: 20px;
+}
+
 @media (max-width: 768px) {
   .swiper {
     .swiper-slide {
       width: 60%;
     }
+  }
+
+  .project-list-wrapper {
+    flex-wrap: nowrap;
+    flex-direction: column;
+  }
+
+  .project-card-container {
+    width: 90%;
   }
 }
