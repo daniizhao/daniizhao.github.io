@@ -2,6 +2,7 @@ import "./Home.scss";
 import Header from "../../components/header/Header";
 import { NAV_SECTIONS } from "../../config/constants";
 import { Element } from "react-scroll";
+import Footer from "../../components/footer/Footer";
 
 const Home = () => {
   return (
@@ -21,6 +22,7 @@ const Home = () => {
           })
         }
       </div>
+      <Footer />
     </div>
   )
 }

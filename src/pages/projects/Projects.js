@@ -9,6 +9,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import Icon from "../../components/icon/Icon";
 import { Modal } from "@mui/material";
 import HeaderBack from "../../components/header/HeaderBack";
+import Footer from "../../components/footer/Footer";
 
 const Projects = () => {
 
@@ -22,18 +23,21 @@ const Projects = () => {
   };
 
   return (
-    <>
-      <HeaderBack />
-      <div className="background-wrapper general-bkg">
-        <img src="/assets/img/Portfolio_bkg.png" alt="bkg_image" />
-      </div>
-      <div id={NAV_SECTIONS[2].id} className="section-wrapper projects-wrapper">
-        <div className="project-list-container">
-          <div className="project-list">
-            <ProjectList list={TECH_PROJECTS} handleProjectClick={handleProjectClick} selectedProject={selectedProject} />	
+    <div className="project-content">
+      <div>
+        <HeaderBack />
+        <div className="background-wrapper general-bkg">
+          <img src="/assets/img/Portfolio_bkg.png" alt="bkg_image" />
+        </div>
+        <div id={NAV_SECTIONS[2].id} className="section-wrapper projects-wrapper">
+          <div className="project-list-container">
+            <div className="project-list">
+              <ProjectList list={TECH_PROJECTS} handleProjectClick={handleProjectClick} selectedProject={selectedProject} />	
+            </div>
           </div>
         </div>
       </div>
+      <Footer />
       <AnimatePresence>
         {
           selectedProject &&
@@ -90,7 +94,7 @@ const Projects = () => {
           </Modal>
         }
       </AnimatePresence>
-    </>
+    </div>
   )
 }
 

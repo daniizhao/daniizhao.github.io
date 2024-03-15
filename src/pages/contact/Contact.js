@@ -85,11 +85,6 @@ const Contact = () => {
           })
         }
       </div>
-      <div className="footer-wrapper">
-        <div>
-          {`Made with ♡ in 2023`} 
-        </div>
-      </div>
     </div>
   )
 }

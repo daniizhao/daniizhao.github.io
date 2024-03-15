@@ -4,6 +4,7 @@ import { useTranslation } from "react-i18next";
 import HeaderBack from "../../components/header/HeaderBack";
 import { Tab, TabList, TabPanel, Tabs } from "../../utils/tabs.js";
 import { Outlet } from "react-router-dom";
+import Footer from "../../components/footer/Footer.js";
 
 const Portfolio = (props) => {
 
@@ -35,6 +36,7 @@ const Portfolio = (props) => {
           </Tabs>
         </div>
       </div>
+      <Footer />
     </>
   )
 };
