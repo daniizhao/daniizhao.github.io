@@ -11,33 +11,35 @@ const Portfolio = (props) => {
   const { t } = useTranslation();
 
   return (
-    <>
-      <HeaderBack />
+    <div className="portfolio-wrapper">
       <div className="background-wrapper general-bkg">
         <img src="/assets/img/Portfolio_bkg.png" alt="bkg_image" />
       </div>
-      <div className="portfolio-wrapper">
-        <div className="portfolio-content">
-          <Tabs>
-            <TabList aria-label="Portfolio">
-              <Tab to="/portfolio/character">{t('PROJECTS.CATEGORIES.CHARACTER')}</Tab>
-              <Tab to="/portfolio/creature">{t('PROJECTS.CATEGORIES.CREATURE')}</Tab>
-              <Tab to="/portfolio/prop">{t('PROJECTS.CATEGORIES.PROP')}</Tab>
-              <Tab to="/portfolio/environment">{t('PROJECTS.CATEGORIES.ENVIRONMENT')}</Tab>
-              <Tab to="/portfolio/3d">{t('PROJECTS.CATEGORIES.3D')}</Tab>
-              <Tab to="/portfolio/digital">{t('PROJECTS.CATEGORIES.DIGITAL')}</Tab>
-              <Tab to="/portfolio/traditional">{t('PROJECTS.CATEGORIES.TRADITONAL')}</Tab>
-            </TabList>
-            <div className="panels">
-              <TabPanel>
-                <Outlet />
-              </TabPanel>
-            </div>
-          </Tabs>
+      <div>
+        <HeaderBack />
+        <div className="portfolio-container">
+          <div className="portfolio-content">
+            <Tabs>
+              <TabList aria-label="Portfolio">
+                <Tab to="/portfolio/character">{t('PROJECTS.CATEGORIES.CHARACTER')}</Tab>
+                <Tab to="/portfolio/creature">{t('PROJECTS.CATEGORIES.CREATURE')}</Tab>
+                <Tab to="/portfolio/prop">{t('PROJECTS.CATEGORIES.PROP')}</Tab>
+                <Tab to="/portfolio/environment">{t('PROJECTS.CATEGORIES.ENVIRONMENT')}</Tab>
+                <Tab to="/portfolio/3d">{t('PROJECTS.CATEGORIES.3D')}</Tab>
+                <Tab to="/portfolio/digital">{t('PROJECTS.CATEGORIES.DIGITAL')}</Tab>
+                <Tab to="/portfolio/traditional">{t('PROJECTS.CATEGORIES.TRADITONAL')}</Tab>
+              </TabList>
+              <div className="panels">
+                <TabPanel>
+                  <Outlet />
+                </TabPanel>
+              </div>
+            </Tabs>
+          </div>
         </div>
       </div>
       <Footer />
-    </>
+    </div>
   )
 };
 

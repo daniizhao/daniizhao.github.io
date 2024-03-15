@@ -8,6 +8,11 @@ import Portfolio from './pages/portfolio/Portfolio';
 import DigitalDetails from './components/projectDetails/creative/DigitalDetails';
 import TraditionalDetails from './components/projectDetails/creative/TraditionalDetails';
 import Contact from './pages/contact/Contact';
+import CharacterDetails from './components/projectDetails/creative/CharactersDetails';
+import CreatureDetails from './components/projectDetails/creative/CreatureDetails';
+import PropDetails from './components/projectDetails/creative/PropDetails';
+import EnvironmentDetails from './components/projectDetails/creative/EnvironmentDetails';
+import Details3D from './components/projectDetails/creative/3dDetails';
 
 export const IsMobileSizeContext = createContext(window.innerWidth <= MOBILE_SIZE);
 
@@ -34,11 +39,11 @@ function App() {
         <Route path='/projects' element={<Projects />} />
         <Route path='/portfolio' element={<Portfolio />} >
           <Route index element={<Contact />} />
-          <Route path='/portfolio/character' element={<Contact />} />
-          <Route path='/portfolio/creature' element={<Contact />} />
-          <Route path='/portfolio/prop' element={<Contact />} />
-          <Route path='/portfolio/environment' element={<Contact />} />
-          <Route path='/portfolio/3d' element={<Contact />} />
+          <Route path='/portfolio/character' element={<CharacterDetails />} />
+          <Route path='/portfolio/creature' element={<CreatureDetails />} />
+          <Route path='/portfolio/prop' element={<PropDetails />} />
+          <Route path='/portfolio/environment' element={<EnvironmentDetails />} />
+          <Route path='/portfolio/3d' element={<Details3D />} />
           <Route path='/portfolio/traditional' element={<TraditionalDetails />} />
           <Route path='/portfolio/digital' element={<DigitalDetails />} />
         </Route>

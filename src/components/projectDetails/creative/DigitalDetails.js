@@ -1,5 +1,4 @@
 import Gallery from "../../gallery/Gallery";
-import "../ProjectDetails.scss";
 
 const DigitalDetails = () => {
 

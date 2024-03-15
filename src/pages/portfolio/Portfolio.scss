@@ -1,4 +1,11 @@
 .portfolio-wrapper {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.portfolio-container {
   width: 100%;
   height: 100%;
   margin: 64px 0 0;

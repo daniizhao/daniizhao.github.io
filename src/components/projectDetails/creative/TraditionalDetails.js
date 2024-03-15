@@ -1,4 +1,3 @@
-import "../ProjectDetails.scss";
 import Gallery from "../../gallery/Gallery";
 
 const TraditionalDetails = () => {
