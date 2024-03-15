@@ -1,17 +1,74 @@
 import "../ProjectDetails.scss";
-
-import { useTranslation } from "react-i18next";
-import { useCallback, useEffect, useState } from "react";
-import PhotoAlbum from "react-photo-album";
-import Lightbox from "yet-another-react-lightbox";
-import "yet-another-react-lightbox/styles.css";
-import Zoom from "yet-another-react-lightbox/plugins/zoom";
-import { ESC_KEY } from "../../../utils/keyboadEvents";
+import Gallery from "../../gallery/Gallery";
 
 const TraditionalDetails = () => {
 
-  const SketchbookPhotos = [
+  const TraditionalArtwork = [
     {
+      src: '/assets/img/artworks/traditional.jpg',
+      width: 1205,
+      height: 1719
+    },
+    {
+      src: '/assets/img/artworks/traditional_0001.jpg',
+      width: 1205,
+      height: 1719
+    },
+    {
+      src: '/assets/img/artworks/traditional_0002.jpg',
+      width: 1205,
+      height: 1719
+    },
+    {
+      src: '/assets/img/artworks/traditional_0003.jpg',
+      width: 1205,
+      height: 1719
+    },
+    {
+      src: '/assets/img/artworks/traditional_0004.jpg',
+      width: 1205,
+      height: 1719
+    },
+    {
+      src: '/assets/img/artworks/traditional_0005.jpg',
+      width: 1205,
+      height: 1719
+    },
+    {
+      src: '/assets/img/artworks/traditional_0006.jpg',
+      width: 1205,
+      height: 1719
+    },
+    {
+      src: '/assets/img/artworks/traditional_0007.jpg',
+      width: 1205,
+      height: 1719
+    },
+    {
+      src: '/assets/img/artworks/traditional_0008.jpg',
+      width: 1205,
+      height: 1719
+    },
+    {
+      src: '/assets/img/artworks/traditional_0029.jpg',
+      width: 1719,
+      height: 1205
+    },
+    {
+      src: '/assets/img/artworks/traditional_0025.jpg',
+      width: 1205,
+      height: 1719
+    },
+    {
+      src: '/assets/img/artworks/traditional_0027.jpg',
+      width: 1205,
+      height: 1719
+    },
+    {
+      src: '/assets/img/artworks/traditional_0028.jpg',
+      width: 1205,
+      height: 1719
+    },{
       src: '/assets/img/artworks/sketchbook.jpg',
       width: 1173,
       height: 1161
@@ -77,21 +134,6 @@ const TraditionalDetails = () => {
       height: 828
     },
     {
-      src: '/assets/img/artworks/sketchbook_0032.jpg',
-      width: 1211,
-      height: 1431
-    },
-    {
-      src: '/assets/img/artworks/sketchbook_0036.jpg',
-      width: 819,
-      height: 1234
-    },
-    {
-      src: '/assets/img/artworks/sketchbook_0042.jpg',
-      width: 1083,
-      height: 1178
-    },
-    {
       src: '/assets/img/artworks/sketchbook_0043.jpg',
       width: 1315,
       height: 1926
@@ -100,87 +142,6 @@ const TraditionalDetails = () => {
       src: '/assets/img/artworks/sketchbook_0044.jpg',
       width: 863,
       height: 1303
-    },
-    {
-      src: '/assets/img/artworks/sketchbook_0047.jpg',
-      width: 861,
-      height: 1355
-    },
-  ];
-
-  const ArtworksPhotos = [
-    {
-      src: '/assets/img/artworks/traditional.jpg',
-      width: 1205,
-      height: 1719
-    },
-    {
-      src: '/assets/img/artworks/traditional_0001.jpg',
-      width: 1205,
-      height: 1719
-    },
-    {
-      src: '/assets/img/artworks/traditional_0002.jpg',
-      width: 1205,
-      height: 1719
-    },
-    {
-      src: '/assets/img/artworks/traditional_0003.jpg',
-      width: 1205,
-      height: 1719
-    },
-    {
-      src: '/assets/img/artworks/traditional_0004.jpg',
-      width: 1205,
-      height: 1719
-    },
-    {
-      src: '/assets/img/artworks/traditional_0005.jpg',
-      width: 1205,
-      height: 1719
-    },
-    {
-      src: '/assets/img/artworks/traditional_0006.jpg',
-      width: 1205,
-      height: 1719
-    },
-    {
-      src: '/assets/img/artworks/traditional_0007.jpg',
-      width: 1205,
-      height: 1719
-    },
-    {
-      src: '/assets/img/artworks/traditional_0008.jpg',
-      width: 1205,
-      height: 1719
-    },
-    {
-      src: '/assets/img/artworks/traditional_0029.jpg',
-      width: 1719,
-      height: 1205
-    },
-    {
-      src: '/assets/img/artworks/traditional_0025.jpg',
-      width: 1205,
-      height: 1719
-    },
-    {
-      src: '/assets/img/artworks/traditional_0027.jpg',
-      width: 1205,
-      height: 1719
-    },
-    {
-      src: '/assets/img/artworks/traditional_0028.jpg',
-      width: 1205,
-      height: 1719
-    },
-  ];
-
-  const LiveDrawings = [
-    {
-      src: '/assets/img/artworks/Modelo_20230203_003.jpg',
-      width: 1807,
-      height: 1578
     },
     {
       src: '/assets/img/artworks/Modelo_20230203_006.jpg',
@@ -234,53 +195,8 @@ const TraditionalDetails = () => {
     },
   ];
 
-  const { t } = useTranslation();
-
-  const [selectedPhoto, setSelectedPhoto] = useState(null);
-  const onPhotoClick = (photoArray, index) => {
-    setSelectedPhoto({
-      photos: photoArray,
-      index: index
-    });
-  };
-
-  const handleEsc = useCallback((event) => {
-    if (event.key === ESC_KEY && selectedPhoto !== null) {
-      event.stopPropagation();
-    }
-  }, [selectedPhoto]);
-  
-  useEffect(() => {
-    document.addEventListener('keydown', handleEsc, true);
-    return  () => {
-      document.removeEventListener('keydown', handleEsc, true);
-    }
-  }, [handleEsc]);
-
   return (
-    <div className="project-detail-wrapper">
-      <div className="project-detail-column">
-        {/* <div>
-          {t('PROJECTS.TRADITIONAL.CONTEXT')}
-        </div>
-        <div className="project-detail-subtitle">
-          {t('PROJECTS.TRADITIONAL.SKETCHBOOK')}
-        </div> */}
-        <PhotoAlbum photos={SketchbookPhotos} layout="rows" onClick={({index}) => {onPhotoClick(SketchbookPhotos, index)}} />
-        <div className="project-detail-subtitle">
-          {t('PROJECTS.TRADITIONAL.ARTWORKS')}
-        </div>
-        <PhotoAlbum photos={ArtworksPhotos} layout="rows" onClick={({index}) => {onPhotoClick(ArtworksPhotos, index)}} />
-        <div className="project-detail-subtitle">
-          {t('PROJECTS.TRADITIONAL.LIVE')}
-        </div>
-        <PhotoAlbum photos={LiveDrawings} layout="rows" onClick={({index}) => {onPhotoClick(LiveDrawings, index)}} />
-      </div>
-      {
-        selectedPhoto &&
-        <Lightbox slides={selectedPhoto.photos} open={selectedPhoto} index={selectedPhoto.index} close={() => {setSelectedPhoto(null)}} plugins={[Zoom]} carousel={{finite: true}} />
-      }
-    </div>
+    <Gallery images={TraditionalArtwork} />
   )
 };
 

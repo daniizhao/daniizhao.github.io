@@ -24,8 +24,8 @@ const Portfolio = (props) => {
               <Tab to="/portfolio/prop">{t('PROJECTS.CATEGORIES.PROP')}</Tab>
               <Tab to="/portfolio/environment">{t('PROJECTS.CATEGORIES.ENVIRONMENT')}</Tab>
               <Tab to="/portfolio/3d">{t('PROJECTS.CATEGORIES.3D')}</Tab>
-              <Tab to="/portfolio/traditional">{t('PROJECTS.CATEGORIES.TRADITONAL')}</Tab>
               <Tab to="/portfolio/digital">{t('PROJECTS.CATEGORIES.DIGITAL')}</Tab>
+              <Tab to="/portfolio/traditional">{t('PROJECTS.CATEGORIES.TRADITONAL')}</Tab>
             </TabList>
             <div className="panels">
               <TabPanel>

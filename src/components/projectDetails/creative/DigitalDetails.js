@@ -1,41 +1,9 @@
-import { useTranslation } from "react-i18next";
+import Gallery from "../../gallery/Gallery";
 import "../ProjectDetails.scss";
-
-import { useCallback, useEffect, useState } from "react";
-import PhotoAlbum from "react-photo-album";
-import Lightbox from "yet-another-react-lightbox";
-import "yet-another-react-lightbox/styles.css";
-import Zoom from "yet-another-react-lightbox/plugins/zoom";
-import { ESC_KEY } from "../../../utils/keyboadEvents";
 
 const DigitalDetails = () => {
 
-  const { t } = useTranslation();
-
-  const SketchesPhotos = [
-    {
-      src: '/assets/img/artworks/sketches_Hands.png',
-      width: 1107,
-      height: 761
-    },
-    {
-      src: '/assets/img/artworks/sketches_heads.png',
-      width: 1081,
-      height: 761
-    },
-    {
-      src: '/assets/img/artworks/sketches.png',
-      width: 1920,
-      height: 1080
-    },
-    {
-      src: '/assets/img/artworks/sketches_2.png',
-      width: 1920,
-      height: 1080
-    },
-  ];
-  
-  const ArtworksPhotos = [
+  const DigitalArtwork = [
     {
       src: '/assets/img/artworks/alone.png',
       width: 2000,
@@ -66,9 +34,6 @@ const DigitalDetails = () => {
       width: 874,
       height: 1240
     },
-  ];
-  
-  const ChallengesPhotos = [
     {
       src: '/assets/img/artworks/sailormoonredraw.png',
       width: 2000,
@@ -83,54 +48,30 @@ const DigitalDetails = () => {
       src: '/assets/img/artworks/JustineFlorentinoChallenge.png',
       width: 1600,
       height: 2000
+    },{
+      src: '/assets/img/artworks/sketches_Hands.png',
+      width: 1107,
+      height: 761
+    },
+    {
+      src: '/assets/img/artworks/sketches_heads.png',
+      width: 1081,
+      height: 761
+    },
+    {
+      src: '/assets/img/artworks/sketches.png',
+      width: 1920,
+      height: 1080
+    },
+    {
+      src: '/assets/img/artworks/sketches_2.png',
+      width: 1920,
+      height: 1080
     },
   ];
 
-  const [selectedPhoto, setSelectedPhoto] = useState(null);
-  const onPhotoClick = (photoArray, index) => {
-    setSelectedPhoto({
-      photos: photoArray,
-      index: index
-    });
-  };
-
-  const handleEsc = useCallback((event) => {
-    if (event.key === ESC_KEY && selectedPhoto !== null) {
-      event.stopPropagation();
-    }
-  }, [selectedPhoto]);
-  
-  useEffect(() => {
-    document.addEventListener('keydown', handleEsc, true);
-    return  () => {
-      document.removeEventListener('keydown', handleEsc, true);
-    }
-  }, [handleEsc]);
-
   return (
-    <div className="project-detail-wrapper">
-      <div className="project-detail-column">
-        {/* <div>
-          {t('PROJECTS.DIGITAL.CONTEXT')}
-        </div> */}
-        <div className="project-detail-subtitle">
-          {t('PROJECTS.DIGITAL.SKETCHES')}
-        </div>
-        <PhotoAlbum photos={SketchesPhotos} layout="rows" onClick={({index}) => {onPhotoClick(SketchesPhotos, index)}} />
-        <div className="project-detail-subtitle">
-          {t('PROJECTS.DIGITAL.ARTWORKS')}
-        </div>
-        <PhotoAlbum photos={ArtworksPhotos} layout="rows" onClick={({index}) => {onPhotoClick(ArtworksPhotos, index)}} />
-        <div className="project-detail-subtitle">
-          {t('PROJECTS.DIGITAL.CHALLENGES')}
-        </div>
-        <PhotoAlbum photos={ChallengesPhotos} layout="rows" onClick={({index}) => {onPhotoClick(ChallengesPhotos, index)}} />
-      </div>
-      {
-        selectedPhoto &&
-        <Lightbox slides={selectedPhoto.photos} open={selectedPhoto} index={selectedPhoto.index} close={() => {setSelectedPhoto(null)}} plugins={[Zoom]} carousel={{finite: true}} />
-      }
-    </div>
+    <Gallery images={DigitalArtwork} />
   )
 };
 
