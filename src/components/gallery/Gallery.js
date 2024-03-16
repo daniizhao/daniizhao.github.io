@@ -14,7 +14,7 @@ const Gallery = (props) => {
     setSelectedPhoto({
       photos: photoArray,
       index: index
-    });
+    }); 
   };
 
   const handleEsc = useCallback((event) => {
