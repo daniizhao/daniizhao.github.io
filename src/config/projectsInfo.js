@@ -481,3 +481,483 @@ export const PROP_PROJECTS = [
     ]} />
   },
 ]
+
+export const ENV_PROJECTS = [
+  {
+    id: `env-budapest`,
+    coverImage: "/assets/img/environments/2M_2T_Environment_Render.png",
+    titleKey: "",
+    detailsComponent: <Gallery items={[
+      {
+        src: '/assets/img/environments/2M_2T_Env_Thumbnails.png',
+        width: 1920,
+        height: 1080
+      },
+      {
+        src: '/assets/img/environments/2M_2T_Env_ColorExploration.png',
+        width: 1920,
+        height: 1080
+      },
+      {
+        src: '/assets/img/environments/2M_2T_Environment_Render.png',
+        width: 1920,
+        height: 1080
+      },
+      {
+        src: '/assets/img/environments/2M_2T_Environment_Render_View1.png',
+        width: 1920,
+        height: 1080
+      },
+      {
+        src: '/assets/img/environments/2M_2T_Environment_Render_View2.png',
+        width: 1920,
+        height: 1080
+      },
+    ]} />
+  },
+  {
+    id: `env-library`,
+    coverImage: "/assets/img/environments/2M_1T_Environment_Library.png",
+    titleKey: "",
+    detailsComponent: <Gallery items ={[
+      {
+        src: '/assets/img/environments/2M_1T_Environment_Library_Exploration.png',
+        width: 1920,
+        height: 1080
+      },
+      {
+        src: '/assets/img/environments/2M_1T_Environment_Library_ColorExploration.png',
+        width: 1920,
+        height: 1080
+      },
+      {
+        src: '/assets/img/environments/2M_1T_Library_Render.png',
+        width: 1920,
+        height: 1080
+      },
+    ]} />
+  },
+  {
+    id: `env-bedroom`,
+    coverImage: "/assets/img/environments/2M_1T_Environment_Bedroom.png",
+    titleKey: "",
+    detailsComponent: <Gallery items={[
+      {
+        src: '/assets/img/environments/2M_1T_Environment_Bedroom_Exploration.png',
+        width: 1920,
+        height: 1080
+      },
+      {
+        src: '/assets/img/environments/2M_1T_Environment_Bedroom_ColorExploration.png',
+        width: 1920,
+        height: 1080
+      },
+      {
+        src: '/assets/img/environments/2M_1T_Bedroom_Render.png',
+        width: 1920,
+        height: 1080
+      },
+    ]} />
+  },
+  {
+    id: `env-lab`,
+    coverImage: "/assets/img/environments/1M_2T_Laboratory_Render_AltView1.png",
+    titleKey: "",
+    detailsComponent: <Gallery items={[
+      {
+        src: '/assets/img/environments/1M_2T_Environment_Exploration.png',
+        width: 1920,
+        height: 1080
+      },
+      {
+        src: '/assets/img/environments/1M_2T_Laboratory_Render.png',
+        width: 1920,
+        height: 1080
+      },
+      {
+        src: '/assets/img/environments/1M_2T_Laboratory_Render_AltView1.png',
+        width: 1920,
+        height: 1080
+      },
+      {
+        src: '/assets/img/environments/1M_2T_Laboratory_Render_AltView2.png',
+        width: 1920,
+        height: 1080
+      },
+      {
+        src: '/assets/img/environments/1M_2T_Laboratory_Render_AltView3.png',
+        width: 1920,
+        height: 1080
+      },
+    ]} />
+  },
+  {
+    id: `env-china`,
+    coverImage: "/assets/img/environments/1M_3T_Environment_Render_View1.png",
+    titleKey: "",
+    detailsComponent: <Gallery items={[
+      {
+        src: '/assets/img/environments/1M_3T_Environment_Exploration.png',
+        width: 1920,
+        height: 1080
+      },
+      {
+        src: '/assets/img/environments/1M_3T_Environment_ColorExploration.png',
+        width: 1920,
+        height: 1080
+      },
+      {
+        src: '/assets/img/environments/1M_3T_Environment_Render_View1.png',
+        width: 1920,
+        height: 1080
+      },
+      {
+        src: '/assets/img/environments/1M_3T_Environment_Render_View2.png',
+        width: 1920,
+        height: 1080
+      },
+      {
+        src: '/assets/img/environments/1M_3T_Environment_Render.png',
+        width: 1920,
+        height: 1080
+      },
+    ]} />
+  },
+]
+
+export const PROJECTS_3D = [
+  {
+    id: `3d-Dexter`,
+    coverImage: "/assets/img/3D/2M_2T_3D_Cover.png",
+    titleKey: "",
+    detailsComponent: <Gallery items={[
+      {
+        src: '/assets/img/3D/2M_2T_3D_AposeTurnaround.png',
+        width: 1920,
+        height: 1080
+      },
+      {
+        src: '/assets/img/3D/2M_2T_Character_Render.png',
+        width: 1080,
+        height: 1920
+      }
+    ]} 
+    videos={[
+      "/assets/img/3D/2M_2T_TurnAround_Clay.mp4",
+      "/assets/img/3D/2M_2T_TurnAround.mp4"
+    ]} />
+  },
+  {
+    id: `3d-Katrina`,
+    coverImage: "/assets/img/3D/2M_1T_Character_Cover.png",
+    titleKey: "",
+    detailsComponent: <Gallery items ={[
+      {
+        src: '/assets/img/3D/2M_1T_3D_process.png',
+        width: 1920,
+        height: 1080
+      },
+      {
+        src: '/assets/img/3D/2M_1T_Render_Final.png',
+        width: 1080,
+        height: 1920
+      },
+    ]} 
+    videos={[
+      "/assets/img/3D/2M_1T_TurnAround.mp4",
+    ]} />
+  },
+  {
+    id: `3d-Bear`,
+    coverImage: "/assets/img/3D/1M_2T_Render_Creature_1.png",
+    titleKey: "",
+    detailsComponent: <Gallery items={[
+      {
+        src: '/assets/img/3D/1M_2T_Render_Creature_1.png',
+        width: 1920,
+        height: 1080
+      },
+      {
+        src: '/assets/img/3D/1M_2T_Render_Creature_2.png',
+        width: 1920,
+        height: 1080
+      },
+      {
+        src: '/assets/img/3D/1M_2T_Render_Creature_4.png',
+        width: 1920,
+        height: 1080
+      },
+    ]} 
+    videos={[
+      "/assets/img/3D/1M_2T_3DTurnAround.mp4",
+    ]} />
+  },
+  {
+    id: `3d-hongmei`,
+    coverImage: "/assets/img/3D/1M_3T_3d_Cover.png",
+    titleKey: "",
+    detailsComponent: <Gallery items={[
+      {
+        src: '/assets/img/3D/1M_3T_3d_TurnAround.png',
+        width: 1920,
+        height: 1080
+      },
+      {
+        src: '/assets/img/3D/1M_3T_3d_Render.png',
+        width: 1920,
+        height: 1080
+      },
+    ]} />
+  },
+]
+
+export const DIGITAL_ARTWORK = [
+  {
+    src: '/assets/img/artworks/mononoke.png',
+    width: 874,
+    height: 1240
+  },
+  {
+    src: '/assets/img/artworks/vampire.png',
+    width: 1080,
+    height: 1386
+  },
+  {
+    src: '/assets/img/artworks/yonaSpelling.png',
+    width: 2000,
+    height: 1600
+  },
+  {
+    src: '/assets/img/artworks/AstridSheathe.png',
+    width: 1080,
+    height: 1920
+  },
+  {
+    src: '/assets/img/artworks/sailormoonredraw.png',
+    width: 2000,
+    height: 1500
+  },
+  {
+    src: '/assets/img/artworks/crosshatching.png',
+    width: 1600,
+    height: 2000
+  },
+  {
+    src: '/assets/img/artworks/portraitEmerald.png',
+    width: 1500,
+    height: 2000
+  },
+  {
+    src: '/assets/img/artworks/JustineFlorentinoChallenge.png',
+    width: 1600,
+    height: 2000
+  },
+  {
+    src: '/assets/img/artworks/alone.png',
+    width: 2000,
+    height: 1500
+  },
+  {
+    src: '/assets/img/artworks/sketches_Hands.png',
+    width: 1107,
+    height: 761
+  },
+  {
+    src: '/assets/img/artworks/sketches_heads.png',
+    width: 1081,
+    height: 761
+  },
+  {
+    src: '/assets/img/artworks/sketches.png',
+    width: 1920,
+    height: 1080
+  },
+  {
+    src: '/assets/img/artworks/sketches_2.png',
+    width: 1920,
+    height: 1080
+  },
+]
+
+export const TRADITIONAL_ARTWORK = [
+  {
+    src: '/assets/img/artworks/traditional_0025.jpg',
+    width: 1205,
+    height: 1719
+  },
+  {
+    src: '/assets/img/artworks/traditional_0027.jpg',
+    width: 1205,
+    height: 1719
+  },
+  {
+    src: '/assets/img/artworks/sketchbook.jpg',
+    width: 1173,
+    height: 1161
+  },
+  {
+    src: '/assets/img/artworks/sketchbook_0005.jpg',
+    width: 934,
+    height: 1240
+  },
+  {
+    src: '/assets/img/artworks/sketchbook_0006.jpg',
+    width: 1201,
+    height: 1539
+  },
+  {
+    src: '/assets/img/artworks/sketchbook_0007.jpg',
+    width: 949,
+    height: 1332
+  },
+  {
+    src: '/assets/img/artworks/sketchbook_0008.jpg',
+    width: 831,
+    height: 1024
+  },
+  {
+    src: '/assets/img/artworks/sketchbook_0009.jpg',
+    width: 878,
+    height: 1309
+  },
+  {
+    src: '/assets/img/artworks/sketchbook_0011.jpg',
+    width: 902,
+    height: 1279
+  },
+  {
+    src: '/assets/img/artworks/sketchbook_0013.jpg',
+    width: 856,
+    height: 1216
+  },
+  {
+    src: '/assets/img/artworks/sketchbook_0014.jpg',
+    width: 841,
+    height: 1208
+  },
+  {
+    src: '/assets/img/artworks/sketchbook_0015.jpg',
+    width: 907,
+    height: 1026
+  },
+  {
+    src: '/assets/img/artworks/sketchbook_0019.jpg',
+    width: 1338,
+    height: 879
+  },
+  {
+    src: '/assets/img/artworks/sketchbook_0020.jpg',
+    width: 847,
+    height: 1005
+  },
+  {
+    src: '/assets/img/artworks/sketchbook_0025.jpg',
+    width: 848,
+    height: 828
+  },
+  {
+    src: '/assets/img/artworks/sketchbook_0043.jpg',
+    width: 1315,
+    height: 1926
+  },
+  {
+    src: '/assets/img/artworks/traditional.jpg',
+    width: 1205,
+    height: 1719
+  },
+  {
+    src: '/assets/img/artworks/traditional_0001.jpg',
+    width: 1205,
+    height: 1719
+  },
+  {
+    src: '/assets/img/artworks/traditional_0002.jpg',
+    width: 1205,
+    height: 1719
+  },
+  {
+    src: '/assets/img/artworks/traditional_0003.jpg',
+    width: 1205,
+    height: 1719
+  },
+  {
+    src: '/assets/img/artworks/traditional_0004.jpg',
+    width: 1205,
+    height: 1719
+  },
+  {
+    src: '/assets/img/artworks/traditional_0005.jpg',
+    width: 1205,
+    height: 1719
+  },
+  {
+    src: '/assets/img/artworks/traditional_0006.jpg',
+    width: 1205,
+    height: 1719
+  },
+  {
+    src: '/assets/img/artworks/traditional_0007.jpg',
+    width: 1205,
+    height: 1719
+  },
+  {
+    src: '/assets/img/artworks/traditional_0008.jpg',
+    width: 1205,
+    height: 1719
+  },
+  {
+    src: '/assets/img/artworks/sketchbook_0044.jpg',
+    width: 863,
+    height: 1303
+  },
+  {
+    src: '/assets/img/artworks/Modelo_20230203_006.jpg',
+    width: 1078,
+    height: 989
+  },
+  {
+    src: '/assets/img/artworks/Modelo_20230223_001.jpg',
+    width: 870,
+    height: 1435
+  },
+  {
+    src: '/assets/img/artworks/Modelo_20230223_004.jpg',
+    width: 991,
+    height: 1048
+  },
+  {
+    src: '/assets/img/artworks/Modelo_20230223_005.jpg',
+    width: 679,
+    height: 1183
+  },
+  {
+    src: '/assets/img/artworks/Modelo_20230317_003.jpg',
+    width: 1011,
+    height: 1498
+  },
+  {
+    src: '/assets/img/artworks/modelo_20230428_0001.jpg',
+    width: 1115,
+    height: 1914
+  },
+  {
+    src: '/assets/img/artworks/modelo_20230428_0002.jpg',
+    width: 2047,
+    height: 716
+  },
+  {
+    src: '/assets/img/artworks/modelo_20230428_0003.jpg',
+    width: 998,
+    height: 1442
+  },
+  {
+    src: '/assets/img/artworks/modelo_20230428_0004.jpg',
+    width: 1563,
+    height: 1248
+  },
+  {
+    src: '/assets/img/artworks/modelo_20230428_0006.jpg',
+    width: 907,
+    height: 1509
+  },
+]

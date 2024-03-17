@@ -38,7 +38,7 @@ const Gallery = (props) => {
         onClick={({index}) => {
           onPhotoClick(props.items, index)
         }}
-        rowConstraints={{
+        rowConstraints={props.rowsConstraints || {
           minPhotos: 1,
           maxPhotos: 3
         }}
