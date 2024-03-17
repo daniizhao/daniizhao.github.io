@@ -60,10 +60,6 @@ export const CHARACTER_PROJECTS = [
     id: `character-Katrina`,
     coverImage: "/assets/img/characters/2M_1T_Character_Cover.png",
     titleKey: "Katrina",
-    tagsKey: [
-      "PROJECTS.TAGS.DIGITAL",
-      "2D",
-    ],
     detailsComponent: <Gallery items={[
       {
         src: '/assets/img/characters/2M_1T_Character_EarlyExploration.png',
@@ -111,10 +107,6 @@ export const CHARACTER_PROJECTS = [
     id: `character-Dexter`,
     coverImage: "/assets/img/characters/2M_2T_Character_Cover.png",
     titleKey: "Dexter",
-    tagsKey: [
-      "PROJECTS.TAGS.DIGITAL",
-      "2D",
-    ],
     detailsComponent: <Gallery items ={[
       {
         src: '/assets/img/characters/2M_2T_Character_EarlyExploration.png',
@@ -167,10 +159,6 @@ export const CHARACTER_PROJECTS = [
     id: `character-Hong-Mei`,
     coverImage: "/assets/img/characters/1M_3T_Character_Cover.png",
     titleKey: "Hong Mei",
-    tagsKey: [
-      "PROJECTS.TAGS.DIGITAL",
-      "2D",
-    ],
     detailsComponent: <Gallery items={[
       {
         src: '/assets/img/characters/1M_3T_Character_Cover.png',
@@ -206,6 +194,137 @@ export const CHARACTER_PROJECTS = [
         src: '/assets/img/characters/1M_3T_Character_Render.png',
         width: 1080,
         height: 1920
+      },
+    ]} />
+  },
+]
+
+export const CREATURE_PROJECTS = [
+  {
+    id: `creature-Mephisto`,
+    coverImage: "/assets/img/creatures/2M_1T_Creature_Cover.png",
+    titleKey: "Mephisto",
+    detailsComponent: <Gallery items={[
+      {
+        src: '/assets/img/creatures/2M_1T_Creature_EarlyExploration.png',
+        width: 1920,
+        height: 1080
+      },
+      {
+        src: '/assets/img/creatures/2M_1T_Creature_ColorExploration.png',
+        width: 1920,
+        height: 1080
+      },
+      {
+        src: '/assets/img/creatures/2M_1T_Creature_TurnAround.png',
+        width: 1920,
+        height: 1080
+      },
+      {
+        src: '/assets/img/creatures/2M_1T_Creature_BodyAttitude.png',
+        width: 1920,
+        height: 1080
+      },
+      {
+        src: '/assets/img/creatures/2M_1T_Creature_Callouts.png',
+        width: 1920,
+        height: 1080
+      },
+      {
+        src: '/assets/img/creatures/2M_1T_Creature_Render.png',
+        width: 1080,
+        height: 1920
+      },
+    ]} />
+  },
+  {
+    id: `creature-Wukong`,
+    coverImage: "/assets/img/creatures/1M_3T_Creature_Cover.png",
+    titleKey: "Sun Wukong",
+    detailsComponent: <Gallery items ={[
+      {
+        src: '/assets/img/creatures/1M_3T_Creature_Exploration.png',
+        width: 1920,
+        height: 1080
+      },
+      {
+        src: '/assets/img/creatures/1M_3T_Creature_ColorExploration.png',
+        width: 1920,
+        height: 1080
+      },
+      {
+        src: '/assets/img/creatures/1M_3T_Creature_TurnAround.png',
+        width: 1920,
+        height: 1080
+      },
+      {
+        src: '/assets/img/creatures/1M_3T_Creature_BodyExpressions.png',
+        width: 1920,
+        height: 1080
+      },
+      {
+        src: '/assets/img/creatures/1M_3T_Creature_Callouts.png',
+        width: 1920,
+        height: 1080
+      },
+      {
+        src: '/assets/img/creatures/1M_3T_Creature_Render.png',
+        width: 1080,
+        height: 1920
+      },
+    ]} />
+  },
+  {
+    id: `creature-Bear`,
+    coverImage: "/assets/img/creatures/1M_2T_BigCreature_Portada.png",
+    titleKey: "Subject BJX_07",
+    detailsComponent: <Gallery items={[
+      {
+        src: '/assets/img/creatures/1M_2T_BigCreature_Exploration.png',
+        width: 1920,
+        height: 1080
+      },
+      {
+        src: '/assets/img/creatures/1M_2T_BigCreature_TurnAround.png',
+        width: 1920,
+        height: 1080
+      },
+      {
+        src: '/assets/img/creatures/1M_2T_BigCreature_BodyAttitude.png',
+        width: 1920,
+        height: 1080
+      },
+      {
+        src: '/assets/img/creatures/1M_2T_BigCreature_CallOuts.png',
+        width: 1920,
+        height: 1080
+      },
+    ]} />
+  },
+  {
+    id: `creature-owl`,
+    coverImage: "/assets/img/creatures/1M_2T_SmallCreature_Portada.png",
+    titleKey: "Subject BJX_07",
+    detailsComponent: <Gallery items={[
+      {
+        src: '/assets/img/creatures/1M_2T_SmallCreature_Exploration.png',
+        width: 1920,
+        height: 1080
+      },
+      {
+        src: '/assets/img/creatures/1M_2T_SmallCreature_TurnAround.png',
+        width: 1920,
+        height: 1080
+      },
+      {
+        src: '/assets/img/creatures/1M_2T_SmallCreature_BodyAttitude.png',
+        width: 1920,
+        height: 1080
+      },
+      {
+        src: '/assets/img/creatures/1M_2T_SmallCreature_CallOuts.png',
+        width: 1920,
+        height: 1080
       },
     ]} />
   },
