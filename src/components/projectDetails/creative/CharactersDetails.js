@@ -16,12 +16,6 @@ const CharacterDetails = () => {
       height: 1080
     },
     {
-      src: '/assets/img/characters/2M_1T_Character_FaceExploration.png',
-      original: '/assets/img/characters/2M_1T_Character_FaceExploration.png',
-      width: 1920,
-      height: 1080
-    },
-    {
       src: '/assets/img/characters/2M_1T_Character_HairExploration.png',
       original: '/assets/img/characters/2M_1T_Character_HairExploration.png',
       width: 1920,
