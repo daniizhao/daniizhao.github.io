@@ -1,13 +1,9 @@
 // import PlaceholderImage from "../assets/img/keyboard.jpg";
-import FairyTaleDetails from "../components/projectDetails/creative/FairytaleDetails";
 import CompressorDetails from "../components/projectDetails/technological/CompressorDetails";
 import BreakInDetails from "../components/projectDetails/technological/BreakInDetails";
 import QompDetails from "../components/projectDetails/technological/QompDetails";
 import PortfolioDetails from "../components/projectDetails/technological/WebsitePortfolio";
-import TraditionalDetails from "../components/projectDetails/creative/TraditionalDetails";
-import LaboratoryDetails from "../components/projectDetails/creative/LaboratoryDetails";
-import DigitalDetails from "../components/projectDetails/creative/DigitalDetails";
-import CastleDetails from "../components/projectDetails/creative/CastleDetails";
+import Gallery from "../components/gallery/Gallery";
 
 
 export const TECH_PROJECTS = [
@@ -59,58 +55,158 @@ export const TECH_PROJECTS = [
   },
 ];
 
-export const ART_PROJECTS = [
+export const CHARACTER_PROJECTS = [
   {
-    id: `art-2`,
-    coverImage: "/assets/img/Lab_Cover.png",
-    titleKey: "PROJECTS.LABORATORY.TITLE",
-    tagsKey: [
-      "PROJECTS.TAGS.DIGITAL",
-      "2D & 3D",
-      "FX Animation",
-    ],
-    detailsComponent: <LaboratoryDetails />
-  },
-  {
-    id: `art-3`,
-    coverImage: "/assets/img/FairyTale_ZhaoDaniela_Cover.png",
-    titleKey: "PROJECTS.FAIRYTALE.TITLE",
-    tagsKey: [
-      "PROJECTS.TAGS.DIGITAL",
-      "2D & 3D",
-      "FX Animation",
-    ],
-    detailsComponent: <FairyTaleDetails />
-  },
-  {
-    id: `art-4`,
-    coverImage: "/assets/img/Castle_Cover.png",
-    titleKey: "PROJECTS.CASTLE.TITLE",
-    tagsKey: [
-      "PROJECTS.TAGS.DIGITAL",
-      "2D & 3D",
-      "FX Animation",
-    ],
-    detailsComponent: <CastleDetails />
-  },
-  {
-    id: `art-1`,
-    coverImage: "/assets/img/artworks/traditional_cover.jpg",
-    titleKey: "PROJECTS.TRADITIONAL.TITLE",
-    tagsKey: [
-      "PROJECTS.TAGS.TRADITIONAL",
-      "2D",
-    ],
-    detailsComponent: <TraditionalDetails />
-  },
-  {
-    id: `art-0`,
-    coverImage: "/assets/img/artworks/yonaSpelling.png",
-    titleKey: "PROJECTS.DIGITAL.TITLE",
+    id: `character-Katrina`,
+    coverImage: "/assets/img/characters/2M_1T_Character_Cover.png",
+    titleKey: "Katrina",
     tagsKey: [
       "PROJECTS.TAGS.DIGITAL",
       "2D",
     ],
-    detailsComponent: <DigitalDetails />
+    detailsComponent: <Gallery items={[
+      {
+        src: '/assets/img/characters/2M_1T_Character_EarlyExploration.png',
+        width: 1920,
+        height: 1080
+      },
+      {
+        src: '/assets/img/characters/2M_1T_Character_HairExploration.png',
+        width: 1920,
+        height: 1080
+      },
+      {
+        src: '/assets/img/characters/2M_1T_Character_ColiorExploration.png',
+        width: 1920,
+        height: 1080
+      },
+      {
+        src: '/assets/img/characters/2M_1T_Character_TurnAround.png',
+        width: 1920,
+        height: 1080
+      },
+      {
+        src: '/assets/img/characters/2M_1T_Character_Expressions.png',
+        width: 1920,
+        height: 1080
+      },
+      {
+        src: '/assets/img/characters/2M_1T_Character_BodyAttitude.png',
+        width: 1920,
+        height: 1080
+      },
+      {
+        src: '/assets/img/characters/2M_1T_Character_Callouts.png',
+        width: 1920,
+        height: 1080
+      },
+      {
+        src: '/assets/img/characters/2M_1T_Character_Render.png',
+        width: 1080,
+        height: 1920
+      },
+    ]} />
   },
-];
+  {
+    id: `character-Dexter`,
+    coverImage: "/assets/img/characters/2M_2T_Character_Cover.png",
+    titleKey: "Dexter",
+    tagsKey: [
+      "PROJECTS.TAGS.DIGITAL",
+      "2D",
+    ],
+    detailsComponent: <Gallery items ={[
+      {
+        src: '/assets/img/characters/2M_2T_Character_EarlyExploration.png',
+        width: 1920,
+        height: 1080
+      },
+      {
+        src: '/assets/img/characters/2M_2T_Character_DesignExploration.png',
+        width: 1920,
+        height: 1080
+      },
+      {
+        src: '/assets/img/characters/2M_2T_Character_FaceExploration.png',
+        width: 1920,
+        height: 1080
+      },
+      {
+        src: '/assets/img/characters/2M_2T_Character_ColorExploration.png',
+        width: 1920,
+        height: 1080
+      },
+      {
+        src: '/assets/img/characters/2M_2T_Character_Turnaround.png',
+        width: 1920,
+        height: 1080
+      },
+      {
+        src: '/assets/img/characters/2M_2T_Character_Expressions.png',
+        width: 1920,
+        height: 1080
+      },
+      {
+        src: '/assets/img/characters/2M_2T_Character_BodyAttitude.png',
+        width: 1920,
+        height: 1080
+      },
+      {
+        src: '/assets/img/characters/2M_2T_Character_Callouts.png',
+        width: 1920,
+        height: 1080
+      },
+      {
+        src: '/assets/img/characters/2M_2T_Character_Render.png',
+        width: 1080,
+        height: 1920
+      },
+    ]} />
+  },
+  {
+    id: `character-Hong-Mei`,
+    coverImage: "/assets/img/characters/1M_3T_Character_Cover.png",
+    titleKey: "Hong Mei",
+    tagsKey: [
+      "PROJECTS.TAGS.DIGITAL",
+      "2D",
+    ],
+    detailsComponent: <Gallery items={[
+      {
+        src: '/assets/img/characters/1M_3T_Character_Cover.png',
+        width: 1920,
+        height: 1080
+      },
+      {
+        src: '/assets/img/characters/1M_3T_Character_Exploration.png',
+        width: 1920,
+        height: 1080
+      },
+      {
+        src: '/assets/img/characters/1M_3T_Character_ColorExploration.png',
+        width: 1920,
+        height: 1080
+      },
+      {
+        src: '/assets/img/characters/1M_3T_Character_TurnAround.png',
+        width: 1920,
+        height: 1080
+      },
+      {
+        src: '/assets/img/characters/1M_3T_Character_BodyExpressions.png',
+        width: 1920,
+        height: 1080
+      },
+      {
+        src: '/assets/img/characters/1M_3T_Character_Callouts.png',
+        width: 1920,
+        height: 1080
+      },
+      {
+        src: '/assets/img/characters/1M_3T_Character_Render.png',
+        width: 1080,
+        height: 1920
+      },
+    ]} />
+  },
+]
