@@ -1,6 +1,6 @@
 import './Header.scss';
 import Icon from '../icon/Icon';
-import { ARTSTATION_PAGE, GITHUB_PAGE, LINKEDIN_PAGE } from '../../config/constants';
+import { GITHUB_PAGE, INSTAGRAM_PAGE, LINKEDIN_PAGE } from '../../config/constants';
 import { motion } from "framer-motion";
 import { useNavigate } from 'react-router';
 
@@ -13,8 +13,8 @@ const SocialIcons = () => {
       <motion.a href={GITHUB_PAGE} target='_blank' rel='noreferrer'>
         <Icon iconName={'fa-brands fa-github'} />
       </motion.a>
-      <motion.a href={ARTSTATION_PAGE} target='_blank' rel='noreferrer'>
-        <Icon iconName={'fa-brands fa-artstation'} />
+      <motion.a href={INSTAGRAM_PAGE} target='_blank' rel='noreferrer'>
+        <Icon iconName={'fa-brands fa-instagram'} />
       </motion.a>
     </>
   )
