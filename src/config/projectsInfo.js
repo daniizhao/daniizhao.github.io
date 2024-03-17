@@ -59,7 +59,7 @@ export const CHARACTER_PROJECTS = [
   {
     id: `character-Katrina`,
     coverImage: "/assets/img/characters/2M_1T_Character_Cover.png",
-    titleKey: "Katrina",
+    titleKey: "",
     detailsComponent: <Gallery items={[
       {
         src: '/assets/img/characters/2M_1T_Character_EarlyExploration.png',
@@ -106,7 +106,7 @@ export const CHARACTER_PROJECTS = [
   {
     id: `character-Dexter`,
     coverImage: "/assets/img/characters/2M_2T_Character_Cover.png",
-    titleKey: "Dexter",
+    titleKey: "",
     detailsComponent: <Gallery items ={[
       {
         src: '/assets/img/characters/2M_2T_Character_EarlyExploration.png',
@@ -158,7 +158,7 @@ export const CHARACTER_PROJECTS = [
   {
     id: `character-Hong-Mei`,
     coverImage: "/assets/img/characters/1M_3T_Character_Cover.png",
-    titleKey: "Hong Mei",
+    titleKey: "",
     detailsComponent: <Gallery items={[
       {
         src: '/assets/img/characters/1M_3T_Character_Cover.png',
@@ -203,7 +203,7 @@ export const CREATURE_PROJECTS = [
   {
     id: `creature-Mephisto`,
     coverImage: "/assets/img/creatures/2M_1T_Creature_Cover.png",
-    titleKey: "Mephisto",
+    titleKey: "",
     detailsComponent: <Gallery items={[
       {
         src: '/assets/img/creatures/2M_1T_Creature_EarlyExploration.png',
@@ -240,7 +240,7 @@ export const CREATURE_PROJECTS = [
   {
     id: `creature-Wukong`,
     coverImage: "/assets/img/creatures/1M_3T_Creature_Cover.png",
-    titleKey: "Sun Wukong",
+    titleKey: "",
     detailsComponent: <Gallery items ={[
       {
         src: '/assets/img/creatures/1M_3T_Creature_Exploration.png',
@@ -277,7 +277,7 @@ export const CREATURE_PROJECTS = [
   {
     id: `creature-Bear`,
     coverImage: "/assets/img/creatures/1M_2T_BigCreature_Portada.png",
-    titleKey: "Subject BJX_07",
+    titleKey: "",
     detailsComponent: <Gallery items={[
       {
         src: '/assets/img/creatures/1M_2T_BigCreature_Exploration.png',
@@ -304,7 +304,7 @@ export const CREATURE_PROJECTS = [
   {
     id: `creature-owl`,
     coverImage: "/assets/img/creatures/1M_2T_SmallCreature_Portada.png",
-    titleKey: "Subject BJX_07",
+    titleKey: "",
     detailsComponent: <Gallery items={[
       {
         src: '/assets/img/creatures/1M_2T_SmallCreature_Exploration.png',
@@ -323,6 +323,158 @@ export const CREATURE_PROJECTS = [
       },
       {
         src: '/assets/img/creatures/1M_2T_SmallCreature_CallOuts.png',
+        width: 1920,
+        height: 1080
+      },
+    ]} />
+  },
+]
+
+export const PROP_PROJECTS = [
+  {
+    id: `prop-Duo`,
+    coverImage: "/assets/img/props/2M_1T_Prop_Cover.png",
+    titleKey: "",
+    detailsComponent: <Gallery items={[{
+      src: '/assets/img/props/2M_1T_Prop_EarlyExploration.png',
+      width: 1920,
+      height: 1080
+    },
+    {
+      src: '/assets/img/props/2M_1T_Prop_DesignExploration.png',
+      width: 1920,
+      height: 1080
+    },
+    {
+      src: '/assets/img/props/2M_1T_Prop_ColorExploration.png',
+      width: 1920,
+      height: 1080
+    },
+    {
+      src: '/assets/img/props/2M_1T_Prop_GlassDesignExploration.png',
+      width: 1920,
+      height: 1080
+    },
+    {
+      src: '/assets/img/props/2M_1T_Prop_TurnAround.png',
+      width: 1920,
+      height: 1080
+    },
+    {
+      src: '/assets/img/props/2M_1T_Prop_Render.png',
+      width: 1080,
+      height: 1920
+    },
+    ]} />
+  },
+  {
+    id: `prop-drums`,
+    coverImage: "/assets/img/props/2M_2T_Prop_Cover.png",
+    titleKey: "",
+    detailsComponent: <Gallery items ={[
+      {
+        src: '/assets/img/props/2M_2T_Prop_EarlyExploration.png',
+        width: 1920,
+        height: 1080
+      },
+      {
+        src: '/assets/img/props/2M_2T_Prop_DesignExploration.png',
+        width: 1920,
+        height: 1080
+      },
+      {
+        src: '/assets/img/props/2M_2T_Prop_ColorExploration.png',
+        width: 1920,
+        height: 1080
+      },
+      {
+        src: '/assets/img/props/2M_2T_Prop_Turnaround.png',
+        width: 1920,
+        height: 1080
+      },
+      {
+        src: '/assets/img/props/2M_2T_Prop_Callouts.png',
+        width: 1920,
+        height: 1080
+      },
+      {
+        src: '/assets/img/props/2M_2T_Prop_Render.png',
+        width: 1920,
+        height: 1080
+      },
+    ]} />
+  },
+  {
+    id: `props-basket`,
+    coverImage: "/assets/img/props/1M_3T_Prop_Cover.png",
+    titleKey: "",
+    detailsComponent: <Gallery items={[
+      {
+        src: '/assets/img/props/1M_3T_Prop_Exploration.png',
+        width: 1920,
+        height: 1080
+      },
+      {
+        src: '/assets/img/props/1M_3T_Prop_ColorExploration.png',
+        width: 1920,
+        height: 1080
+      },
+      {
+        src: '/assets/img/props/1M_3T_Prop_TurnAround.png',
+        width: 1920,
+        height: 1080
+      },
+      {
+        src: '/assets/img/props/1M_3T_Prop_Callouts.png',
+        width: 1920,
+        height: 1080
+      },
+      {
+        src: '/assets/img/props/1M_3T_Prop_Render.png',
+        width: 1080,
+        height: 1920
+      },
+    ]} />
+  },
+  {
+    id: `prop-oxy_tian`,
+    coverImage: "/assets/img/props/1M_2T_LongWeapon_Portada.png",
+    titleKey: "",
+    detailsComponent: <Gallery items={[
+      {
+        src: '/assets/img/props/1M_2T_LongWeapon_Exploration.png',
+        width: 1920,
+        height: 1080
+      },
+      {
+        src: '/assets/img/props/1M_2T_LongWeapon_TurnAround.png',
+        width: 1920,
+        height: 1080
+      },
+      {
+        src: '/assets/img/props/1M_2T_LongWeapon_Callouts.png',
+        width: 1920,
+        height: 1080
+      },
+    ]} />
+  },
+  {
+    id: `prop-oxy_yue`,
+    coverImage: "/assets/img/props/1M_2T_ShortWeapon_Portada.png",
+    titleKey: "",
+    detailsComponent: <Gallery items={[
+      {
+        src: '/assets/img/props/1M_2T_ShortWeapon_Exploration.png',
+        width: 1920,
+        height: 1080
+      },
+      {
+        src: '/assets/img/props/1M_2T_ShortWeapon_TurnAround.png',
+        width: 1920,
+        height: 1080
+      },
+      {
+        src: '/assets/img/props/1M_2T_ShortWeapon_Callouts.png',
         width: 1920,
         height: 1080
       },

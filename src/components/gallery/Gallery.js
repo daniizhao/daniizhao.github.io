@@ -32,7 +32,17 @@ const Gallery = (props) => {
 
   return (
     <div className="gallery-detail-wrapper">
-      <PhotoAlbum photos={props.items} layout="rows" onClick={({index}) => {onPhotoClick(props.items, index)}} />
+      <PhotoAlbum
+        photos={props.items}
+        layout="rows"
+        onClick={({index}) => {
+          onPhotoClick(props.items, index)
+        }}
+        rowConstraints={{
+          minPhotos: 1,
+          maxPhotos: 3
+        }}
+      />
 
       {
         props.videos && 
