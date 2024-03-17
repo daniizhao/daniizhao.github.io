@@ -11,7 +11,7 @@ const PropDetails = () => {
   ]
 
   return (
-    <Gallery images={PropArtwork} />
+    <Gallery items={PropArtwork} />
   )
 };
 

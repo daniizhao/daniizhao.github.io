@@ -11,7 +11,7 @@ const EnvironmentDetails = () => {
   ]
 
   return (
-    <Gallery images={EnvironmentArtwork} />
+    <Gallery items={EnvironmentArtwork} />
   )
 };
 

@@ -11,7 +11,7 @@ const CharacterDetails = () => {
   ]
 
   return (
-    <Gallery images={CharacterArtwork} />
+    <Gallery items={CharacterArtwork} />
   )
 };
 

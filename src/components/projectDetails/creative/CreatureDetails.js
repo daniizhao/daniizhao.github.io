@@ -11,7 +11,7 @@ const CreatureDetails = () => {
   ]
 
   return (
-    <Gallery images={CreatureArtwork} />
+    <Gallery items={CreatureArtwork} />
   )
 };
 
