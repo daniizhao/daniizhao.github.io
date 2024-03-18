@@ -1,7 +1,7 @@
 {
   "homepage": "http://daniizhao.github.io/",
   "name": "portfolio",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "private": true,
   "dependencies": {
     "@ariakit/react": "^0.4.3",
