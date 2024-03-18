@@ -62,7 +62,7 @@ const TimelineComponent = () => {
         },
       }}
     >
-      <CustomTimeLineElement position='right'>
+      {/* <CustomTimeLineElement position='right'>
         <div className='element-content-title' onClick={() => {openLink(SCRUFFY_LINK)}}>
           {t('ABOUTME.STORY.SCRUFFYDOG.TITLE')}
         </div>
@@ -80,7 +80,7 @@ const TimelineComponent = () => {
             {t('ABOUTME.STORY.SCRUFFYDOG.STACK')}
           </div>
         </div>
-      </CustomTimeLineElement>
+      </CustomTimeLineElement> */}
       <CustomTimeLineElement position='right'>
         <div className='element-content-title' onClick={() => {openLink(FX_LINK)}}>
           {t('ABOUTME.STORY.FX_ANIMATION.TITLE')}
