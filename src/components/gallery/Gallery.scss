@@ -1,0 +1,31 @@
+.gallery-detail-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: justify;
+  white-space: pre-line;
+  gap: 40px;
+  div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    img, video {
+      width: 80%;
+      object-fit: cover;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .project-detail-wrapper {
+    gap: 8px;
+    .project-detail {
+      padding: 0 8px;
+      &-embed-video {
+        iframe {
+          padding-bottom: 0;
+        }
+      }
+    }
+  }
+}

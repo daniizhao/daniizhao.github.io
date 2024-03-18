@@ -2,13 +2,14 @@ import "./Home.scss";
 import Header from "../../components/header/Header";
 import { NAV_SECTIONS } from "../../config/constants";
 import { Element } from "react-scroll";
+import Footer from "../../components/footer/Footer";
 
 const Home = () => {
   return (
     <div id="portfolio-content" className="home-wrapper">
       <Header />
       <div className="background-wrapper general-bkg">
-        <img src="assets/img/Portfolio_bkg.png" alt="bkg_image" />
+        <img src="/assets/img/Portfolio_bkg.png" alt="bkg_image" />
       </div>
       <div className="content-wrapper">
         {
@@ -21,6 +22,7 @@ const Home = () => {
           })
         }
       </div>
+      <Footer />
     </div>
   )
 }

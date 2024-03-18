@@ -8,16 +8,16 @@ const ProjectCard = (props) => {
 
   return (
     <motion.div className="project-card-wrapper" whileHover={{scale: 1.025}}>
-      <div className="project-card-cover">
+      <div className={`project-card-cover ${!props.showBottomBkg && `no-bottom`}`}>
         <img src={props.img} alt={`image_${props.projectName}`} />
       </div>
-      <div className="project-card-info">
+      <div className={`project-card-info ${!props.showBottomBkg && `no-bottom`}`}>
         <div className="project-card-info-name">
           {props.projectName}
         </div>
         <div className="project-card-info-description">
           {
-            props.tags.map((tag) => {
+            props.showBottomBkg && props.tags.map((tag) => {
               return (
                 <div key={`tag-${props.projectName}-${tag}`} className="project-card-info-description-tag">
                   {t(tag)}

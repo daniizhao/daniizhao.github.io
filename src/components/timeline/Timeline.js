@@ -2,7 +2,7 @@ import "./Timeline.scss";
 import Star from '@mui/icons-material/Star';
 import { Timeline, TimelineItem, TimelineSeparator, TimelineConnector, TimelineContent, TimelineDot, timelineItemClasses } from "@mui/lab";
 import { useTranslation } from "react-i18next";
-import { FX_LINK, SLASH_LINK, UPC_LINK } from "../../config/constants";
+import { FX_LINK, SCRUFFY_LINK, SLASH_LINK, UPC_LINK } from "../../config/constants";
 import { motion, useInView } from "framer-motion";
 import { useContext, useRef } from "react";
 import { IsMobileSizeContext } from "../../App";
@@ -62,11 +62,30 @@ const TimelineComponent = () => {
         },
       }}
     >
+      {/* <CustomTimeLineElement position='right'>
+        <div className='element-content-title' onClick={() => {openLink(SCRUFFY_LINK)}}>
+          {t('ABOUTME.STORY.SCRUFFYDOG.TITLE')}
+        </div>
+        <div className='element-content-subtitle'>
+          2024 - present
+        </div>
+        <div className='element-content-description'>
+          <div>
+            {t('ABOUTME.STORY.SCRUFFYDOG.DESCRIPTION')}
+          </div>
+          <div>
+            {t('ABOUTME.STORY.SCRUFFYDOG.DESCRIPTION_2')}
+          </div>
+          <div className="element-content-description-stack">
+            {t('ABOUTME.STORY.SCRUFFYDOG.STACK')}
+          </div>
+        </div>
+      </CustomTimeLineElement> */}
       <CustomTimeLineElement position='right'>
         <div className='element-content-title' onClick={() => {openLink(FX_LINK)}}>
           {t('ABOUTME.STORY.FX_ANIMATION.TITLE')}
           <div className='logo-container'>
-            <img src="assets/img/Logo_FX.png" alt='FXAnimation_logo' />
+            <img src="/assets/img/Logo_FX.png" alt='FXAnimation_logo' />
           </div>
         </div>
         <div className='element-content-subtitle'>
@@ -88,7 +107,7 @@ const TimelineComponent = () => {
         <div className='element-content-title' onClick={() => {openLink(SLASH_LINK)}}>
           {t('ABOUTME.STORY.SLASHMOBILITY.TITLE')}
           <div className='logo-container'>
-            <img src="assets/img/Logo_Slash.png" alt='SlashMobility_logo' />
+            <img src="/assets/img/Logo_Slash.png" alt='SlashMobility_logo' />
           </div>
         </div>
         <div className='element-content-subtitle'>
@@ -110,7 +129,7 @@ const TimelineComponent = () => {
         <div className='element-content-title' onClick={() => {openLink(UPC_LINK)}}>
           {t('ABOUTME.STORY.COLLEGE_DEGREE.TITLE')}
           <div className='logo-container'>
-            <img src="assets/img/Logo_UPC.png" alt='UPC_logo' />
+            <img src="/assets/img/Logo_UPC.png" alt='UPC_logo' />
           </div>
         </div>
         <div className='element-content-subtitle'>

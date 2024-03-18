@@ -59,11 +59,11 @@ const SkillsList = (props) => {
         {
           props.list.map((skill, i) => {
             return (
-              <>
+              <div key={`skill-${i}`}>
                 {
                   skill.lvl_id !== -1 &&
                   (
-                    <div key={`skill-${i}`} className={`skills-list-content-row ${isLeftSide && !isMobile && 'align-right'}`}>
+                    <div className={`skills-list-content-row ${isLeftSide && !isMobile && 'align-right'}`}>
                       <div className={`skills-list-content-row-title skill-name ${
                         !isLeftSide && !isMobile && 'align-right'}`}>
                         {skill.title}
@@ -77,7 +77,7 @@ const SkillsList = (props) => {
                     </div>
                   )
                 }
-              </>
+              </div>
             )
           })
         }
@@ -87,7 +87,7 @@ const SkillsList = (props) => {
         {
           additionalSkills.map((skill, i) => {
             return (
-              <div key={`skill-${i}`} className={`skills-list-content-additional-skill`}>
+              <div key={`add-skill-${i}`} className={`skills-list-content-additional-skill`}>
                 <div className={`section-title`}>
                   {t(skill.title)}
                 </div>

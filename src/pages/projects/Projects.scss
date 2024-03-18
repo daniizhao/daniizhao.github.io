@@ -1,8 +1,17 @@
+.project-content {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 .projects-wrapper {
   display: flex !important;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
+  margin: 64px 0 0;
+  
   .section-title {
     padding-top: 0 !important;
   }

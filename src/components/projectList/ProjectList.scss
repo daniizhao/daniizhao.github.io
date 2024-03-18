@@ -1,16 +1,20 @@
-.swiper {
-  width: 100%;
-  height: 100%;
-  .swiper-slide {
-    padding: 1% 2%;
-    width: 25%;
-  }
+.project-list-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30%, max-content));
+  grid-gap: 32px;
+  justify-content: center;
+  
+}
+
+.project-card-container {
+  padding: 20px;
 }
 
 @media (max-width: 768px) {
-  .swiper {
-    .swiper-slide {
-      width: 60%;
-    }
+  .project-list-wrapper {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    gap: 16px;
   }
 }
