@@ -1,0 +1,174 @@
+{
+  "HOME": {
+    "INTRODUCTION": {
+      "HEY": "Hey! I am",
+      "DEV": "Frontend developer",
+      "CONCEPT": "Artist",
+      "SHORT_INTRO": "",
+      "SCROLL": "Scroll down to get to know me better!",
+      "PROJECTS": "Go to Projects",
+      "PORTFOLIO": "Go to Portfolio"
+    }
+  },
+  "ABOUTME": {
+    "TITLE": "About me",
+    "STORY": {
+      "TITLE_1": "Where ",
+      "TITLE_2": "I've been ...",
+      "COLLEGE_DEGREE": {
+        "TITLE": "Informatics Engineering degree @ UPC",
+        "DESCRIPTION": "Major in Software Engineering",
+        "STACK" : "Java, C++, C, Assembly, R, Matlab, SQL"
+      },
+      "HOBBY": {
+        "TITLE": "kept drawing as a hobby, got interested in realism/impresionism/digital art"
+      },
+      "SLASHMOBILITY": {
+        "TITLE": "Software Developer @ SlashMobility",
+        "DESCRIPTION": "Developed, debugged and delivered web,  mobile and TV applications",
+        "DESCRIPTION_2": "Led and managed projects, communication with clients",
+        "STACK": "Angular, Ionic, React Native, KnockoutJS, Tizen SDK, webOs SDK, Git"
+      },
+      "FX_ANIMATION": {
+        "TITLE": "Master in Concept Art @ FX Animation School",
+        "DESCRIPTION": "Create and design 2D characters, creatures, props and environments for projects",
+        "DESCRIPTION_2": "Build 3D models (characters, creatures, environments ...)",
+        "STACK": "Clip Studio Paint, Adobe Photoshop, ZBrush, Blender, Substance Painter, Maya"
+      },
+      "SCRUFFYDOG": {
+        "TITLE": "Concept Art Internship @ Scruffy Dog",
+        "DESCRIPTION": "Design and generate visuals from a given pitch",
+        "DESCRIPTION_2": "",
+        "STACK": "Adobe Photoshop, Blender"
+      }
+    }
+  },
+  "SKILLS": {
+    "TITLE": "Skills",
+    "LEVELS": {
+      "BEGINNER": "Beginner",
+      "INTERMEDIATE": "Intermediate",
+      "ADVANCED": "Advanced",
+      "EXPERT": "Expert"
+    },
+    "LANGUAGES": {
+      "TITLE": "Languages",
+      "LEVELS": {
+        "BASIC": "Basic",
+        "INTERMEDIATE": "Intermediate",
+        "FLUENT": "Fluent",
+        "NATIVE": "Native"
+      }
+    },
+    "ADDITIONAL": {
+      "KNOWLEDGE": "Knowledge"
+    },
+    "OTHER": {
+      "TITLE": "Soft Skills",
+      "COMM": "Communication",
+      "TEAMWORK": "Teamwork",
+      "PROJ_MGM": "Project management",
+      "DETAILS": "Keen to details"
+    },
+    "HOBBIES": {
+      "TITLE": "Hobbies & Interests",
+      "SHELTER": "Volunteer @ ",
+      "GAMES": "Cozy/MMORPG Games",
+      "READING": "Books"
+    }
+  },
+  "PROJECTS": {
+    "TITLE": "Projects",
+    "TECH_TITLE": "Technical projects",
+    "CREATIVE_TITLE": "Creative projects",
+    "CATEGORIES": {
+      "CHARACTER": "Character Design",
+      "CREATURE": "Creature Design",
+      "PROP": "Prop Design",
+      "ENVIRONMENT": "Environment Design",
+      "3D": "3D",
+      "TRADITONAL": "Traditional Illustrations",
+      "DIGITAL": "Digital Illustrations"
+    },
+    "TAGS": {
+      "DESIGN": "Design",
+      "DEVELOPMENT": "Development",
+      "GAME": "Game",
+      "TRADITIONAL": "Tradicional",
+      "DIGITAL": "Digital Art"
+    },
+    "SECTIONS": {
+      "CONTEXT": "Context",
+      "FEATURES": "Functional Requirements",
+      "SOLUTION": "Solution",
+      "CONTRIBUTORS": "Contributors",
+      "LINKS": "Related links",
+      "DEMO": "Demo",
+      "STACK": "Stack"
+    },
+    "MORE_INFO": {
+      "TITLE": "More information",
+      "GITHUB_LINK": "View Github 🡥",
+      "YOUTUBE_LINK": "View YouTube Video 🡥",
+      "ORIGINAL": "View Original Game 🡥"
+    },
+    "COMPRESSOR": {
+      "TITLE": "Text & Image Compressor",
+      "CONTEXT": "This project is from a compulsory subject at Informatics Engineering Bachelor Degree at UPC.\n\nThe project consists in document, design, develop, test and deliver a program able to compress/decompress texts and images.\nIt also has the possibility to compare a file before and after compression/decompression and save global statistics of every compression/decompression.\n\n",
+      "FEATURES": " - Compress File & Folders: The user can select a file, select the output directory and the compression algorithm to compress it.\n\n - Decompress File & Folders: The user can select a compressed file, the output directory and it will automatically detect which algorithms use and decompress it.\n\n - Compare File: The user can select a file to compare, the program will compress and descompress it and show if there are any differences (compression data loss)\n\n - View Global Statistics: The user can view the global statistics of the selected algorithm.\n\n - Export Global Statistics: The user can export the global statistics to a txt file.\n\n - Algorithms: LZ78, LZSS, LZW, JPEG \n\n - Help Module: In each feature tab, there's a question mark button that opens a window with an explanation of the feature.",
+      "SOLUTION": "The final program is organized in the following folders: \n\n - DOCS: Documentation of the project such as Class diagram, Functional requirements and the User's Manual explaining how the program works.\n - EXE: Executable files and Tests suite\n - SRC: Source code of the project.\n\nThe source code and the program is based and organized with a Three-tier architecture:\n\n - Presentation layer: Layer in charge of the user's interactions and displaying information to the user.\n - Application layer: Layer in charge of processing the information.\n - Data layer: Layer in charge of storing and accessing the data of the application. In this case, the database is the computer's hard disk. \n\n In the following screenshots we can see the final result and some tests:"
+    },
+    "BREAKIN": {
+      "TITLE": "Nook Break In",
+      "CONTEXT": "This project is from an optional subject at Informatics Engineering Bachelor Degree at UPC.\n\nThe project consists in creating a clone of an existing Game, in this case is Break In (1987, MSX platform). The goal of this project is to learn openGL to develop games.",
+      "SOLUTION": "( ! Disclaimer ! ) We used a template provided by the subject resources, it consisted in an initialized game project with basics classes, but every logic (collision, movements logics and sprites are developed & designed by us). \n\nWe had total liberty to change the design and my partner and me got inspired by Animal Crossing (we just lived through a pandemic quarantine and ACNH was incredibly popular), so we build the game's 'story' and aesthetic (mantaining the 8bit style) around Animal Crossing and instead of breaking into banks, the user was breaking into Tom Nook's safes.\n We tried our best to adapt the other elements of the game to Animal Crossing's universe, evens so we left some elements as the original game."
+    },
+    "QOMP": {
+      "TITLE": "Among Us - After ejection",
+      "CONTEXT": "This project is from an optional subject at Informatics Engineering Bachelor Degree at UPC.\n\nThe project consists in creating a clone of an existing Game (at that moment, it was in development), in this case is QOMP. The goal of this project is to learn to develop a game with 3D elements, we had the choice to develop it in OpenGL or Unity, due to the time we had to develop the project we chose Unity.",
+      "SOLUTION": "In this project, we started the Unity project from zero. \n\nThe 3D assets were created using MagicaVoxel and we used Blender to animate the 3D assets.\n\nWe had total liberty to change the design and my partner and me got inspired by Among Us (we just lived through a pandemic quarantine and the game was super popular), so we adapted the game to take place when a crewmate (or impostor) is ejected and goes through the spaceship to finally be ejected."
+    },
+    "PORTFOLIO": {
+      "TITLE": "Website Portfolio",
+      "CONTEXT": "As I started to take more seriously my artistic skills and started the Concept Art Master @ FX Animation, I knew I needed to prepare a Portfolio to promote my work and I wanted to take this opportunity to mix my technical and artistic skills. \n\nI have no experience in UI/UX so I needed to investigate some popular and cool portfolios, there are some of the portfolio that inspired me:",
+      "SOLUTION_1": "Before I started developing the website, I needed a design to follow. The first step was to select the colors I would be using for my website. I wanted it to be dark-themed (I'm a night owl and I tend to have everything in night mode, and my Website wouldn't be an exception. I really liked the Iuri de Paula color scheme, so I took the same colors and also added a pop of color with the crimson sky.",
+      "SOLUTION_2": "My first idea (photo on the left) for the duality I wanted for my website was to have my technical and artistic portfolio separated and be able to switch between them using a switch on the header. Also the themes for both sides would be different, the technical side would be dark-themed and the artistic would be light-themed with a pop of color. \n\nAs I struggled to organize how I would put the information, I didn't really like the layout of the page, the technical side was so typical and reminded me of LinkedIn.\n\nI finally decided to mix it up together and show the duality on the same page, and came up with the second idea (photo on the right). At this point, I started the ReactJS project, as I really wanted to get things done. I started to put together the layout but I had problems with the responsiveness of the design. I liked the duality of both side on the same page and the color scheme, but... The layout didn't convince me as a lot of space was wasted.",
+      "SOLUTION_3": "In a sleepless night, I had the idea that would become the final website and I took my iPad, opened Procreate and made the sketch on the left. Then I started browsing photos of myself that could be of use for the website and found the one and started sketching to give it a sketchy style that I really enjoy doing. \nAs I was doing the sketch, I was thinking in the background too and started doodling stars and moons (I really like them) and wanted to add a little easter egg and doodled in the center of the background that 'constelation' that is actually build with the freckles in my face. Slowly it all came together and after some animations, the website on the right side and the very same page you are visiting was ready!"
+    },
+    "LABORATORY": {
+      "TITLE": "Sci-fi Laboratory",
+      "CONTEXT": "Welcome to a laboratory nestled deep within a soon to be extinct forest, dedicated to combatting the looming threat of extinction. This state-of-the-art facility combines futuristic design with advanced technology, seamlessly integrating with the natural environment. Its modular rooms house cutting-edge research equipment, allows any laboratory combination depending on the needs of the facility.\n\nWhile the laboratory strives for scientific progress, it also prioritizes safety. Each laboratory is equipped with defense mechanisms and formidable weaponry, ready to protect both researchers and the precious specimens they study or to protect the researchers from the specimens... ",
+      "3D": "In each project, there's a 3D module and for this project we had to choose one creature to build a 3D model and I chose the bear. It really was a challenge to get the hair texture and the wood. Here are the results of the final model."
+    },
+    "FAIRYTALE": {
+      "TITLE": "Fairy tale adaptation",
+      "CONTEXT": "In ancient China, a modest family in a village owned a bakery specializing in Moon Cakes. During the busy Mid-Autumn Festival, they sent their daughter, Hong Mei, to keep her weak grandmother company until they closed the bakery and could celebrate the Festilval together.\n\nUnbeknownst to Hong Mei, a mischievous creature named Sun Wukong planned to steal her Moon Cakes. He ambushed the grandmother's house, disguised himself as her and awaited Hong Mei's arrival. Suspicious of the darkness and the 'grandmother's' strange behaviour, she realized the impostor and using her Kung Fu skills, defeated Sun Wukong and freed her grandmother. The family reunited, praising HM but also scolding her for the danger she faced.",
+      "3D": "In each project, there's a 3D module and for this project we had to build a 3D model of a character and I really enjoyed the process. Here you can see it:"
+    },
+    "CASTLE": {
+      "TITLE": "Victorian Castle",
+      "CONTEXT": "Once upon a time there was a young woman excited for life. Katrina Scharlach was an ambitious girl that wanted to do a lot of things in life. She thought life was too short for her and searched for the eternity. One night, she encountered a demon and they reached an agreement. Mephisto the demon turned Katrina into a vampire in exchenge of her soul. This exchange was reflected in their eyes as they now shared their fate. The demon then decided to stay in Earth and accompany Katrina in her eternal life.",
+      "": "",
+      "3D": "In each project, there's a 3D module and for this project we had to build a 3D model of a character and I really enjoyed the process, as it allowed me to improve my sculpting skills with ZBrush and experiment with Marvelous Designer with the skirt.",
+      "3D_credits": "Modeled with ZBrush, skirt made with Marvelous Designer, Rendered with Arnold (Maya) and background and details added with Clip Studio Paint"
+    },
+    "DIGITAL": {
+      "TITLE": "Digital Work",
+      "CONTEXT": "This is a collection of my favorite digital sketches & artworks over the years. As you will be able to see, I really enjoy drawing portraits, especially female portraits. \n\nMost of the work is done with Procreate and Clip Studio Paint. I use to switch between the iPad Pro (2018), XP PEN Artist 15.6 Pro, Wacom One 13 and Wacom Intuos M.",
+      "SKETCHES": "Sketches",
+      "ARTWORKS": "Artworks",
+      "CHALLENGES": "Challenges"
+    },
+    "TRADITIONAL": {
+      "TITLE": "Traditional Work",
+      "CONTEXT": "This is a collection of my favorite traditional artworks over the years",
+      "SKETCHBOOK": "Sketchbook",
+      "ARTWORKS": "Artworks",
+      "LIVE": "Live Session Drawings"
+    }
+  },
+  "CONTACT": {
+    "TITLE": "Contact",
+    "SUBTITLE": "Let's work together!"
+  }
+}
