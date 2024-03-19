@@ -1,4 +1,4 @@
-import { Route, Routes } from 'react-router-dom';
+import { Navigate, Route, Routes } from 'react-router-dom';
 import './App.scss';
 import Home from './pages/home/Home';
 import { createContext, useEffect, useState } from 'react';
@@ -7,7 +7,6 @@ import Projects from './pages/projects/Projects';
 import Portfolio from './pages/portfolio/Portfolio';
 import DigitalDetails from './components/projectDetails/creative/DigitalDetails';
 import TraditionalDetails from './components/projectDetails/creative/TraditionalDetails';
-import Contact from './pages/contact/Contact';
 import CharacterDetails from './components/projectDetails/creative/CharactersDetails';
 import CreatureDetails from './components/projectDetails/creative/CreatureDetails';
 import PropDetails from './components/projectDetails/creative/PropDetails';
@@ -38,7 +37,10 @@ function App() {
         <Route path='/' element={<Home />} />
         <Route path='/projects' element={<Projects />} />
         <Route path='/portfolio' element={<Portfolio />} >
-          <Route index element={<Contact />} />
+          <Route
+              path="/portfolio"
+              element={<Navigate to="/portfolio/character" replace />}
+          />
           <Route path='/portfolio/character' element={<CharacterDetails />} />
           <Route path='/portfolio/creature' element={<CreatureDetails />} />
           <Route path='/portfolio/prop' element={<PropDetails />} />

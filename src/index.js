@@ -4,6 +4,7 @@ import './index.scss';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import './utils/i18next';
+import { createBrowserHistory } from "history";
 
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { fas } from '@fortawesome/free-solid-svg-icons';
@@ -12,10 +13,13 @@ import { far } from '@fortawesome/free-regular-svg-icons';
 import { BrowserRouter } from 'react-router-dom';
 library.add(fas, fab, far);
 
+
+const hist = createBrowserHistory();
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <BrowserRouter>
+    <BrowserRouter history={hist}>
       <App />
     </BrowserRouter>
   </React.StrictMode>

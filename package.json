@@ -1,7 +1,7 @@
 {
   "homepage": "http://daniizhao.github.io/",
   "name": "portfolio",
-  "version": "0.1.8",
+  "version": "0.1.9",
   "private": true,
   "dependencies": {
     "@ariakit/react": "^0.4.3",
@@ -20,6 +20,7 @@
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "framer-motion": "^10.16.2",
+    "history": "^5.3.0",
     "i18next": "^23.4.4",
     "i18next-browser-languagedetector": "^7.1.0",
     "i18next-http-backend": "^2.2.1",
