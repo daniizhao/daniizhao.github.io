@@ -637,6 +637,16 @@ export const PROJECTS_3D = [
         height: 1080
       },
       {
+        src: '/assets/img/3D/2M_2T_Character_Clay.png',
+        width: 600,
+        height: 1080
+      },
+      {
+        src: '/assets/img/3D/2M_2T_Character_Color.png',
+        width: 600,
+        height: 1080
+      },
+      {
         src: '/assets/img/3D/2M_2T_Character_Render.png',
         width: 1080,
         height: 1920
@@ -665,6 +675,38 @@ export const PROJECTS_3D = [
     ]} 
     videos={[
       "/assets/img/3D/2M_1T_TurnAround.mp4",
+    ]} />
+  },
+  {
+    id: `3d-Miles`,
+    coverImage: "/assets/img/3D/2M_1T_Miles_Render_01.png",
+    titleKey: "",
+    detailsComponent: <Gallery items={[
+      {
+        src: '/assets/img/3D/2M_1T_Miles_BlockingTurnAround.jpg',
+        width: 1920,
+        height: 1080
+      },
+      {
+        src: '/assets/img/3D/2M_1T_Miles_TurnAround.png',
+        width: 1920,
+        height: 1080
+      },
+      {
+        src: '/assets/img/3D/2M_1T_Miles_FaceTurnAround.jpg',
+        width: 1920,
+        height: 1080
+      },
+      {
+        src: '/assets/img/3D/2M_1T_Miles_Shoes.png',
+        width: 1920,
+        height: 1080
+      },
+      {
+        src: '/assets/img/3D/2M_1T_Miles_Render_01.png',
+        width: 1920,
+        height: 1080
+      },
     ]} />
   },
   {
