@@ -12,6 +12,7 @@ import CreatureDetails from './components/projectDetails/creative/CreatureDetail
 import PropDetails from './components/projectDetails/creative/PropDetails';
 import EnvironmentDetails from './components/projectDetails/creative/EnvironmentDetails';
 import Details3D from './components/projectDetails/creative/3dDetails';
+import NotFound from './pages/notfound/NotFound';
 
 export const IsMobileSizeContext = createContext(window.innerWidth <= MOBILE_SIZE);
 
@@ -34,6 +35,7 @@ function App() {
   return (
     <IsMobileSizeContext.Provider value={isMobileSize}>
       <Routes>
+        <Route path='*' element={<NotFound />} />
         <Route path='/' element={<Home />} />
         <Route path='/projects' element={<Projects />} />
         <Route path='/portfolio' element={<Portfolio />} >
