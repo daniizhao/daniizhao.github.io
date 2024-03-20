@@ -40,7 +40,7 @@ const Gallery = (props) => {
         }}
         rowConstraints={props.rowsConstraints || {
           minPhotos: 1,
-          maxPhotos: 3
+          maxPhotos: 2
         }}
       />
 

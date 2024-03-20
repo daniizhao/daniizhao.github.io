@@ -499,17 +499,17 @@ export const ENV_PROJECTS = [
         height: 1080
       },
       {
-        src: '/assets/img/environments/2M_2T_Environment_Render.png',
-        width: 1920,
-        height: 1080
-      },
-      {
         src: '/assets/img/environments/2M_2T_Environment_Render_View1.png',
         width: 1920,
         height: 1080
       },
       {
         src: '/assets/img/environments/2M_2T_Environment_Render_View2.png',
+        width: 1920,
+        height: 1080
+      },
+      {
+        src: '/assets/img/environments/2M_2T_Environment_Render.png',
         width: 1920,
         height: 1080
       },
@@ -699,6 +699,16 @@ export const PROJECTS_3D = [
       },
       {
         src: '/assets/img/3D/2M_1T_Miles_Shoes.png',
+        width: 1920,
+        height: 1080
+      },
+      {
+        src: '/assets/img/3D/gwen-exercises.png',
+        width: 1920,
+        height: 1080
+      },
+      {
+        src: '/assets/img/3D/peter-exercises.png',
         width: 1920,
         height: 1080
       },
