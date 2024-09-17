@@ -1,7 +1,7 @@
 import './Header.scss';
 import { useTranslation } from 'react-i18next';
 import Icon from '../icon/Icon';
-import { GITHUB_PAGE, INSTAGRAM_PAGE, LINKEDIN_PAGE, NAV_SECTIONS } from '../../config/constants';
+import { ARTSTATION_PAGE, GITHUB_PAGE, LINKEDIN_PAGE, NAV_SECTIONS } from '../../config/constants';
 import { Link, scrollSpy } from 'react-scroll';
 import { useContext, useEffect, useRef } from 'react';
 import { IsMobileSizeContext } from '../../App';
@@ -37,8 +37,8 @@ const SocialIcons = () => {
       <motion.a href={GITHUB_PAGE} target='_blank' rel='noreferrer'>
         <Icon iconName={'fa-brands fa-github'} />
       </motion.a>
-      <motion.a href={INSTAGRAM_PAGE} target='_blank' rel='noreferrer'>
-        <Icon iconName={'fa-brands fa-instagram'} />
+      <motion.a href={ARTSTATION_PAGE} target='_blank' rel='noreferrer'>
+        <Icon iconName={'fa-brands fa-artstation'} />
       </motion.a>
     </>
   )

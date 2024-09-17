@@ -1,6 +1,5 @@
 import "./Projects.scss";
 import "../home/Home.scss";
-import { useTranslation } from "react-i18next";
 import { NAV_SECTIONS } from "../../config/constants";
 import ProjectList from "../../components/projectList/ProjectList";
 import { TECH_PROJECTS } from "../../config/projectsInfo";
@@ -9,9 +8,6 @@ import HeaderBack from "../../components/header/HeaderBack";
 import Footer from "../../components/footer/Footer";
 
 const Projects = () => {
-
-  const { t } = useTranslation();
-
   return (
     <div className="project-content">
       <div>
