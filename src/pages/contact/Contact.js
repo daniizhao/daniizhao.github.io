@@ -7,21 +7,14 @@ import { motion } from "framer-motion";
 import { useContext } from "react";
 import { IsMobileSizeContext } from "../../App";
 
-const handleContactClick = (url, filePath) => {
-  if (url === 'pdf') {
-    const link = document.createElement('a');
-    link.download = 'CV_Daniela_Zhao';
-    link.href = filePath;
-    link.click();
-  } else {
-    window.open(url, "_blank");
-  }
+const handleContactClick = (url) => {
+  window.open(url, "_blank");
 };
 
 const ContactItem = (props) => {
   return (
     <motion.div className="contact-item" whileHover={{ scale: 1.05, cursor: 'pointer' }} onClick={() => {
-      handleContactClick(props.contact.url, props.contact.filePath ?? '')
+      handleContactClick(props.contact.url)
     }}>
       <div className="contact-item-icon">
         <Icon iconName={props.contact.icon} color='var(--secondary)' />

@@ -1,8 +1,8 @@
 import "./Timeline.scss";
-import Star from '@mui/icons-material/Star';
+import { Star, Code, Palette } from '@mui/icons-material';
 import { Timeline, TimelineItem, TimelineSeparator, TimelineConnector, TimelineContent, TimelineDot, timelineItemClasses } from "@mui/lab";
 import { useTranslation } from "react-i18next";
-import { FX_LINK, SLASH_LINK, UPC_LINK } from "../../config/constants";
+import { FX_LINK, NEMI_LINK, SCRUFFY_LINK, SLASH_LINK, UPC_LINK } from "../../config/constants";
 import { motion, useInView } from "framer-motion";
 import { useContext, useRef } from "react";
 import { IsMobileSizeContext } from "../../App";
@@ -21,7 +21,15 @@ const CustomTimeLineElement = (props) => {
         <TimelineSeparator>
           <TimelineConnector />
           <TimelineDot>
-            <Star />
+            {
+              props.position === 'left' &&
+              <Code />
+            }
+            {
+              props.position === 'right' &&
+              <Palette />
+
+            }
           </TimelineDot>
           <TimelineConnector />
           {
@@ -62,12 +70,31 @@ const TimelineComponent = () => {
         },
       }}
     >
-      {/* <CustomTimeLineElement position='right'>
+      <CustomTimeLineElement position='left'>
+        <div className='element-content-title' onClick={() => {openLink(NEMI_LINK)}}>
+          {t('ABOUTME.STORY.NEMI.TITLE')}
+          <div className='logo-container'>
+            <img src="/assets/img/Logo_Nemi.png" alt='Nemi_logo' />
+          </div>
+        </div>
+        <div className='element-content-subtitle'>
+          dec 2024 - present
+        </div>
+        <div className='element-content-description'>
+          <div>
+            {t('ABOUTME.STORY.NEMI.DESCRIPTION')}
+          </div>
+          <div className="element-content-description-stack">
+            {t('ABOUTME.STORY.NEMI.STACK')}
+          </div>
+        </div>
+      </CustomTimeLineElement>
+      <CustomTimeLineElement position='right'>
         <div className='element-content-title' onClick={() => {openLink(SCRUFFY_LINK)}}>
           {t('ABOUTME.STORY.SCRUFFYDOG.TITLE')}
         </div>
         <div className='element-content-subtitle'>
-          2024 - present
+          mar 2024 - aug 2024
         </div>
         <div className='element-content-description'>
           <div>
@@ -80,7 +107,7 @@ const TimelineComponent = () => {
             {t('ABOUTME.STORY.SCRUFFYDOG.STACK')}
           </div>
         </div>
-      </CustomTimeLineElement> */}
+      </CustomTimeLineElement>
       <CustomTimeLineElement position='right'>
         <div className='element-content-title' onClick={() => {openLink(FX_LINK)}}>
           {t('ABOUTME.STORY.FX_ANIMATION.TITLE')}
@@ -89,7 +116,7 @@ const TimelineComponent = () => {
           </div>
         </div>
         <div className='element-content-subtitle'>
-          2022 - present
+          oct 2022 - jan 2025
         </div>
         <div className='element-content-description'>
           <div>
@@ -111,7 +138,7 @@ const TimelineComponent = () => {
           </div>
         </div>
         <div className='element-content-subtitle'>
-          2020 - 2023
+          sep 2020 - jul 2023
         </div>
         <div className='element-content-description'>
           <div>
@@ -133,7 +160,7 @@ const TimelineComponent = () => {
           </div>
         </div>
         <div className='element-content-subtitle'>
-          2017 - 2021
+          sep 2017 - jul 2021
         </div>
         <div className='element-content-description'>
           <div>

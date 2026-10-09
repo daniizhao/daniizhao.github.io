@@ -34,12 +34,5 @@ export const COMMON_CONTACT_INFO = [
     icon: 'fa-solid fa-at',
     name: 'daniela.zhao4@gmail.com',
     url: 'mailto: daniela.zhao4@gmail.com'
-  },
-  {
-    id: 'contact-common-1',
-    icon: 'fa-solid fa-file-arrow-down',
-    name: 'CV',
-    url: 'pdf',
-    filePath: '/assets/files/CV_ENG.pdf' 
-  },
+  }
 ]
