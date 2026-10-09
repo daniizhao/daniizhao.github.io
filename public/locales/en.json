@@ -25,7 +25,7 @@
       },
       "SLASHMOBILITY": {
         "TITLE": "Software Developer @ SlashMobility",
-        "DESCRIPTION": "Developed, debugged and delivered web,  mobile and TV applications",
+        "DESCRIPTION": "Developed, maintained and delivered web,  mobile and TV applications",
         "DESCRIPTION_2": "Led and managed projects, communication with clients",
         "STACK": "Angular, Ionic, React Native, KnockoutJS, Tizen SDK, webOs SDK, Git"
       },
@@ -40,6 +40,11 @@
         "DESCRIPTION": "Design and generate visuals from a given pitch",
         "DESCRIPTION_2": "",
         "STACK": "Adobe Photoshop, Blender"
+      },
+      "NEMI": {
+        "TITLE": "Frontend Developer @ Nemi Mobility Solutions",
+        "DESCRIPTION": "Developed, maintained web and mobile apps.",
+        "STACK": "Angular, ReactJS, React Native, Vue.js, Git"
       }
     }
   },

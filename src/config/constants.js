@@ -31,5 +31,6 @@ export const UPC_LINK = "https://www.upc.edu/en/bachelors/informatics-engineerin
 export const SLASH_LINK = "https://slashmobility.com/?lang=en";
 export const FX_LINK = "https://fxanimation.es/en/superior-master-in-modeling-and-concept-art/";
 export const SCRUFFY_LINK = "https://www.scruffydogltd.com/";
+export const NEMI_LINK = "https://www.nemi.mobi/es/inicio/;"
 
 export const MOBILE_SIZE = 768;

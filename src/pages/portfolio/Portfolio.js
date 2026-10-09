@@ -12,9 +12,9 @@ import 'swiper/css';
 import 'swiper/css/free-mode';
 import 'swiper/css/pagination';
 
-import { FreeMode, Pagination } from 'swiper/modules';
+import { FreeMode } from 'swiper/modules';
 
-const Portfolio = (props) => {
+const Portfolio = () => {
 
   const { t } = useTranslation();
 
